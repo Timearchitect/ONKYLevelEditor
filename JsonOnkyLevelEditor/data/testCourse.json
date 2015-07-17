@@ -1,0 +1,147 @@
+{"testCourse": {
+  "Box27": {
+    "id": 27,
+    "xCoord": 2000,
+    "yCoord": 800
+  },
+  "Box25": {
+    "id": 25,
+    "xCoord": 2000,
+    "yCoord": 0
+  },
+  "Box26": {
+    "id": 26,
+    "xCoord": 2000,
+    "yCoord": 400
+  },
+  "Box23": {
+    "id": 23,
+    "xCoord": 1800,
+    "yCoord": 600
+  },
+  "Box24": {
+    "id": 24,
+    "xCoord": 1800,
+    "yCoord": 200
+  },
+  "Box21": {
+    "id": 21,
+    "xCoord": 1200,
+    "yCoord": 800
+  },
+  "Box22": {
+    "id": 22,
+    "xCoord": 1600,
+    "yCoord": 800
+  },
+  "Box20": {
+    "id": 20,
+    "xCoord": 800,
+    "yCoord": 800
+  },
+  "Box1": {
+    "id": 1,
+    "xCoord": 600,
+    "yCoord": 600
+  },
+  "Box2": {
+    "id": 2,
+    "xCoord": 1000,
+    "yCoord": 600
+  },
+  "Box0": {
+    "id": 0,
+    "xCoord": 200,
+    "yCoord": 600
+  },
+  "Box9": {
+    "id": 9,
+    "xCoord": 1400,
+    "yCoord": 200
+  },
+  "Box7": {
+    "id": 7,
+    "xCoord": 1000,
+    "yCoord": 200
+  },
+  "Box8": {
+    "id": 8,
+    "xCoord": 1200,
+    "yCoord": 400
+  },
+  "Box5": {
+    "id": 5,
+    "xCoord": 600,
+    "yCoord": 200
+  },
+  "Box17": {
+    "id": 17,
+    "xCoord": 0,
+    "yCoord": 400
+  },
+  "Box6": {
+    "id": 6,
+    "xCoord": 800,
+    "yCoord": 400
+  },
+  "courseProperties": {
+    "courseSize": 2200,
+    "randomAmount": 4,
+    "difficultyLevel": 0
+  },
+  "Box16": {
+    "id": 16,
+    "xCoord": 0,
+    "yCoord": 0
+  },
+  "Box3": {
+    "id": 3,
+    "xCoord": 1400,
+    "yCoord": 600
+  },
+  "Box19": {
+    "id": 19,
+    "xCoord": 400,
+    "yCoord": 800
+  },
+  "Box4": {
+    "id": 4,
+    "xCoord": 400,
+    "yCoord": 400
+  },
+  "Box18": {
+    "id": 18,
+    "xCoord": 0,
+    "yCoord": 800
+  },
+  "Box12": {
+    "id": 12,
+    "xCoord": 200,
+    "yCoord": 200
+  },
+  "Box13": {
+    "id": 13,
+    "xCoord": 800,
+    "yCoord": 0
+  },
+  "Box14": {
+    "id": 14,
+    "xCoord": 1200,
+    "yCoord": 0
+  },
+  "Box15": {
+    "id": 15,
+    "xCoord": 1600,
+    "yCoord": 0
+  },
+  "Box10": {
+    "id": 10,
+    "xCoord": 1600,
+    "yCoord": 400
+  },
+  "Box11": {
+    "id": 11,
+    "xCoord": 400,
+    "yCoord": 0
+  }
+}}
