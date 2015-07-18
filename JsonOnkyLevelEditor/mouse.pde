@@ -1,8 +1,9 @@
 PVector diff= new PVector(0, 0);
 
 void mousePressed() {
+  searchFocusableObstacle();
   if (mouseButton==LEFT) {
-    addObstacle();
+   if (focus==null) addObstacle();
   }
   if (mouseButton==RIGHT) {
     if (focus!=null)obstacles.remove(focus);

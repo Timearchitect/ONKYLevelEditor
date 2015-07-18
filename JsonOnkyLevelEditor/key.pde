@@ -2,54 +2,45 @@ void keyPressed() {
   key= Character.toLowerCase(key);
   if (key=='a') {
   }
-    Obstacle temp,temp2;
+  Obstacle temp, temp2;
   switch(key) {
-
-  case 'a':
+  case 'h':
+    hide=!hide;
+    break;
+  case '': //ctrl+s
     background(255);
     exportJSON();
     break;
-  case '0':
-    background(255);
-
+  case 'a':
+    rotateListElement(list.size()-1);
+    listOrder=(listOrder+list.size()-1)%list.size();
+    println(listOrder);
+    break;
+  case 'd':
+    rotateListElement(1);
+    listOrder=(listOrder+1)%list.size();
+    println(listOrder);
     break;
   case '1':
-    background(255);
-     temp=list.get(1);
-     temp2=list.get(0);
-    list.set(0,temp);
-    list.set(1,temp2);
-
     break;
   case '2':
-    background(255);
-      temp=list.get(2);
-     temp2=list.get(0);
-    list.set(0,temp);
-    list.set(2,temp2);
     break;
   case '3':
-    background(255);
     break;
   case '4':
-    background(255);
     break;
   case '5':
-    background(255);
     break;
   case '6':
-    background(255);
     break;
   case '7':
-    background(255);
     break;
   case '8':
-    background(255);
     break;
   case '9':
-    background(255);
     break;
   }
+   // background(255);
 
   int amount=200;
   switch(keyCode) {

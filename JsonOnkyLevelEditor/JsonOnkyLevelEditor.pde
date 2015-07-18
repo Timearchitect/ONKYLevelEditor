@@ -1,6 +1,7 @@
 ArrayList<Obstacle> obstacles= new ArrayList<Obstacle>();
 ArrayList<Obstacle> list= new ArrayList<Obstacle>();
-
+int listOrder;
+boolean hide;
 
 Obstacle focus=null;
 
@@ -19,9 +20,18 @@ String courseName ="testCourse";
 void setup() {
   size( 1080, 720); // horisontal
   loadImages();
-list.add(new Box());
-list.add(new Box());
-list.add(new Tire());
+
+  list.add(new Box());
+  list.add(new Tire());
+  list.add(new IronBox());
+  list.add(new Glass());
+  list.add(new Block());
+  list.add(new Bush());
+  list.add(new Grass());
+  list.add(new Sign());
+  list.add(new Barrel());
+  list.add(new Rock());
+  list.add(new stoneSign());
 }
 
 void draw() {
@@ -36,7 +46,7 @@ void draw() {
   for (Obstacle o : obstacles)  o.display();
 
   popMatrix();
-  showGrid();
+  if (!hide) showGrid();
   fill(255);
 
   if (focus!=null) { 
@@ -46,9 +56,9 @@ void draw() {
     rect(50, 50, 100, 100);
   }
   stroke(255);
-  rect(50,height-100,50,50);
-  for( int i=0; i<list.size();i++)
-  image(list.get(i).image, 50+i*50, height-100, 50, 50);
+  rect(50, height-100, 50, 50);
+  for ( int i=0; i<list.size (); i++)
+    image(list.get(i).image, 50+i*50, height-100, 50, 50);
   displayDebug();
 }
 
@@ -116,7 +126,7 @@ void exportJSON() {
   course.setJSONObject("courseProperties", courseProperties);
   println(" Course: "+courseName);
 
-  for (int i = 0; i < obstacles.size(); i++) {
+  for (int i = 0; i < obstacles.size (); i++) {
     JSONObject obstacle = new JSONObject();
     obstacle.setInt("id", i);
     obstacle.setInt("xCoord", int(obstacles.get(i).x));
@@ -129,27 +139,55 @@ void exportJSON() {
   println("[saved at data/"+courseName+".json}");
 }
 /*void exportJSON() {
-  json.setJSONObject(courseName, course);
+ json.setJSONObject(courseName, course);
+ 
+ JSONObject courseProperties = new JSONObject();
+ courseProperties.setInt("courseSize", 2200);
+ courseProperties.setInt("difficultyLevel", 0);
+ courseProperties.setInt("randomAmount", 4);
+ 
+ course.setJSONObject("courseProperties", courseProperties);
+ println(" Course: "+courseName);
+ 
+ for (int i = 0; i < klass.length; i++) {
+ JSONObject obstacle = new JSONObject();
+ obstacle.setInt("id", i);
+ obstacle.setInt("xCoord", xCoord[i]);
+ obstacle.setInt("yCoord", yCoord[i]);
+ course.setJSONObject(klass[i], obstacle);
+ println(i+" "+ klass[i]+ " obstacle is exported");
+ }
+ 
+ saveJSONObject(json, "data/"+courseName+".json");
+ println("[saved at data/"+courseName+".json}");
+ }*/
 
-  JSONObject courseProperties = new JSONObject();
-  courseProperties.setInt("courseSize", 2200);
-  courseProperties.setInt("difficultyLevel", 0);
-  courseProperties.setInt("randomAmount", 4);
 
-  course.setJSONObject("courseProperties", courseProperties);
-  println(" Course: "+courseName);
+void rotateListElement(int index) {
 
-  for (int i = 0; i < klass.length; i++) {
-    JSONObject obstacle = new JSONObject();
-    obstacle.setInt("id", i);
-    obstacle.setInt("xCoord", xCoord[i]);
-    obstacle.setInt("yCoord", yCoord[i]);
-    course.setJSONObject(klass[i], obstacle);
-    println(i+" "+ klass[i]+ " obstacle is exported");
+  ArrayList<Obstacle> tempList=  new ArrayList(list.subList(0, index));
+  print(" cutted:");
+  for (Obstacle line : tempList) {
+    print(line.getClass().getSimpleName()+" ");
   }
+  println("");
 
-  saveJSONObject(json, "data/"+courseName+".json");
-  println("[saved at data/"+courseName+".json}");
-}*/
+  for ( int i=index-1; i>=0; i--) {
+    list.remove(i);
+  }
+  print(" left:");
+  for (Obstacle line : list) {
+    print(line.getClass().getSimpleName()+" ");
+  }
+  println("");
 
+  list.addAll(tempList);
+
+  print(" listed:");
+  for (Obstacle line : list) {
+    print(line.getClass().getSimpleName()+" ");
+  }
+  println("");
+  //  return new ArrayList(list.subList(0, index));
+}
 
