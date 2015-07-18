@@ -131,7 +131,14 @@ void displayDebug() {
   textSize(30);
   text(obstacles.size()+" obstacles", 100, height-15);
 }
-
+Obstacle getObstacleOnClassName(String name) {
+  Obstacle temp=null;
+  for (Obstacle e : list) {
+    if (name.equals(e.getClass().getSimpleName())) temp=e.clone();
+  }
+  println(temp.getClass().getSimpleName()+ "is found");
+  return temp;
+}
 void importJSON() {
   JSONObject json = loadJSONObject(courseName+".json");
   //  println(json);
@@ -145,11 +152,19 @@ void importJSON() {
   println(testCourse.keys());
   String[] obstacle = splitTokens(testCourse.keys().toString(), ",[] ");
   println(obstacle);
-  for (int i = 0; i < testCourse.size()-1; i++) {
-    //if(obstacle[i].equals())
-    JSONObject element = testCourse.getJSONObject(obstacle[i]);
-    println(element);
+  for (int i = 0; i < testCourse.size ()-1; i++) {
+    if (!obstacle[i].equals("courseProperties")) {
+      JSONObject element = testCourse.getJSONObject(obstacle[i]);
+      println(element);
+
+      Obstacle correspondingObstacle= getObstacleOnClassName(element.getString("class"));
+      correspondingObstacle.x=element.getInt("xCoord");
+      correspondingObstacle.y=element.getInt("yCoord");
+      obstacles.add(correspondingObstacle);
+    }
   }
+    println("[loaded at data/"+courseName+".json}");
+
 }
 
 void exportJSON() {

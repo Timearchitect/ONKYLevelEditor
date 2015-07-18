@@ -1,37 +1,44 @@
 {"testCourse": {
-  "Box0": {
-    "id": 0,
-    "xCoord": 800,
-    "yCoord": 600
+  "Grass15": {
+    "id": 15,
+    "xCoord": 1800,
+    "class": "Grass",
+    "yCoord": 800
+  },
+  "Grass13": {
+    "id": 13,
+    "xCoord": 1400,
+    "class": "Grass",
+    "yCoord": 800
+  },
+  "Grass14": {
+    "id": 14,
+    "xCoord": 1600,
+    "class": "Grass",
+    "yCoord": 800
   },
   "Grass5": {
     "id": 5,
-    "xCoord": 1000,
-    "yCoord": 800
-  },
-  "Grass4": {
-    "id": 4,
     "xCoord": 800,
+    "class": "Grass",
     "yCoord": 800
   },
   "Grass3": {
     "id": 3,
-    "xCoord": 600,
+    "xCoord": 1000,
+    "class": "Grass",
     "yCoord": 800
   },
-  "Grass2": {
-    "id": 2,
-    "xCoord": 400,
-    "yCoord": 800
-  },
-  "Grass11": {
+  "Sign11": {
     "id": 11,
-    "xCoord": 0,
-    "yCoord": 800
+    "xCoord": -100,
+    "class": "Sign",
+    "yCoord": 600
   },
-  "Grass1": {
-    "id": 1,
-    "xCoord": 200,
+  "Grass12": {
+    "id": 12,
+    "xCoord": 1200,
+    "class": "Grass",
     "yCoord": 800
   },
   "courseProperties": {
@@ -43,36 +50,55 @@
   "Grass10": {
     "id": 10,
     "xCoord": 2000,
+    "class": "Grass",
     "yCoord": 800
+  },
+  "Block4": {
+    "id": 4,
+    "xCoord": 200,
+    "class": "Block",
+    "yCoord": 600
   },
   "Grass6": {
     "id": 6,
-    "xCoord": 1200,
+    "xCoord": 600,
+    "class": "Grass",
     "yCoord": 800
   },
   "Grass7": {
     "id": 7,
-    "xCoord": 1400,
+    "xCoord": 400,
+    "class": "Grass",
     "yCoord": 800
-  },
-  "IronBox12": {
-    "id": 12,
-    "xCoord": 800,
-    "yCoord": 400
   },
   "Grass8": {
     "id": 8,
-    "xCoord": 1600,
+    "xCoord": 200,
+    "class": "Grass",
     "yCoord": 800
-  },
-  "IronBox13": {
-    "id": 13,
-    "xCoord": 800,
-    "yCoord": 200
   },
   "Grass9": {
     "id": 9,
-    "xCoord": 1800,
+    "xCoord": 0,
+    "class": "Grass",
     "yCoord": 800
+  },
+  "Rock2": {
+    "id": 2,
+    "xCoord": 1800,
+    "class": "Rock",
+    "yCoord": 600
+  },
+  "Rock1": {
+    "id": 1,
+    "xCoord": 1400,
+    "class": "Rock",
+    "yCoord": 600
+  },
+  "Rock0": {
+    "id": 0,
+    "xCoord": 1000,
+    "class": "Rock",
+    "yCoord": 600
   }
 }}
