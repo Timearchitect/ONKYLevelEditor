@@ -4,6 +4,7 @@ void mousePressed() {
   searchFocusableObstacle();
   if (mouseButton==LEFT) {
    if (focus==null) addObstacle();
+     searchFocusableObstacle();
   }
   if (mouseButton==RIGHT) {
     if (focus!=null)obstacles.remove(focus);
@@ -18,6 +19,7 @@ void mouseDragged() {
   searchFocusableObstacle();
   if (mouseButton==LEFT) {
     if (focus==null)addObstacle();
+      searchFocusableObstacle();
   }
   if (mouseButton==RIGHT) {
     if (focus!=null)obstacles.remove(focus);
@@ -56,7 +58,8 @@ void searchFocusableObstacle() {
 }
 
 void addObstacle() {
-  int interval=100;
+
+  int interval=int(list.get(0).h*0.5);
   int xRounded = int(((mouseX/scaleFactor-cameraCoord.x) -interval*0.5) / interval ) * interval;
   int yRounded = int(((mouseY/scaleFactor-cameraCoord.y) -interval*0.5) / interval ) * interval;
   //obstacles.add(new Box(int(mouseX/scaleFactor-cameraCoord.x),int(mouseY/scaleFactor-cameraCoord.y)));

@@ -28,6 +28,8 @@ void setup() {
   list.add(new Block());
   list.add(new Bush());
   list.add(new Grass());
+  list.add(new Lumber());
+  list.add(new PlatForm());
   list.add(new Sign());
   list.add(new Barrel());
   list.add(new Rock());

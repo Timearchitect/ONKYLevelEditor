@@ -192,7 +192,14 @@ class IronBox extends Obstacle {
 
 class PlatForm extends Obstacle {
   boolean hanging;
-
+  PlatForm() {
+    super();
+    image=Vines;
+    w=100;
+    h=100;
+    defaultHealth=4;
+    obstacleColor = color(255, 50, 50);
+  }
   PlatForm(int _x, int _y, int _w, int _h) {
     super(_x, _y);
     w=_w;
@@ -213,12 +220,22 @@ class PlatForm extends Obstacle {
       line(x+w, -1000, x+w, y);
       strokeWeight(1);
     }
+    fill(obstacleColor);
+    rect(x, y, w, h);
   }
 }
 
 class Lumber extends Obstacle {
   boolean hanging;
 
+  Lumber() {
+    super();
+    image=lumber;
+    w=100;
+    h=100;
+    defaultHealth=4;
+    obstacleColor = color(182, 69, 0);
+  }
   Lumber(int _x, int _y, int _w, int _h) {
     super(_x, _y);
     w=_w;
@@ -231,7 +248,8 @@ class Lumber extends Obstacle {
     hanging=_hanging;
   }
   void display() {
-    image(lumber, x, y, w, h);
+    super.display();
+    image(image, x, y, w, h);
     if (hanging) {
       for (int i= 0; i > -1000; i-=40) {
         image(Vines, x, y-80+i, 32, 80);
@@ -244,6 +262,8 @@ class Lumber extends Obstacle {
 class Glass extends Obstacle {
   Glass() {
     super();
+    w=100;
+    h=100;
     image=glass;
     obstacleColor = color(0, 150, 255, 100);
     defaultHealth=1;
@@ -326,10 +346,7 @@ class Grass extends Obstacle {
   int margin=25;
   Grass() {
     super();
-    //w=_w;
-    //h=_h;
     image=Grass;
-
     obstacleColor = color(128, 181, 113);
     unBreakable=true;
   }
@@ -343,7 +360,8 @@ class Grass extends Obstacle {
     unBreakable=true;
   }
   void display() {
-    //  super.display();
+      super.display();
+
     fill(obstacleColor);
     noStroke();
     rect(x, y, w, 1000);
@@ -362,6 +380,8 @@ class Water extends Obstacle {
     unBreakable=true;
   }
   void display() {
+        super.display();
+
     count++;
     noStroke();
     fill(obstacleColor);
@@ -405,6 +425,8 @@ class Sign extends Obstacle {
   }
 
   void display() {
+        super.display();
+
     image(image, x, y, w, h);
     fill(0);
     textSize(30);
@@ -453,6 +475,8 @@ class Barrel extends Obstacle {
     vx=-2;
   }
   void display() {
+        super.display();
+
     angle--;
     pushMatrix();
     translate(x+w*0.5, y+h*0.5);
