@@ -4,7 +4,7 @@ int listOrder;
 boolean hide;
 
 Obstacle focus=null;
-
+PImage  poisonIcon, slashIcon, laserIcon, superIcon, tokenIcon, lifeIcon, slowIcon, magnetIcon;
 PImage Tire, Vines, rockSign, rock, lumber, glass, Bush, Box, brokenBox, mysteryBox, Leaf, rockDebris, Block, BlockSad, ironBox, ironBox2, ironBox3;
 PImage  sign, Grass, waterSpriteSheet, Snake, Barrel;
 float scaleFactor=0.5;
@@ -35,22 +35,26 @@ void setup() {
   list.add(new Barrel());
   list.add(new Rock());
   list.add(new stoneSign());
+  list.add(new TokenPowerup());
+  list.add(new LifePowerup());
+  list.add(new LaserPowerup());
+  list.add(new TeleportPowerup());
+  list.add(new InvisPowerup());
+  list.add(new MagnetPowerup());
+  list.add(new RandomPowerup());
+  list.add(new PoisonPowerdown());
 }
 
 void draw() {
-
   background(100);
   pushMatrix();
   scale(scaleFactor);
   translate(cameraCoord.x, cameraCoord.y);
-
   displayCourseSize();
-
   for (Obstacle o : obstacles)  o.display();
   popMatrix();
   if (!hide) showGrid();
   fill(255);
-
   if (focus!=null) { 
     rect(50, 50, focus.w*0.5, focus.h*0.5);
     image(focus.image, 50, 50, focus.w*0.5, focus.h*0.5);
@@ -71,6 +75,15 @@ void draw() {
 
 
 void loadImages() {
+  //icons
+  poisonIcon = loadImage("icon/poison.png");
+  slowIcon = loadImage("icon/slowpower.png");
+  slashIcon = loadImage("icon/slashpower.png");
+  laserIcon = loadImage("icon/laserpower2.png");
+  tokenIcon = loadImage("icon/token2.png");
+  superIcon = loadImage("icon/speedpower.png");
+  lifeIcon = loadImage("icon/oneup.png");
+  magnetIcon = loadImage("icon/magnet.png");
 
   //Obstacle graphics
   rockSign=loadImage("stoneSign.png");
@@ -163,8 +176,7 @@ void importJSON() {
       obstacles.add(correspondingObstacle);
     }
   }
-    println("[loaded at data/"+courseName+".json}");
-
+  println("[loaded at data/"+courseName+".json}");
 }
 
 void exportJSON() {

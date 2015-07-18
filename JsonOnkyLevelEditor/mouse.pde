@@ -3,12 +3,14 @@ PVector diff= new PVector(0, 0);
 void mousePressed() {
   searchFocusableObstacle();
   if (mouseButton==LEFT) {
-   if (focus==null) addObstacle();
-     searchFocusableObstacle();
+    if (focus==null) addObstacle();
+    searchFocusableObstacle();
   }
   if (mouseButton==RIGHT) {
-    if (focus!=null)obstacles.remove(focus);
-    println("deleted");
+    if (focus!=null) {
+      obstacles.remove(focus);
+      println("deleted");
+    }
   }
   if (mouseButton==CENTER) {
     diff.set(cameraCoord.x-mouseX/scaleFactor, cameraCoord.y-mouseY/scaleFactor);
@@ -19,11 +21,13 @@ void mouseDragged() {
   searchFocusableObstacle();
   if (mouseButton==LEFT) {
     if (focus==null)addObstacle();
-      searchFocusableObstacle();
+    searchFocusableObstacle();
   }
   if (mouseButton==RIGHT) {
-    if (focus!=null)obstacles.remove(focus);
-    println("deleted");
+    if (focus!=null) {
+      obstacles.remove(focus);
+      println("deleted");
+    }
   }
   if (mouseButton==CENTER) {
     cameraCoord.set(mouseX/scaleFactor+diff.x, mouseY/scaleFactor+diff.y);
@@ -35,7 +39,7 @@ void mouseMoved() {
 
 void mouseReleased() {
   if (mouseButton==CENTER) {
-  //  pCameraCoord=cameraCoord;
+    //  pCameraCoord=cameraCoord;
   }
 }
 void mouseWheel(MouseEvent event) {
@@ -63,11 +67,11 @@ void addObstacle() {
   int xRounded = int(((mouseX/scaleFactor-cameraCoord.x) -interval*0.5) / interval ) * interval;
   int yRounded = int(((mouseY/scaleFactor-cameraCoord.y) -interval*0.5) / interval ) * interval;
   //obstacles.add(new Box(int(mouseX/scaleFactor-cameraCoord.x),int(mouseY/scaleFactor-cameraCoord.y)));
-//  if (selected!=null) {
-     list.get(0).x=xRounded;
-     list.get(0).y=yRounded;
-    obstacles.add(list.get(0).clone());
-//  }
+  //  if (selected!=null) {
+  list.get(0).x=xRounded;
+  list.get(0).y=yRounded;
+  obstacles.add(list.get(0).clone());
+  //  }
   //obstacles.add(new Box(xRounded, yRounded));
   println("added");
 }

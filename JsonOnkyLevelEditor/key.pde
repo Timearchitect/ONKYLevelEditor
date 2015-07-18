@@ -1,5 +1,6 @@
 void keyPressed() {
   key= Character.toLowerCase(key);
+
   if (key=='a') {
   }
   Obstacle temp, temp2;
@@ -11,6 +12,10 @@ void keyPressed() {
     background(255);
     exportJSON();
     break;
+  case ''://ctrl+l
+    background(255);
+    importJSON();
+    break;
   case 'a':
     rotateListElement(list.size()-1);
     listOrder=(listOrder+list.size()-1)%list.size();
@@ -20,9 +25,6 @@ void keyPressed() {
     rotateListElement(1);
     listOrder=(listOrder+1)%list.size();
     println(listOrder);
-    break;
-  case 'l':
-    importJSON();
     break;
   case '1':
     break;
@@ -47,7 +49,9 @@ void keyPressed() {
 
   int amount=200;
   switch(keyCode) {
-
+  case DELETE:
+    obstacles.clear();
+    break;
   case UP:
     cameraCoord.add(0, amount, 0);
     break;
