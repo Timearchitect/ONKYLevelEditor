@@ -4,7 +4,7 @@ abstract class Obstacle implements Cloneable {
   color obstacleColor;
   int hitBrightness, defaultHealth=1, health=defaultHealth, type;
   String tooltip="";
-  boolean randomized, stretchable, unBreakable, regenerating, underlay, highLight;
+  boolean marked,randomized, stretchable, unBreakable, regenerating, underlay, highLight;
   PImage image;
   Obstacle() {
     health=defaultHealth;

@@ -15,7 +15,7 @@ PVector defaultCourseSize= new PVector(2200, 1000);
 
 JSONObject json= new JSONObject();
 JSONObject course= new JSONObject();
-int difficultyLevel=0,randomLevel=4;
+int difficultyLevel=0, randomLevel=4;
 
 
 String courseName ="testCourse";
@@ -57,11 +57,10 @@ void draw() {
     fill(255);
     textSize(18);
     textAlign(LEFT);
-    text(" Coord: "+ int(focus.x)+" , " +int(focus.y),50,80+focus.h*0.5);
-    text(" Size: "+ int(focus.w)+" , " +int(focus.h),50,100+focus.h*0.5);
-    text(" Tooltip: "+ focus.tooltip,50,120+focus.h*0.5);
-    text(" Class: "+ focus.getClass().getSimpleName(),50,40);
-
+    text(" Coord: "+ int(focus.x)+" , " +int(focus.y), 50, 80+focus.h*0.5);
+    text(" Size: "+ int(focus.w)+" , " +int(focus.h), 50, 100+focus.h*0.5);
+    text(" Tooltip: "+ focus.tooltip, 50, 120+focus.h*0.5);
+    text(" Class: "+ focus.getClass().getSimpleName(), 50, 40);
   } else {
     rect(50, 50, 100, 100);
   }
@@ -134,13 +133,30 @@ void displayDebug() {
 }
 
 void importJSON() {
+  JSONObject json = loadJSONObject(courseName+".json");
+  //  println(json);
+  JSONObject testCourse= json.getJSONObject("testCourse");
+  JSONObject courseProperties= testCourse.getJSONObject("courseProperties");
+  println( "courseSize: "+ courseProperties.getInt("courseSize")) ;
+  println( "difficultyLevel: "+ courseProperties.getInt("difficultyLevel")) ;
+  println( "randomAmount: "+ courseProperties.getInt("randomAmount")) ;
 
-  println("[importing data/"+courseName+".json}");
+  println(testCourse.size());
+  println(testCourse.keys());
+  String[] obstacle = splitTokens(testCourse.keys().toString(), ",[] ");
+  println(obstacle);
+  for (int i = 0; i < testCourse.size()-1; i++) {
+    //if(obstacle[i].equals())
+    JSONObject element = testCourse.getJSONObject(obstacle[i]);
+    println(element);
+  }
 }
+
 void exportJSON() {
   json.setJSONObject(courseName, course);
 
   JSONObject courseProperties = new JSONObject();
+  courseProperties.setString("name", courseName);
   courseProperties.setInt("courseSize", int(defaultCourseSize.x));
   courseProperties.setInt("difficultyLevel", difficultyLevel);
   courseProperties.setInt("randomAmount", randomLevel);
@@ -150,6 +166,7 @@ void exportJSON() {
 
   for (int i = 0; i < obstacles.size (); i++) {
     JSONObject obstacle = new JSONObject();
+    obstacle.setString("class", obstacles.get(i).getClass().getSimpleName());
     obstacle.setInt("id", i);
     obstacle.setInt("xCoord", int(obstacles.get(i).x));
     obstacle.setInt("yCoord", int(obstacles.get(i).y));
