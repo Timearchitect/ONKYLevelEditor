@@ -15,12 +15,13 @@ PVector defaultCourseSize= new PVector(2200, 1000);
 
 JSONObject json= new JSONObject();
 JSONObject course= new JSONObject();
+int difficultyLevel=0,randomLevel=4;
+
 
 String courseName ="testCourse";
 void setup() {
   size( 1080, 720); // horisontal
   loadImages();
-
   list.add(new Box());
   list.add(new Tire());
   list.add(new IronBox());
@@ -43,10 +44,9 @@ void draw() {
   scale(scaleFactor);
   translate(cameraCoord.x, cameraCoord.y);
 
-  fill(255, 255, 0);
-  rect(0, 0, defaultCourseSize.x, defaultCourseSize.y);
-  for (Obstacle o : obstacles)  o.display();
+  displayCourseSize();
 
+  for (Obstacle o : obstacles)  o.display();
   popMatrix();
   if (!hide) showGrid();
   fill(255);
@@ -54,13 +54,19 @@ void draw() {
   if (focus!=null) { 
     rect(50, 50, focus.w*0.5, focus.h*0.5);
     image(focus.image, 50, 50, focus.w*0.5, focus.h*0.5);
+    fill(255);
+    textSize(18);
+    textAlign(LEFT);
+    text(" Coord: "+ int(focus.x)+" , " +int(focus.y),50,80+focus.h*0.5);
+    text(" Size: "+ int(focus.w)+" , " +int(focus.h),50,100+focus.h*0.5);
+    text(" Tooltip: "+ focus.tooltip,50,120+focus.h*0.5);
+    text(" Class: "+ focus.getClass().getSimpleName(),50,40);
+
   } else {
     rect(50, 50, 100, 100);
   }
-  stroke(255);
-  rect(50, height-100, 50, 50);
-  for ( int i=0; i<list.size (); i++)
-    image(list.get(i).image, 50+i*50, height-100, 50, 50);
+
+  displayToolbar();
   displayDebug();
 }
 
@@ -89,41 +95,55 @@ void loadImages() {
   //lumberL= loadImage("lumber11.png");
   //Wood= loadImage("wood.png");
   waterSpriteSheet= loadImage("watertile.png");
-
   Block = loadImage("blockMad.png");
   BlockSad = loadImage("blockSad.png");
 }
-
+void displayCourseSize() {
+  fill(0);
+  textSize(30);
+  text("courseSize: "+int(defaultCourseSize.x) +" , " +int(defaultCourseSize.y), 0, -50 );
+  fill(255, 255, 0, 100);
+  rect(0, 0, defaultCourseSize.x, defaultCourseSize.y);
+}
 void showGrid() {
   float interval=200;
-
   stroke(0, 255, 0);
   strokeWeight(2);
-
   for (int i=0; i< (width); i+=interval*scaleFactor) {
     float xLine=i+((cameraCoord.x)%interval)*scaleFactor;
     line(xLine, 0, xLine, height);
   }
-
   for (int i=0; i< (height); i+=interval*scaleFactor) {
     float yLine=i+((cameraCoord.y)%interval)*scaleFactor;
     line(0, yLine, width, yLine);
   }
 }
+void displayToolbar() {
+  stroke(255);
+  strokeWeight(20);
+  rect(50, height-120, 50, 50);
+  image(list.get(0).image, 50, height-120, 50, 50);
+  for ( int i=1; i<list.size (); i++)image(list.get(i).image, 50+i*60, height-100, 50, 50);
+  image(list.get(list.size()-1).image, -10, height-100, 50, 50);
+  noStroke();
+}
 void displayDebug() {
   fill(0);
-  textSize(24);
-  text(obstacles.size()+" obstacles", 100, height-100);
+  textSize(30);
+  text(obstacles.size()+" obstacles", 100, height-15);
 }
 
+void importJSON() {
 
+  println("[importing data/"+courseName+".json}");
+}
 void exportJSON() {
   json.setJSONObject(courseName, course);
 
   JSONObject courseProperties = new JSONObject();
-  courseProperties.setInt("courseSize", 2200);
-  courseProperties.setInt("difficultyLevel", 0);
-  courseProperties.setInt("randomAmount", 4);
+  courseProperties.setInt("courseSize", int(defaultCourseSize.x));
+  courseProperties.setInt("difficultyLevel", difficultyLevel);
+  courseProperties.setInt("randomAmount", randomLevel);
 
   course.setJSONObject("courseProperties", courseProperties);
   println(" Course: "+courseName);
@@ -140,6 +160,7 @@ void exportJSON() {
   saveJSONObject(json, "data/"+courseName+".json");
   println("[saved at data/"+courseName+".json}");
 }
+
 /*void exportJSON() {
  json.setJSONObject(courseName, course);
  

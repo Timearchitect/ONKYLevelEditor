@@ -1,5 +1,192 @@
-{"testCourse": {"courseProperties": {
-  "courseSize": 2200,
-  "randomAmount": 4,
-  "difficultyLevel": 0
-}}}
+{"testCourse": {
+  "Bush19": {
+    "id": 19,
+    "xCoord": 1400,
+    "yCoord": 500
+  },
+  "Block27": {
+    "id": 27,
+    "xCoord": 1000,
+    "yCoord": 0
+  },
+  "Lumber28": {
+    "id": 28,
+    "xCoord": 1000,
+    "yCoord": 200
+  },
+  "stoneSign3": {
+    "id": 3,
+    "xCoord": 600,
+    "yCoord": 200
+  },
+  "Lumber29": {
+    "id": 29,
+    "xCoord": 1100,
+    "yCoord": 200
+  },
+  "Grass6": {
+    "id": 6,
+    "xCoord": 0,
+    "yCoord": 600
+  },
+  "Grass7": {
+    "id": 7,
+    "xCoord": 200,
+    "yCoord": 600
+  },
+  "Grass8": {
+    "id": 8,
+    "xCoord": 400,
+    "yCoord": 600
+  },
+  "Grass9": {
+    "id": 9,
+    "xCoord": 600,
+    "yCoord": 600
+  },
+  "Bush18": {
+    "id": 18,
+    "xCoord": 1300,
+    "yCoord": 500
+  },
+  "Bush17": {
+    "id": 17,
+    "xCoord": 1200,
+    "yCoord": 500
+  },
+  "Box1": {
+    "id": 1,
+    "xCoord": 400,
+    "yCoord": 400
+  },
+  "Grass15": {
+    "id": 15,
+    "xCoord": 1800,
+    "yCoord": 600
+  },
+  "Box2": {
+    "id": 2,
+    "xCoord": 600,
+    "yCoord": 400
+  },
+  "Grass16": {
+    "id": 16,
+    "xCoord": 2000,
+    "yCoord": 600
+  },
+  "Grass13": {
+    "id": 13,
+    "xCoord": 1400,
+    "yCoord": 600
+  },
+  "Box0": {
+    "id": 0,
+    "xCoord": 200,
+    "yCoord": 400
+  },
+  "Grass14": {
+    "id": 14,
+    "xCoord": 1600,
+    "yCoord": 600
+  },
+  "Lumber36": {
+    "id": 36,
+    "xCoord": 1800,
+    "yCoord": 200
+  },
+  "Lumber34": {
+    "id": 34,
+    "xCoord": 1600,
+    "yCoord": 200
+  },
+  "Lumber35": {
+    "id": 35,
+    "xCoord": 1700,
+    "yCoord": 200
+  },
+  "Lumber32": {
+    "id": 32,
+    "xCoord": 1400,
+    "yCoord": 200
+  },
+  "Grass11": {
+    "id": 11,
+    "xCoord": 1000,
+    "yCoord": 600
+  },
+  "Lumber33": {
+    "id": 33,
+    "xCoord": 1500,
+    "yCoord": 200
+  },
+  "courseProperties": {
+    "courseSize": 2200,
+    "randomAmount": 4,
+    "difficultyLevel": 0
+  },
+  "Grass12": {
+    "id": 12,
+    "xCoord": 1200,
+    "yCoord": 600
+  },
+  "Lumber30": {
+    "id": 30,
+    "xCoord": 1200,
+    "yCoord": 200
+  },
+  "Lumber31": {
+    "id": 31,
+    "xCoord": 1300,
+    "yCoord": 200
+  },
+  "Grass10": {
+    "id": 10,
+    "xCoord": 800,
+    "yCoord": 600
+  },
+  "Barrel5": {
+    "id": 5,
+    "xCoord": 1000,
+    "yCoord": 400
+  },
+  "Bush21": {
+    "id": 21,
+    "xCoord": 1600,
+    "yCoord": 500
+  },
+  "Bush20": {
+    "id": 20,
+    "xCoord": 1500,
+    "yCoord": 500
+  },
+  "Rock4": {
+    "id": 4,
+    "xCoord": 800,
+    "yCoord": 400
+  },
+  "Bush26": {
+    "id": 26,
+    "xCoord": 2100,
+    "yCoord": 500
+  },
+  "Bush23": {
+    "id": 23,
+    "xCoord": 1800,
+    "yCoord": 500
+  },
+  "Bush22": {
+    "id": 22,
+    "xCoord": 1700,
+    "yCoord": 500
+  },
+  "Bush25": {
+    "id": 25,
+    "xCoord": 2000,
+    "yCoord": 500
+  },
+  "Bush24": {
+    "id": 24,
+    "xCoord": 1900,
+    "yCoord": 500
+  }
+}}

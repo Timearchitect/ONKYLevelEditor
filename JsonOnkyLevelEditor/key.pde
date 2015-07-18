@@ -21,6 +21,9 @@ void keyPressed() {
     listOrder=(listOrder+1)%list.size();
     println(listOrder);
     break;
+  case 'l':
+    importJSON();
+    break;
   case '1':
     break;
   case '2':
@@ -40,7 +43,7 @@ void keyPressed() {
   case '9':
     break;
   }
-   // background(255);
+  // background(255);
 
   int amount=200;
   switch(keyCode) {

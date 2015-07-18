@@ -2,8 +2,9 @@ abstract class Obstacle implements Cloneable {
   float impactForce, x, y, vx, vy, w=200, h=200;
   PVector coord, vel, accel, size;
   color obstacleColor;
-  int hitBrightness, defaultHealth=1, health=defaultHealth;
-  boolean unBreakable, regenerating, underlay, highLight;
+  int hitBrightness, defaultHealth=1, health=defaultHealth, type;
+  String tooltip="";
+  boolean randomized, stretchable, unBreakable, regenerating, underlay, highLight;
   PImage image;
   Obstacle() {
     health=defaultHealth;
@@ -46,6 +47,7 @@ class Box extends Obstacle {
     super();
     obstacleColor = color(180, 140, 50);
     defaultHealth=2;
+    randomized=true;
     type=int(random(3));
     switch(type) {
     case 0:
@@ -60,6 +62,7 @@ class Box extends Obstacle {
     default:
       image=mysteryBox;
     }
+    tooltip=" standard breakable obstacle.";
   }
   Box(int _x, int _y) {
     super(_x, _y);
@@ -116,6 +119,7 @@ class Tire extends Obstacle {
       radianer = PI*2;
       break;
     }
+    tooltip=" slowing breakable obstacle.";
   }
   Tire(int _x, int _y) {
     super(_x, _y);
@@ -164,6 +168,7 @@ class IronBox extends Obstacle {
     } else {
       image=ironBox3;
     }
+    tooltip=" standard unbreakable obstacle.";
   }
   IronBox(int _x, int _y) {
     super(_x, _y);
@@ -199,6 +204,7 @@ class PlatForm extends Obstacle {
     h=100;
     defaultHealth=4;
     obstacleColor = color(255, 50, 50);
+    tooltip=" legacy breakable platform obstacle.";
   }
   PlatForm(int _x, int _y, int _w, int _h) {
     super(_x, _y);
@@ -220,6 +226,7 @@ class PlatForm extends Obstacle {
       line(x+w, -1000, x+w, y);
       strokeWeight(1);
     }
+    noStroke();
     fill(obstacleColor);
     rect(x, y, w, h);
   }
@@ -235,6 +242,7 @@ class Lumber extends Obstacle {
     h=100;
     defaultHealth=4;
     obstacleColor = color(182, 69, 0);
+    tooltip=" standard breakable platform obstacle.";
   }
   Lumber(int _x, int _y, int _w, int _h) {
     super(_x, _y);
@@ -267,6 +275,8 @@ class Glass extends Obstacle {
     image=glass;
     obstacleColor = color(0, 150, 255, 100);
     defaultHealth=1;
+    tooltip=" breakable dodad.";
+
   }
   Glass(int _x, int _y, int _w, int _h) {
     super(_x, _y);
@@ -297,6 +307,7 @@ class Block extends Obstacle {
     w=200;
     h=200;
     defaultHealth=20;
+        tooltip=" unbreakable enemy.";
   }
   Block(int _x, int _y) {
     super(_x, _y);
@@ -328,6 +339,8 @@ class Bush extends Obstacle {
     w=100;
     h=100;
     health=1;
+    tooltip=" breakable dodad.";
+
   }
   Bush(int _x, int _y) {
     super(_x, _y);
@@ -358,9 +371,11 @@ class Grass extends Obstacle {
 
     obstacleColor = color(128, 181, 113);
     unBreakable=true;
+    tooltip=" unbreakable none interactive ground obstacle.";
+
   }
   void display() {
-      super.display();
+    super.display();
 
     fill(obstacleColor);
     noStroke();
@@ -380,7 +395,7 @@ class Water extends Obstacle {
     unBreakable=true;
   }
   void display() {
-        super.display();
+    super.display();
 
     count++;
     noStroke();
@@ -425,7 +440,7 @@ class Sign extends Obstacle {
   }
 
   void display() {
-        super.display();
+    super.display();
 
     image(image, x, y, w, h);
     fill(0);
@@ -475,7 +490,7 @@ class Barrel extends Obstacle {
     vx=-2;
   }
   void display() {
-        super.display();
+    super.display();
 
     angle--;
     pushMatrix();
