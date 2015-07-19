@@ -13,14 +13,7 @@ abstract class Powerup implements Cloneable {
     y=_y;
     w=100;
     h=100;
-    // powerups.add( this);
-    // totalTokens++;
   }
-  Powerup(int _x, int _y, int _time, boolean _regenerating) {
-    this(_x, _y, _time);
-    regenerating=_regenerating;
-  }
-
   void display() {
     if (!instant) { 
       noStroke();
@@ -31,22 +24,14 @@ abstract class Powerup implements Cloneable {
   }
 }
 class TokenPowerup extends Obstacle {
-
   TokenPowerup() {
     super();
     obstacleColor=color(255);
     image= tokenIcon;
     w=100;
     h=100;
-    //  homing=true;
-  }
-  TokenPowerup(int _x, int _y, int _vx, int _vy, int _time) {
-    super(_x, _y);
-    vx=_vx;
-    vy=_vy;
-    // ax=0;
-    //ay=2;
-    //gravity=true;
+    tooltip=new String[maxType+1];
+    tooltip[0]=" valueble token used as ingame currency.";
   }
   void display() {
     super.display();
@@ -67,10 +52,8 @@ class InvisPowerup extends Obstacle {
     image = superIcon;
     w=100;
     h=100;
-  }
-  InvisPowerup(int _x, int _y, int _time, boolean _instant) {
-    super(_x, _y);
-    //instant=_instant;
+    tooltip=new String[maxType+1];
+    tooltip[0]=" grants player invinciblity.";
   }
   void display() {
     super.display();
@@ -80,6 +63,9 @@ class InvisPowerup extends Obstacle {
      ellipse(x+offsetX, y+offsetY, w+40, h+40);
      }*/
     image(image, x, y, w, h);
+  }
+    void changeType(int _amount) {
+    super.changeType(_amount);
   }
 }
 
@@ -90,10 +76,8 @@ class LaserPowerup extends Obstacle {
     obstacleColor=color(255, 0, 0);
     w=100;
     h=100;
-  }
-  LaserPowerup(int _x, int _y, int _time, boolean _instant) {
-    super(_x, _y);
-    // this.instant=_instant;
+    tooltip=new String[maxType+1];
+    tooltip[0]=" grants player lasershooting.";
   }
   void display() {
     super.display();
@@ -103,6 +87,9 @@ class LaserPowerup extends Obstacle {
      ellipse(x+offsetX, y+offsetY, w+40, h+40);
      }*/
     image(image, x, y, w, h);
+  }
+      void changeType(int _amount) {
+    super.changeType(_amount);
   }
 }
 
@@ -113,10 +100,8 @@ class SlowPowerup extends Obstacle {
     image=slowIcon;
     w=100;
     h=100;
-  }
-  SlowPowerup(int _x, int _y, int _time, boolean _instant) {
-    super(_x, _y);
-    //instant=_instant;
+    tooltip=new String[maxType+1];
+    tooltip[0]=" grants player slowmotion.";
   }
   void display() {
     super.display();
@@ -126,6 +111,9 @@ class SlowPowerup extends Obstacle {
      ellipse(x+offsetX, y+offsetY, w+40, h+40);
      }*/
     image(image, x, y, w, h);
+  }
+      void changeType(int _amount) {
+    super.changeType(_amount);
   }
 }
 class LifePowerup extends Obstacle {
@@ -136,6 +124,8 @@ class LifePowerup extends Obstacle {
     image= lifeIcon;
     w=100;
     h=100;
+    tooltip=new String[maxType+1];
+    tooltip[0]=" grants player extra life.";
   }
   void display() {
     super.display();
@@ -145,6 +135,9 @@ class LifePowerup extends Obstacle {
      ellipse(x+offsetX, y+offsetY, w+40, h+40);
      }*/
     image(image, x, y, w, h);
+  }
+      void changeType(int _amount) {
+    super.changeType(_amount);
   }
 }
 class TeleportPowerup extends Obstacle {
@@ -157,26 +150,8 @@ class TeleportPowerup extends Obstacle {
     image= slashIcon;
     w=100;
     h=100;
-  }
-  TeleportPowerup(int _x, int _y, int _time, boolean _instant) {
-    super(_x, _y);
-    //this.instant=_instant;
-  }
-  TeleportPowerup(int _x, int _y, int _time, int _distance) {
-    super(_x, _y);
-    // distance=_distance;
-    //instant=true;
-  }
-  TeleportPowerup(int _x, int _y, int _time, int _distance, boolean _instant) {
-    super(_x, _y);
-    //  distance=_distance;
-    //  instant=_instant;
-  }
-  TeleportPowerup(int _x, int _y, int _time, int _distance, boolean _instant, boolean _regenerating) {
-    super(_x, _y);
-    // distance=_distance;
-    //regenerating=_regenerating;
-    // instant=_instant;
+    tooltip=new String[maxType+1];
+    tooltip[0]=" grants player short teleport.";
   }
   void display() {
     super.display();
@@ -186,6 +161,9 @@ class TeleportPowerup extends Obstacle {
      ellipse(x+offsetX, y+offsetY, w+40, h+40);
      }*/
     image(image, x, y, w, h);
+  }
+      void changeType(int _amount) {
+    super.changeType(_amount);
   }
 }
 
@@ -197,11 +175,8 @@ class MagnetPowerup extends Obstacle {
     image=magnetIcon;
     w=100;
     h=100;
-    //range=80*(upgradeLevel)+300;
-  }
-  MagnetPowerup(int _x, int _y, int _time, boolean _instant) {
-    super(_x, _y);
-    // instant=_instant;
+    tooltip=new String[maxType+1];
+    tooltip[0]=" grants player token attraction.";
   }
   void display() {
     super.display();
@@ -212,6 +187,9 @@ class MagnetPowerup extends Obstacle {
      }*/
     image(image, x, y, w, h);
   }
+      void changeType(int _amount) {
+    super.changeType(_amount);
+  }
 }
 
 class RandomPowerup extends Obstacle {
@@ -220,8 +198,9 @@ class RandomPowerup extends Obstacle {
     w=100;
     h=100;
     image=randomIcon;
+    tooltip=new String[maxType+1];
+    tooltip[0]=" spawn random powerup.";
   }
-
   RandomPowerup(int _x, int _y, int _time) {
     super(_x, _y);
     //icon= tokenIcon;
@@ -258,6 +237,9 @@ class RandomPowerup extends Obstacle {
      }*/
     image(image, x, y, w, h);
   }
+      void changeType(int _amount) {
+    super.changeType(_amount);
+  }
 }
 
 class PoisonPowerdown extends Obstacle {
@@ -267,7 +249,8 @@ class PoisonPowerdown extends Obstacle {
     image=poisonIcon;
     w=100;
     h=100;
-    //instant=true;
+    tooltip=new String[maxType+1];
+    tooltip[0]=" inflicts player with tokendrop curse.";
   }
   void display() {
     super.display();
@@ -277,6 +260,9 @@ class PoisonPowerdown extends Obstacle {
      ellipse(x+offsetX, y+offsetY, w+40, h+40);
      }*/
     image(image, x, y, w, h);
+  }
+      void changeType(int _amount) {
+    super.changeType(_amount);
   }
 }
 

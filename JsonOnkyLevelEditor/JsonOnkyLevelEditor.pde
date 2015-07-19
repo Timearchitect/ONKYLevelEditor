@@ -1,5 +1,22 @@
+import javax.swing.*; 
+
+import java.io.File;
+
+import javax.swing.JFileChooser;
+import javax.swing.filechooser.FileFilter;
+String myInputFile ;
+
+final JFileChooser fc = new JFileChooser(); 
+int returnVal;
+      FileFilter fileFilter = new ExtensionFileFilter("only: .json", new String[] { 
+        "json"
+      }
+      );
+
 ArrayList<Obstacle> obstacles= new ArrayList<Obstacle>();
 ArrayList<Obstacle> list= new ArrayList<Obstacle>();
+ArrayList<Obstacle> selected= new ArrayList<Obstacle>();
+
 int listOrder;
 boolean hide;
 
@@ -12,13 +29,12 @@ PVector cameraCoord= new PVector(0, 0);
 //PVector pCameraCoord= new PVector(0, 0);
 PVector defaultCourseSize= new PVector(2200, 1000);
 
-
 JSONObject json= new JSONObject();
 JSONObject course= new JSONObject();
 int difficultyLevel=0, randomLevel=4;
 
-
 String courseName ="testCourse";
+String courseFilePath;
 void setup() {
   size( 1080, 720); // horisontal
   loadImages();
@@ -32,7 +48,7 @@ void setup() {
   list.add(new Lumber());
   list.add(new PlatForm());
   list.add(new Snake());
-    list.add(new Water());
+  list.add(new Water());
   list.add(new Sign());
   list.add(new Barrel());
   list.add(new Rock());
@@ -45,6 +61,11 @@ void setup() {
   list.add(new MagnetPowerup());
   list.add(new RandomPowerup());
   list.add(new PoisonPowerdown());
+  if (frame != null) {
+    frame.setResizable(true);
+  }
+        File dir = new File(dataPath(""));
+      fc.setCurrentDirectory (dir);
 }
 
 void draw() {
@@ -54,9 +75,18 @@ void draw() {
   translate(cameraCoord.x, cameraCoord.y);
   displayCourseSize();
   for (Obstacle o : obstacles)  o.display();
+  for (Obstacle o : selected)  o.highLight();
+
   popMatrix();
   if (!hide) showGrid();
   fill(255);
+
+  if (selected.size()>0) {
+    for (int i=selected.size ()-1; 0<=i; i--) {
+      //rect(50+(i)*20, 50, selected.get(i).w*0.5, selected.get(i).h*0.5);
+      image(selected.get(i).image, 50+(i)*20, 50, selected.get(i).w*0.5, selected.get(i).h*0.5);
+    }
+  } 
   if (focus!=null) { 
     rect(50, 50, focus.w*0.5, focus.h*0.5);
     image(focus.image, 50, 50, focus.w*0.5, focus.h*0.5);
@@ -65,11 +95,13 @@ void draw() {
     textAlign(LEFT);
     text(" Coord: "+ int(focus.x)+" , " +int(focus.y), 50, 80+focus.h*0.5);
     text(" Size: "+ int(focus.w)+" , " +int(focus.h), 50, 100+focus.h*0.5);
-    text(" Tooltip: "+ focus.tooltip, 50, 120+focus.h*0.5);
+    text(" Tooltip: "+ focus.tooltip[focus.type], 50, 120+focus.h*0.5);
     text(" Class: "+ focus.getClass().getSimpleName(), 50, 40);
-  } else {
+  } else if (selected.size()==0) {
     rect(50, 50, 100, 100);
   }
+  //println("Selected at this point " + myInputFile );
+
 
   displayToolbar();
   displayDebug();
@@ -145,7 +177,7 @@ void displayToolbar() {
 void displayDebug() {
   fill(0);
   textSize(30);
-  text(obstacles.size()+" obstacles", 100, height-15);
+  text(obstacles.size()+" obstacles  "+ selected.size() +" selected", 100, height-15);
 }
 Obstacle getObstacleOnClassName(String name) {
   Obstacle temp=null;
@@ -156,30 +188,30 @@ Obstacle getObstacleOnClassName(String name) {
   return temp;
 }
 void importJSON() {
+
   JSONObject json = loadJSONObject(courseName+".json");
   //  println(json);
-  JSONObject testCourse= json.getJSONObject("testCourse");
-  JSONObject courseProperties= testCourse.getJSONObject("courseProperties");
+  JSONObject course= json.getJSONObject(courseName);
+  JSONObject courseProperties= course.getJSONObject("courseProperties");
   println( "courseSize: "+ courseProperties.getInt("courseSize")) ;
   println( "difficultyLevel: "+ courseProperties.getInt("difficultyLevel")) ;
   println( "randomAmount: "+ courseProperties.getInt("randomAmount")) ;
-
-  println(testCourse.size());
-  println(testCourse.keys());
-  String[] obstacle = splitTokens(testCourse.keys().toString(), ",[] ");
+  println(course.size());
+  println(course.keys());
+  String[] obstacle = splitTokens(course.keys().toString(), ",[] ");
   println(obstacle);
-  for (int i = 0; i < testCourse.size ()-1; i++) {
+  for (int i = 0; i < course.size (); i++) {
     if (!obstacle[i].equals("courseProperties")) {
-      JSONObject element = testCourse.getJSONObject(obstacle[i]);
+      JSONObject element = course.getJSONObject(obstacle[i]);
       println(element);
-
       Obstacle correspondingObstacle= getObstacleOnClassName(element.getString("class"));
+      correspondingObstacle.type=element.getInt("type"); 
       correspondingObstacle.x=element.getInt("xCoord");
       correspondingObstacle.y=element.getInt("yCoord");
       obstacles.add(correspondingObstacle);
     }
   }
-  println("[loaded at data/"+courseName+".json}");
+  println("[loaded at data/"+courseName+".json]");
 }
 
 void exportJSON() {
@@ -198,14 +230,16 @@ void exportJSON() {
     JSONObject obstacle = new JSONObject();
     obstacle.setString("class", obstacles.get(i).getClass().getSimpleName());
     obstacle.setInt("id", i);
+    obstacle.setInt("type", int(obstacles.get(i).type));
     obstacle.setInt("xCoord", int(obstacles.get(i).x));
     obstacle.setInt("yCoord", int(obstacles.get(i).y));
     course.setJSONObject(obstacles.get(i).getClass().getSimpleName()+i, obstacle);
     println(i+" "+ obstacles.get(i).getClass().getSimpleName()+ " obstacle is exported");
   }
 
-  saveJSONObject(json, "data/"+courseName+".json");
-  println("[saved at data/"+courseName+".json}");
+  //saveJSONObject(json, "data/"+courseName+".json");
+  saveJSONObject(json, courseFilePath);
+  println("[saved at data/"+courseName+".json]");
 }
 
 /*void exportJSON() {

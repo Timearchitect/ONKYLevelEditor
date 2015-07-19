@@ -2,8 +2,8 @@ abstract class Obstacle implements Cloneable {
   float impactForce, x, y, vx, vy, w=200, h=200;
   PVector coord, vel, accel, size;
   color obstacleColor;
-  int hitBrightness, defaultHealth=1, health=defaultHealth, type;
-  String tooltip="";
+  int hitBrightness, defaultHealth=1, health=defaultHealth, type, maxType;
+  String[] tooltip;
   boolean marked, randomized, stretchable, unBreakable, regenerating, underlay, highLight;
   PImage image;
   Obstacle() {
@@ -31,6 +31,11 @@ abstract class Obstacle implements Cloneable {
     noFill();
     rect(x, y, w, h);
   }
+  void changeType(int _amount) {
+    type+=_amount;
+    if (type>maxType)type=0;
+    if (type<0)type=maxType;
+  }
   public Obstacle clone() {  
     try {
       return (Obstacle)super.clone();
@@ -39,62 +44,50 @@ abstract class Obstacle implements Cloneable {
       return null;
     }
   }
+    void changeImage() {}
 }
 
 class Box extends Obstacle {
-  int type, count;
+  int  count;
   Box() {
     super();
+    maxType=3;
     obstacleColor = color(180, 140, 50);
     defaultHealth=2;
     randomized=true;
-    type=int(random(3));
-    switch(type) {
-    case 0:
-      image=Box;
-      break;
-    case 1:
-      image=brokenBox;
-      break;
-    case 2:
-      image=brokenBox;
-      break;
-    default:
-      image=mysteryBox;
-    }
-    tooltip=" standard breakable obstacle.";
-  }
-  Box(int _x, int _y) {
-    super(_x, _y);
-    obstacleColor = color(180, 140, 50);
-    defaultHealth=2;
-    type=int(random(3));
-    switch(type) {
-    case 0:
-      image=Box;
-      break;
-    case 1:
-      image=brokenBox;
-      break;
-    case 2:
-      image=brokenBox;
-      break;
-    default:
-      image=mysteryBox;
-    }
-  }
-  Box(int _x, int _y, int _type) {
-    this(_x, _y);
-    type=_type;
-  }
-  Box(int _x, int _y, int _type, boolean _regenerating) {
-    this(_x, _y, _type);
-    regenerating=_regenerating;
+    type=0;
+    //type=int(random(3));
+    image=Box;
+    tooltip=new String[maxType+1];
+    tooltip[0]=" standard breakable obstacle.";
+    tooltip[1]=" standard breakable obstacle skin.";
+    tooltip[2]=" standard breakable obstacle with 3 tokens.";
+    tooltip[3]=" standard breakable obstacle with random powerup.";
   }
 
+  void changeType(int _amount) {
+    super.changeType(_amount);
+    changeImage();
+  }
   void display() {
+    changeImage();
     image(image, x, y, w, h);
     super.display();
+  }
+  void changeImage() {
+    switch(type) {
+    case 1:
+      image=brokenBox;
+      break;
+    case 2:
+      image=brokenBox;
+      break;
+    case 3:
+      image=mysteryBox;
+      break;
+    default:
+      image=Box;
+    }
   }
 }
 
@@ -119,14 +112,14 @@ class Tire extends Obstacle {
       radianer = PI*2;
       break;
     }
-    tooltip=" slowing breakable obstacle.";
+    tooltip=new String[maxType+1];
+    tooltip[0]=" slowing breakable obstacle.";
   }
   Tire(int _x, int _y) {
     super(_x, _y);
     obstacleColor = color(0, 0, 0);
     defaultHealth=3;
     image=Tire;
-
     switch(int(random(4))) {
     case 0:
       radianer = HALF_PI;
@@ -142,8 +135,6 @@ class Tire extends Obstacle {
       break;
     }
   }
-
-
   void display() {
     pushMatrix();
     translate(x+w*0.5+random(-offset, offset), y+h*0.5+random(-offset, offset));
@@ -161,37 +152,33 @@ class IronBox extends Obstacle {
     obstacleColor = color(200);
     defaultHealth=5;
     health=defaultHealth;
-    if (health==5) {
-      image=ironBox;
-    } else if (health>2) {
-      image=ironBox2;
-    } else {
-      image=ironBox3;
-    }
-    tooltip=" standard unbreakable obstacle.";
-  }
-  IronBox(int _x, int _y) {
-    super(_x, _y);
-    obstacleColor = color(200);
-    tx=_x;
-    ty=_y;
-    defaultHealth=5;
-    health=defaultHealth;
-    if (health==5) {
-      image=ironBox;
-    } else if (health>2) {
-      image=ironBox2;
-    } else {
-      image=ironBox3;
-    }
-  }
-  IronBox(int _x, int _y, boolean _regenerating) {
-    this(_x, _y);
-    regenerating=_regenerating;
+    maxType=2;
+    image=ironBox;
+    tooltip=new String[maxType+1];
+    tooltip[0]=" standard unbreakable obstacle.";
+    tooltip[1]=" standard unbreakable obstacle damaged.";
+    tooltip[2]=" standard unbreakable obstacle very damaged.";
   }
   void display() {
+    changeImage();
     image(image, x, y, w, h);
     super.display();
+  }
+  void changeType(int _amount) {
+    super.changeType(_amount);
+    changeImage();
+  }
+  void changeImage() {
+    switch(type) {
+    case 1:
+      image=ironBox2;
+      break;
+    case 2:
+      image=ironBox3;
+      break;
+    default:
+      image=ironBox;
+    }
   }
 }
 
@@ -204,7 +191,8 @@ class PlatForm extends Obstacle {
     h=100;
     defaultHealth=4;
     obstacleColor = color(255, 50, 50);
-    tooltip=" legacy breakable platform obstacle.";
+    tooltip=new String[maxType+1];
+    tooltip[0]=" legacy breakable platform obstacle.";
   }
   PlatForm(int _x, int _y, int _w, int _h) {
     super(_x, _y);
@@ -234,7 +222,6 @@ class PlatForm extends Obstacle {
 
 class Lumber extends Obstacle {
   boolean hanging;
-
   Lumber() {
     super();
     image=lumber;
@@ -242,7 +229,8 @@ class Lumber extends Obstacle {
     h=100;
     defaultHealth=4;
     obstacleColor = color(182, 69, 0);
-    tooltip=" standard breakable platform obstacle.";
+    tooltip=new String[maxType+1];
+    tooltip[0]=" standard breakable platform obstacle.";
   }
   Lumber(int _x, int _y, int _w, int _h) {
     super(_x, _y);
@@ -275,14 +263,14 @@ class Glass extends Obstacle {
     image=glass;
     obstacleColor = color(0, 150, 255, 100);
     defaultHealth=1;
-    tooltip=" breakable dodad.";
+    tooltip=new String[maxType+1];
+    tooltip[0]=" breakable dodad.";
   }
   Glass(int _x, int _y, int _w, int _h) {
     super(_x, _y);
     w=_w;
     h=_h;
     image=glass;
-
     obstacleColor = color(0, 150, 255, 100);
     defaultHealth=1;
   }
@@ -306,7 +294,8 @@ class Block extends Obstacle {
     w=200;
     h=200;
     defaultHealth=20;
-    tooltip=" unbreakable enemy.";
+    tooltip=new String[maxType+1];
+    tooltip[0]=" unbreakable enemy.";
   }
   Block(int _x, int _y) {
     super(_x, _y);
@@ -338,7 +327,8 @@ class Bush extends Obstacle {
     w=100;
     h=100;
     health=1;
-    tooltip=" breakable dodad.";
+    tooltip=new String[maxType+1];
+    tooltip[0]=" breakable dodad.";
   }
   Bush(int _x, int _y) {
     super(_x, _y);
@@ -360,20 +350,19 @@ class Grass extends Obstacle {
     image=Grass;
     obstacleColor = color(128, 181, 113);
     unBreakable=true;
+    tooltip=new String[maxType+1];
+    tooltip[0]=" unbreakable none interactive ground obstacle.";
   }
   Grass(int _x, int _y, int _w, int _h) {
     super(_x, _y);
     w=_w;
     h=_h;
     image=Grass;
-
     obstacleColor = color(128, 181, 113);
     unBreakable=true;
-    tooltip=" unbreakable none interactive ground obstacle.";
   }
   void display() {
     super.display();
-
     fill(obstacleColor);
     noStroke();
     rect(x, y, w, 1000);
@@ -391,21 +380,21 @@ class Water extends Obstacle {
     for (int i=0; i<totalFrames; i++) {
       animSprite[i]=cutSprite(i);
     }
-    image=      animSprite[0];
+    image=animSprite[0];
+    tooltip=new String[maxType+1];
+    tooltip[0]=" water obstacle calls respawn on contact unless you on top of obstacle.";
   }
 
-   PImage cutSprite (int index) {
-   final int interval= 50, imageWidth=50, imageheight=50;
-   return waterSpriteSheet.get(index*(interval+1), 0, imageWidth, imageheight);
-   }
+  PImage cutSprite (int index) {
+    final int interval= 50, imageWidth=50, imageheight=50;
+    return waterSpriteSheet.get(index*(interval+1), 0, imageWidth, imageheight);
+  }
   void display() {
     super.display();
-
     count++;
     noStroke();
     fill(obstacleColor);
     rect(x, y+50, w, 1000);
-
     if (count%60<10)image(animSprite[0], x, y-50, w, h);
     else if (count%60<20)image(animSprite[1], x, y-50, w, h);
     else if (count%60<30)image(animSprite[2], x, y-50, w, h);
@@ -420,32 +409,16 @@ class Sign extends Obstacle {
   boolean trigg;
   Sign() {
     super();
-
     image=sign;
     obstacleColor = color(220, 180, 90);
     defaultHealth=1;
     //text=_text;
     underlay=true;
+    tooltip=new String[maxType+1];
+    tooltip[0]="sign obstacle.";
   }
-  Sign(int _x, int _y, String _text) {
-    super(_x, _y);
-    obstacleColor = color(220, 180, 90);
-    w=200;
-    h=200;
-    defaultHealth=1;
-    text=_text;
-    image=sign;
-
-    underlay=true;
-  }
-  Sign(int _x, int _y, String _text, boolean _trigg) {
-    this(_x, _y, _text);
-    trigg=_trigg;
-  }
-
   void display() {
     super.display();
-
     image(image, x, y, w, h);
     fill(0);
     textSize(30);
@@ -468,13 +441,13 @@ class Snake extends Obstacle {
       animSprite[i]=cutSprite(i);
     }
     image=animSprite[0];
+    tooltip=new String[maxType+1];
+    tooltip[0]="inflict poison powerdown effect.";
   }
   PImage cutSprite (int index) {
     final int interval= 82, imageWidth=82, imageheight=35;
     return Snake.get(index*(interval+1), 0, imageWidth, imageheight);
   }
-
-
   void display() {
     super.display();
     count++;
@@ -493,19 +466,20 @@ class Barrel extends Obstacle {
     defaultHealth=1;
     health=defaultHealth;
     vx=-2;
+    tooltip=new String[maxType+1];
+    tooltip[0]="moving/rolling breakable obstacle.";
   }
-  Barrel(int _x, int _y) {
-    super(_x, _y+67);
-    obstacleColor = color(180, 120, 50);
-    w=67*2;
-    h=67*2;
-    defaultHealth=1;
-    health=defaultHealth;
-    vx=-2;
-  }
+  /* Barrel(int _x, int _y) {
+   super(_x, _y+67);
+   obstacleColor = color(180, 120, 50);
+   w=67*2;
+   h=67*2;
+   defaultHealth=1;
+   health=defaultHealth;
+   vx=-2;
+   }*/
   void display() {
     super.display();
-
     angle--;
     pushMatrix();
     translate(x+w*0.5, y+h*0.5);
@@ -522,16 +496,11 @@ class Rock extends Obstacle {
     image=rock;
     obstacleColor = color(150);
     defaultHealth=7;
-  }
-  Rock(int _x, int _y) {
-    super(_x, _y);
-    image=rock;
-    obstacleColor = color(150);
-    defaultHealth=7;
+    tooltip=new String[maxType+1];
+    tooltip[0]="unbreakable high health obstacle.";
   }
   void display() {
     super.display();
-
     image(image, x, y, w, h);
   }
 }
@@ -547,19 +516,9 @@ class stoneSign extends Obstacle {
     w=400;
     h=200;
     underlay=true;
+    tooltip=new String[maxType+1];
+    tooltip[0]="unbreakable large sign obstacle.";
   }
-  stoneSign(int _x, int _y, String _text) {
-    super(_x, _y);
-    obstacleColor = color(150);
-    w=400;
-    h=200;
-    image=rockSign;
-
-    defaultHealth=5;
-    text=_text;
-    underlay=true;
-  }
-
   void display() {
     super.display();
     image(image, x, y, w, h);

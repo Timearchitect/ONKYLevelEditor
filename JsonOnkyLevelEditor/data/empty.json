@@ -1,0 +1,102 @@
+{
+  "boxes": {
+    "Box1": {
+      "id": 1,
+      "xCoord": 800,
+      "class": "Box",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Box2": {
+      "id": 2,
+      "xCoord": 600,
+      "class": "Box",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Box0": {
+      "id": 0,
+      "xCoord": 800,
+      "class": "Box",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Box5": {
+      "id": 5,
+      "xCoord": 1000,
+      "class": "Box",
+      "yCoord": 200,
+      "type": 0
+    },
+    "courseProperties": {
+      "name": "empty",
+      "courseSize": 2200,
+      "randomAmount": 4,
+      "difficultyLevel": 0
+    },
+    "Box3": {
+      "id": 3,
+      "xCoord": 600,
+      "class": "Box",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Box4": {
+      "id": 4,
+      "xCoord": 1000,
+      "class": "Box",
+      "yCoord": 400,
+      "type": 0
+    }
+  },
+  "empty": {
+    "Box1": {
+      "id": 1,
+      "xCoord": 800,
+      "class": "Box",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Box2": {
+      "id": 2,
+      "xCoord": 600,
+      "class": "Box",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Box0": {
+      "id": 0,
+      "xCoord": 800,
+      "class": "Box",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Box5": {
+      "id": 5,
+      "xCoord": 1000,
+      "class": "Box",
+      "yCoord": 200,
+      "type": 0
+    },
+    "courseProperties": {
+      "name": "empty",
+      "courseSize": 2200,
+      "randomAmount": 4,
+      "difficultyLevel": 0
+    },
+    "Box3": {
+      "id": 3,
+      "xCoord": 600,
+      "class": "Box",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Box4": {
+      "id": 4,
+      "xCoord": 1000,
+      "class": "Box",
+      "yCoord": 400,
+      "type": 0
+    }
+  }
+}
