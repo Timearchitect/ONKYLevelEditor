@@ -4,7 +4,7 @@ abstract class Obstacle implements Cloneable {
   color obstacleColor;
   int hitBrightness, defaultHealth=1, health=defaultHealth, type;
   String tooltip="";
-  boolean marked,randomized, stretchable, unBreakable, regenerating, underlay, highLight;
+  boolean marked, randomized, stretchable, unBreakable, regenerating, underlay, highLight;
   PImage image;
   Obstacle() {
     health=defaultHealth;
@@ -276,7 +276,6 @@ class Glass extends Obstacle {
     obstacleColor = color(0, 150, 255, 100);
     defaultHealth=1;
     tooltip=" breakable dodad.";
-
   }
   Glass(int _x, int _y, int _w, int _h) {
     super(_x, _y);
@@ -307,7 +306,7 @@ class Block extends Obstacle {
     w=200;
     h=200;
     defaultHealth=20;
-        tooltip=" unbreakable enemy.";
+    tooltip=" unbreakable enemy.";
   }
   Block(int _x, int _y) {
     super(_x, _y);
@@ -340,7 +339,6 @@ class Bush extends Obstacle {
     h=100;
     health=1;
     tooltip=" breakable dodad.";
-
   }
   Bush(int _x, int _y) {
     super(_x, _y);
@@ -372,7 +370,6 @@ class Grass extends Obstacle {
     obstacleColor = color(128, 181, 113);
     unBreakable=true;
     tooltip=" unbreakable none interactive ground obstacle.";
-
   }
   void display() {
     super.display();
@@ -387,13 +384,20 @@ class Water extends Obstacle {
   int debrisCooldown, totalFrames=4;
   float count;
   PImage animSprite[]=new PImage[totalFrames];
-  Water(int _x, int _y, int _w, int _h) {
-    super(_x, _y);
-    w=_w;
-    h=_h;
+  Water() {
+    super();
     obstacleColor = color(81, 104, 151);
     unBreakable=true;
+    for (int i=0; i<totalFrames; i++) {
+      animSprite[i]=cutSprite(i);
+    }
+    image=      animSprite[0];
   }
+
+   PImage cutSprite (int index) {
+   final int interval= 50, imageWidth=50, imageheight=50;
+   return waterSpriteSheet.get(index*(interval+1), 0, imageWidth, imageheight);
+   }
   void display() {
     super.display();
 
@@ -454,19 +458,29 @@ class Snake extends Obstacle {
   float count;
   int snakeSpeed = -int(random(16)+1);
   PImage animSprite[]=new PImage[totalFrames];
-  Snake(int _x, int _y) {
-    super(_x, _y);
+  Snake() {
+    super();
     obstacleColor = color(0, 255, 50);
     w=82*2;
     h=35*2;
     defaultHealth=1;
+    for (int i=0; i<totalFrames; i++) {
+      animSprite[i]=cutSprite(i);
+    }
+    image=animSprite[0];
   }
+  PImage cutSprite (int index) {
+    final int interval= 82, imageWidth=82, imageheight=35;
+    return Snake.get(index*(interval+1), 0, imageWidth, imageheight);
+  }
+
+
   void display() {
     super.display();
-
-    if (count%30<10)image( animSprite[0], x+w*.5, y-30, w, h);
-    else if (count%30<20)image(animSprite[2], x+w*.5, y-40, w, h);
-    else image(animSprite[1], x+w*.5, y-20, w, h);
+    count++;
+    if (count%30<10)image( animSprite[0], x, y-30, w, h);
+    else if (count%30<20)image(animSprite[2], x, y-40, w, h);
+    else image(animSprite[1], x, y-20, w, h);
   }
 }
 

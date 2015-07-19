@@ -219,7 +219,7 @@ class RandomPowerup extends Obstacle {
     super();
     w=100;
     h=100;
-    image=tokenIcon;
+    image=randomIcon;
   }
 
   RandomPowerup(int _x, int _y, int _time) {

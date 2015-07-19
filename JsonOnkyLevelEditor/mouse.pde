@@ -1,19 +1,35 @@
 PVector diff= new PVector(0, 0);
 
 void mousePressed() {
-  searchFocusableObstacle();
-  if (mouseButton==LEFT) {
-    if (focus==null) addObstacle();
-    searchFocusableObstacle();
-  }
-  if (mouseButton==RIGHT) {
-    if (focus!=null) {
-      obstacles.remove(focus);
-      println("deleted");
+  // image(list.get(0).image, 50, height-120, 50, 50);
+  //font i=1; i<list.size (); i++)image(list.get(i).image, 50+i*60, height-100, 50, 50);
+  //image(list.get(list.size()-1).image, -10, height-100, 50, 50);
+  if (mouseY> height-100) {
+    for (int i=0; i<list.size (); i++) { 
+      if (mouseX > i*+60+50 && mouseX < i*+60+100) { 
+        background(255); 
+        println(i);
+        rotateListElement(i);
+        listOrder=(listOrder+i)%list.size();
+      }
     }
-  }
-  if (mouseButton==CENTER) {
-    diff.set(cameraCoord.x-mouseX/scaleFactor, cameraCoord.y-mouseY/scaleFactor);
+  } else { 
+
+
+    searchFocusableObstacle();
+    if (mouseButton==LEFT) {
+      if (focus==null) addObstacle();
+      searchFocusableObstacle();
+    }
+    if (mouseButton==RIGHT) {
+      if (focus!=null) {
+        obstacles.remove(focus);
+        println("deleted");
+      }
+    }
+    if (mouseButton==CENTER) {
+      diff.set(cameraCoord.x-mouseX/scaleFactor, cameraCoord.y-mouseY/scaleFactor);
+    }
   }
 }
 

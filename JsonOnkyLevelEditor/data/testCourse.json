@@ -1,44 +1,56 @@
 {"testCourse": {
-  "Grass15": {
-    "id": 15,
+  "Water8": {
+    "id": 8,
     "xCoord": 1800,
-    "class": "Grass",
+    "class": "Water",
     "yCoord": 800
   },
-  "Grass13": {
-    "id": 13,
-    "xCoord": 1400,
-    "class": "Grass",
-    "yCoord": 800
-  },
-  "Grass14": {
-    "id": 14,
+  "Water7": {
+    "id": 7,
     "xCoord": 1600,
-    "class": "Grass",
+    "class": "Water",
     "yCoord": 800
   },
-  "Grass5": {
+  "Water9": {
+    "id": 9,
+    "xCoord": 2000,
+    "class": "Water",
+    "yCoord": 800
+  },
+  "Water1": {
+    "id": 1,
+    "xCoord": 400,
+    "class": "Water",
+    "yCoord": 800
+  },
+  "Water2": {
+    "id": 2,
+    "xCoord": 600,
+    "class": "Water",
+    "yCoord": 800
+  },
+  "Water0": {
+    "id": 0,
+    "xCoord": 200,
+    "class": "Water",
+    "yCoord": 800
+  },
+  "Water5": {
     "id": 5,
-    "xCoord": 800,
-    "class": "Grass",
-    "yCoord": 800
-  },
-  "Grass3": {
-    "id": 3,
-    "xCoord": 1000,
-    "class": "Grass",
-    "yCoord": 800
-  },
-  "Sign11": {
-    "id": 11,
-    "xCoord": -100,
-    "class": "Sign",
-    "yCoord": 600
-  },
-  "Grass12": {
-    "id": 12,
     "xCoord": 1200,
-    "class": "Grass",
+    "class": "Water",
+    "yCoord": 800
+  },
+  "Water10": {
+    "id": 10,
+    "xCoord": 0,
+    "class": "Water",
+    "yCoord": 800
+  },
+  "Water6": {
+    "id": 6,
+    "xCoord": 1400,
+    "class": "Water",
     "yCoord": 800
   },
   "courseProperties": {
@@ -47,58 +59,16 @@
     "randomAmount": 4,
     "difficultyLevel": 0
   },
-  "Grass10": {
-    "id": 10,
-    "xCoord": 2000,
-    "class": "Grass",
+  "Water3": {
+    "id": 3,
+    "xCoord": 800,
+    "class": "Water",
     "yCoord": 800
   },
-  "Block4": {
+  "Water4": {
     "id": 4,
-    "xCoord": 200,
-    "class": "Block",
-    "yCoord": 600
-  },
-  "Grass6": {
-    "id": 6,
-    "xCoord": 600,
-    "class": "Grass",
-    "yCoord": 800
-  },
-  "Grass7": {
-    "id": 7,
-    "xCoord": 400,
-    "class": "Grass",
-    "yCoord": 800
-  },
-  "Grass8": {
-    "id": 8,
-    "xCoord": 200,
-    "class": "Grass",
-    "yCoord": 800
-  },
-  "Grass9": {
-    "id": 9,
-    "xCoord": 0,
-    "class": "Grass",
-    "yCoord": 800
-  },
-  "Rock2": {
-    "id": 2,
-    "xCoord": 1800,
-    "class": "Rock",
-    "yCoord": 600
-  },
-  "Rock1": {
-    "id": 1,
-    "xCoord": 1400,
-    "class": "Rock",
-    "yCoord": 600
-  },
-  "Rock0": {
-    "id": 0,
     "xCoord": 1000,
-    "class": "Rock",
-    "yCoord": 600
+    "class": "Water",
+    "yCoord": 800
   }
 }}

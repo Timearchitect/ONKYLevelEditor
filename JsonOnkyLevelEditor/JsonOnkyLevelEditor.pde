@@ -4,7 +4,7 @@ int listOrder;
 boolean hide;
 
 Obstacle focus=null;
-PImage  poisonIcon, slashIcon, laserIcon, superIcon, tokenIcon, lifeIcon, slowIcon, magnetIcon;
+PImage  randomIcon, poisonIcon, slashIcon, laserIcon, superIcon, tokenIcon, lifeIcon, slowIcon, magnetIcon;
 PImage Tire, Vines, rockSign, rock, lumber, glass, Bush, Box, brokenBox, mysteryBox, Leaf, rockDebris, Block, BlockSad, ironBox, ironBox2, ironBox3;
 PImage  sign, Grass, waterSpriteSheet, Snake, Barrel;
 float scaleFactor=0.5;
@@ -31,6 +31,8 @@ void setup() {
   list.add(new Grass());
   list.add(new Lumber());
   list.add(new PlatForm());
+  list.add(new Snake());
+    list.add(new Water());
   list.add(new Sign());
   list.add(new Barrel());
   list.add(new Rock());
@@ -76,6 +78,7 @@ void draw() {
 
 void loadImages() {
   //icons
+  randomIcon = loadImage("icon/randomIcon.png");
   poisonIcon = loadImage("icon/poison.png");
   slowIcon = loadImage("icon/slowpower.png");
   slashIcon = loadImage("icon/slashpower.png");
