@@ -4,8 +4,8 @@ void mousePressed() {
   //image(list.get(0).image, 50, height-120, 50, 50);
   //font i=1; i<list.size (); i++)image(list.get(i).image, 50+i*60, height-100, 50, 50);
   //image(list.get(list.size()-1).image, -10, height-100, 50, 50);
-  
-  
+
+
   if (mouseButton==LEFT && mouseY> height-100) {
     for (int i=0; i<list.size (); i++) { 
       if (mouseX > i*+60+50 && mouseX < i*+60+100) { 
@@ -14,7 +14,9 @@ void mousePressed() {
         rotateListElement(i);
         listOrder=(listOrder+i)%list.size();
       }
+
     }
+   if(mouseX > -10 && mouseX< 50) rotateListElement(list.size()-1); // back 
   } else { 
     searchFocusableObstacle();
     if (mouseButton==LEFT) {
@@ -22,6 +24,10 @@ void mousePressed() {
       else {
         searchFocusableObstacle();
         select(focus);
+        if (mouseEvent.getClickCount()==2) {  // double-click
+          println("double-click");
+          focus.edit();
+        }
       }
     }
     if (mouseButton==RIGHT) {
@@ -79,7 +85,7 @@ void searchFocusableObstacle() {
 }
 
 void addObstacle() {
- saveChanged=false;
+  saveChanged=false;
   int interval=int(list.get(0).h*0.5);
   int xRounded = int(((mouseX/scaleFactor-cameraCoord.x) -interval*0.5) / interval ) * interval;
   int yRounded = int(((mouseY/scaleFactor-cameraCoord.y) -interval*0.5) / interval ) * interval;

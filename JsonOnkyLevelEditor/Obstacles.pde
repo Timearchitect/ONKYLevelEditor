@@ -4,6 +4,7 @@ abstract class Obstacle implements Cloneable {
   color obstacleColor;
   int hitBrightness, defaultHealth=1, health=defaultHealth, type, maxType;
   String[] tooltip;
+  String text="";
   boolean marked, randomized, stretchable, unBreakable, regenerating, underlay, highLight;
   PImage image;
   Obstacle() {
@@ -44,7 +45,10 @@ abstract class Obstacle implements Cloneable {
       return null;
     }
   }
-    void changeImage() {}
+  void changeImage() {
+  }
+  void edit() {
+  }
 }
 
 class Box extends Obstacle {
@@ -405,7 +409,6 @@ class Water extends Obstacle {
 }
 class Sign extends Obstacle {
   int debrisCooldown;
-  String text;
   boolean trigg;
   Sign() {
     super();
@@ -423,7 +426,11 @@ class Sign extends Obstacle {
     fill(0);
     textSize(30);
     textAlign(CENTER);
-    //text(text, x+w*0.5, y+h*0.3);
+    text(text, x+w*0.5, y+h*0.3);
+  }
+  void edit() {
+    text=JOptionPane.showInputDialog("Input sign text: ");
+    if (text==null)text="";
   }
 }
 class Snake extends Obstacle {
@@ -506,13 +513,12 @@ class Rock extends Obstacle {
 }
 class stoneSign extends Obstacle {
   int debrisCooldown;
-  String text;
   stoneSign() {
     super();
     obstacleColor = color(150);
     image=rockSign;
     defaultHealth=5;
-    //text=_text;
+
     w=400;
     h=200;
     underlay=true;
@@ -525,7 +531,11 @@ class stoneSign extends Obstacle {
     fill(0);
     textSize(30);
     textAlign(CENTER);
-    //text(text, x+w*0.5, y+h*0.5);
+    text(text, x+w*0.5, y+h*0.5);
+  }
+  void edit() {
+    text=JOptionPane.showInputDialog("Input sign text: ");
+    if (text==null)text="";
   }
 }
 

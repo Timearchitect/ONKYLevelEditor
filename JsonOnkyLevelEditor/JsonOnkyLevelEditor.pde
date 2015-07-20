@@ -17,7 +17,7 @@ ArrayList<Obstacle> selected= new ArrayList<Obstacle>();
 ArrayList<Obstacle> clipBoard= new ArrayList<Obstacle>();
 
 int listOrder;
-boolean hide,pasteing;
+boolean first=true, hide, pasteing;
 
 Obstacle focus=null;
 PImage  randomIcon, poisonIcon, slashIcon, laserIcon, superIcon, tokenIcon, lifeIcon, slowIcon, magnetIcon;
@@ -36,7 +36,7 @@ String courseName ="testCourse";
 String courseFilePath;
 boolean saveChanged=true;
 void setup() {
-    changeAppIcon( loadImage("icon/Qwerty-icon.png") );
+  changeAppIcon( loadImage("icon/Qwerty-icon.png") );
   changeAppTitle("QWERTY");
   ((JFrame)frame).setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE); // disable first Jframe level listener of close
   size( 1080, 720); // horisontal
@@ -69,6 +69,7 @@ void setup() {
   }
   File dir = new File(dataPath(""));
   fc.setCurrentDirectory (dir);
+  first=false;
 }
 
 void draw() {
@@ -108,6 +109,10 @@ void draw() {
 
   displayToolbar();
   displayDebug();
+  fill(0, 255, 0);
+  textSize(10);
+  textAlign(LEFT);
+  text(mouseX+" : "+mouseY, mouseX-50, mouseY-20);
 }
 
 
@@ -209,6 +214,7 @@ void importJSON() {
       println(element);
       Obstacle correspondingObstacle= getObstacleOnClassName(element.getString("class"));
       correspondingObstacle.type=element.getInt("type"); 
+      correspondingObstacle.text=element.getString("text"); 
       correspondingObstacle.x=element.getInt("xCoord");
       correspondingObstacle.y=element.getInt("yCoord");
       obstacles.add(correspondingObstacle);
@@ -233,6 +239,7 @@ void exportJSON() {
     JSONObject obstacle = new JSONObject();
     obstacle.setString("class", obstacles.get(i).getClass().getSimpleName());
     obstacle.setInt("id", i);
+    obstacle.setString("text", obstacles.get(i).text); 
     obstacle.setInt("type", int(obstacles.get(i).type));
     obstacle.setInt("xCoord", int(obstacles.get(i).x));
     obstacle.setInt("yCoord", int(obstacles.get(i).y));
@@ -273,29 +280,29 @@ void exportJSON() {
 void rotateListElement(int index) {
 
   ArrayList<Obstacle> tempList=  new ArrayList(list.subList(0, index));
- /* print(" cutted:");
-  for (Obstacle line : tempList) {
-    print(line.getClass().getSimpleName()+" ");
-  }
-  println("");
-*/
+  /* print(" cutted:");
+   for (Obstacle line : tempList) {
+   print(line.getClass().getSimpleName()+" ");
+   }
+   println("");
+   */
   for ( int i=index-1; i>=0; i--) {
     list.remove(i);
   }
-/*  print(" left:");
-  for (Obstacle line : list) {
-    print(line.getClass().getSimpleName()+" ");
-  }
-  println("");
-*/
+  /*  print(" left:");
+   for (Obstacle line : list) {
+   print(line.getClass().getSimpleName()+" ");
+   }
+   println("");
+   */
   list.addAll(tempList);
-/*
+  /*
   print(" listed:");
-  for (Obstacle line : list) {
-    print(line.getClass().getSimpleName()+" ");
-  }
-  println("");
-*/
+   for (Obstacle line : list) {
+   print(line.getClass().getSimpleName()+" ");
+   }
+   println("");
+   */
 }
 @Override
 void exit() {  // override second processing level listener of close
