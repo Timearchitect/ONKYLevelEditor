@@ -36,6 +36,7 @@ void mousePressed() {
       }
     }
     if (mouseButton==CENTER) {
+      cursor(13);
       diff.set(cameraCoord.x-mouseX/scaleFactor, cameraCoord.y-mouseY/scaleFactor);
     }
   }
@@ -62,6 +63,8 @@ void mouseMoved() {
 
 void mouseReleased() {
   if (mouseButton==CENTER) {
+          cursor(0);
+
     //  pCameraCoord=cameraCoord;
   }
 }
