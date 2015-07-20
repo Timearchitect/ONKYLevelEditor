@@ -1,24 +1,23 @@
 import javax.swing.*; 
-
 import java.io.File;
-
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileFilter;
 String myInputFile ;
 
 final JFileChooser fc = new JFileChooser(); 
 int returnVal;
-      FileFilter fileFilter = new ExtensionFileFilter("only: .json", new String[] { 
-        "json"
-      }
-      );
+FileFilter fileFilter = new ExtensionFileFilter(".json", new String[] { 
+  "json"
+}
+);
 
 ArrayList<Obstacle> obstacles= new ArrayList<Obstacle>();
 ArrayList<Obstacle> list= new ArrayList<Obstacle>();
 ArrayList<Obstacle> selected= new ArrayList<Obstacle>();
+ArrayList<Obstacle> clipBoard= new ArrayList<Obstacle>();
 
 int listOrder;
-boolean hide;
+boolean hide,pasteing;
 
 Obstacle focus=null;
 PImage  randomIcon, poisonIcon, slashIcon, laserIcon, superIcon, tokenIcon, lifeIcon, slowIcon, magnetIcon;
@@ -35,7 +34,11 @@ int difficultyLevel=0, randomLevel=4;
 
 String courseName ="testCourse";
 String courseFilePath;
+boolean saveChanged=true;
 void setup() {
+    changeAppIcon( loadImage("icon/Qwerty-icon.png") );
+  changeAppTitle("QWERTY");
+  ((JFrame)frame).setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE); // disable first Jframe level listener of close
   size( 1080, 720); // horisontal
   loadImages();
   list.add(new Box());
@@ -64,8 +67,8 @@ void setup() {
   if (frame != null) {
     frame.setResizable(true);
   }
-        File dir = new File(dataPath(""));
-      fc.setCurrentDirectory (dir);
+  File dir = new File(dataPath(""));
+  fc.setCurrentDirectory (dir);
 }
 
 void draw() {
@@ -270,28 +273,59 @@ void exportJSON() {
 void rotateListElement(int index) {
 
   ArrayList<Obstacle> tempList=  new ArrayList(list.subList(0, index));
-  print(" cutted:");
+ /* print(" cutted:");
   for (Obstacle line : tempList) {
     print(line.getClass().getSimpleName()+" ");
   }
   println("");
-
+*/
   for ( int i=index-1; i>=0; i--) {
     list.remove(i);
   }
-  print(" left:");
+/*  print(" left:");
   for (Obstacle line : list) {
     print(line.getClass().getSimpleName()+" ");
   }
   println("");
-
+*/
   list.addAll(tempList);
-
+/*
   print(" listed:");
   for (Obstacle line : list) {
     print(line.getClass().getSimpleName()+" ");
   }
   println("");
-  //  return new ArrayList(list.subList(0, index));
+*/
+}
+@Override
+void exit() {  // override second processing level listener of close
+  if (!saveChanged) {
+    returnVal=JOptionPane.showConfirmDialog(null, "Do you want to exit without saving?", "Confirm", 
+    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+    if (returnVal == JOptionPane.NO_OPTION) {
+      System.out.println("No button clicked");
+    } else if (returnVal == JOptionPane.YES_OPTION) {
+      super.exit();
+      System.out.println("EXIT");
+    } else if (returnVal == JOptionPane.CLOSED_OPTION) {
+      System.out.println("Cancel");
+    }
+  } else {
+    super.exit();
+  }
+} 
+
+void changeAppIcon(PImage img) {
+  final PGraphics pg = createGraphics(64, 64, JAVA2D);
+
+  pg.beginDraw();
+  pg.image(img, 0, 0, 64, 64);
+  pg.endDraw();
+
+  frame.setIconImage(pg.image);
+}
+
+void changeAppTitle(String title) {
+  frame.setTitle(title);
 }
 

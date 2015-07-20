@@ -2,10 +2,16 @@ void keyPressed() {
   if (!mousePressed) {
     key= Character.toLowerCase(key);
     println(key);
+    println(keyCode);
     if (key=='a') {
     }
     Obstacle temp, temp2;
     switch(key) {
+    case '':
+      JOptionPane.showMessageDialog(frame, 
+      "[ctrl+s] save \n[ctrl+l & ctrl+o] load/open\n[ctrl+d] delete all obstacles  \n[Mouse LeftClick] add Obstacle  \n[Mouse RightClick] delete\n"+
+        "[Mouse middleButton] pan\n[Mouse scroll] zoom\n[a] previous obstacle \n[d] next obstacle\n[w] previous type  \n[s] next type \n[h] hide grid.");
+      break;
     case 'h':
       hide=!hide;
       break;
@@ -33,15 +39,16 @@ void keyPressed() {
         println("filePath:"+courseFilePath );
 
         background(255);
+        saveChanged=true;
         exportJSON();
       } else { 
         println("Cancelled.");
       }
 
       break;
+    case  '': //ctrl+o
     case ''://ctrl+l
       fc.setDialogTitle("Load a json file");  
-
       fc.setFileFilter(fileFilter);
       fc.addChoosableFileFilter(fileFilter);
       returnVal = fc.showOpenDialog(this); 
@@ -50,18 +57,26 @@ void keyPressed() {
         myInputFile = file.getAbsolutePath();
         String[] sTemp= splitTokens(file.getName(), ".");
         courseName=sTemp[0];
-       
+
         courseFilePath=myInputFile;
         println("filePath:"+courseFilePath );
         println("courseName:"+courseName+"  is loaded");
 
         background(255);
+        saveChanged=true;
         importJSON();
       } else { 
         println("Cancelled.");
       }
 
       break;
+    case  '': // ctrl+x
+      println("ctrl+x");
+      break;
+    case  '?':
+      println("ctrl+a");
+      break;
+
     case 'a':
       rotateListElement(list.size()-1);
       listOrder=(listOrder+list.size()-1)%list.size();
@@ -99,15 +114,27 @@ void keyPressed() {
     case '9':
       break;
     case '':
-      obstacles.clear();
-      selected.clear();
-      println("[all obstacle is deleted]");
+
+      returnVal=JOptionPane.showConfirmDialog(null, "Do you want to delete all Obstacles?", "Confirm", 
+      JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+      if (returnVal == JOptionPane.NO_OPTION) {
+        System.out.println("No button clicked");
+      } else if (returnVal == JOptionPane.YES_OPTION) {
+        deleteAllObstacle();
+      } else if (returnVal == JOptionPane.CLOSED_OPTION) {
+        System.out.println("Cancel");
+      }
+
       break;
     }
     // background(255);
 
     int amount=200;
     switch(keyCode) {
+    case 65:
+    println("select All");
+    for(Obstacle o:obstacles) if(!selected.contains(o)) selected.add(o);
+      break;
     case DELETE:
       deleteSelected();
       break;
@@ -131,8 +158,15 @@ void keyPressed() {
 }
 
 void deleteSelected() {
+  saveChanged=false;
   for (Obstacle o : selected)obstacles.remove(o);
   selected.clear();
   println("[selected is deleted]");
+}
+void deleteAllObstacle() {
+  saveChanged=false;
+  obstacles.clear();
+  selected.clear();
+  println("[all obstacle is deleted]");
 }
 
