@@ -15,7 +15,7 @@ ArrayList<Obstacle> obstacles= new ArrayList<Obstacle>();
 ArrayList<Obstacle> list= new ArrayList<Obstacle>();
 ArrayList<Obstacle> selected= new ArrayList<Obstacle>();
 ArrayList<Obstacle> clipBoard= new ArrayList<Obstacle>();
-
+PVector clipBoardCoord= new PVector();
 int listOrder;
 boolean first=true, hide, pasteing;
 
@@ -80,14 +80,17 @@ void draw() {
   displayCourseSize();
   for (Obstacle o : obstacles)  o.display();
   for (Obstacle o : selected)  o.highLight();
-
+  /*  if (pasteing) {
+   tint(255,100);
+   for (Obstacle o : clipBoard)o.display();
+   noTint();
+   }*/
   popMatrix();
   if (!hide) showGrid();
   fill(255);
 
   if (selected.size()>0) {
     for (int i=selected.size ()-1; 0<=i; i--) {
-      //rect(50+(i)*20, 50, selected.get(i).w*0.5, selected.get(i).h*0.5);
       image(selected.get(i).image, 50+(i)*20, 50, selected.get(i).w*0.5, selected.get(i).h*0.5);
     }
   } 
@@ -104,9 +107,19 @@ void draw() {
   } else if (selected.size()==0) {
     rect(50, 50, 100, 100);
   }
-  //println("Selected at this point " + myInputFile );
+  if (pasteing) { // paste objects
+    pushMatrix();
+    scale(scaleFactor);
+    translate(mouseX/scaleFactor, mouseY/scaleFactor);
 
+    //translate(cameraCoord.x*scaleFactor+mouseX/scaleFactor, cameraCoord.y*scaleFactor+mouseY/scaleFactor);
 
+    tint(255, 100);
+    for (Obstacle o : clipBoard)
+      o.display();
+    noTint();
+    popMatrix();
+  }
   displayToolbar();
   displayDebug();
   fill(0, 255, 0);

@@ -7,7 +7,7 @@ void keyPressed() {
     }
     Obstacle temp, temp2;
     switch(key) {
-    case '':
+    case '': // ctrl+h
       JOptionPane.showMessageDialog(frame, 
       "[ctrl+s] save \n[ctrl+l & ctrl+o] load/open\n[ctrl+d] delete all obstacles  \n[Mouse LeftClick] add Obstacle  \n[Mouse RightClick] delete\n"+
         "[Mouse middleButton] pan\n[Mouse scroll] zoom\n[a] previous obstacle \n[d] next obstacle\n[w] previous type  \n[s] next type \n[h] hide grid.");
@@ -46,7 +46,7 @@ void keyPressed() {
       }
 
       break;
-    case  '': //ctrl+o
+    case '': //ctrl+o
     case ''://ctrl+l
       fc.setDialogTitle("Load a json file");  
       fc.setFileFilter(fileFilter);
@@ -70,13 +70,6 @@ void keyPressed() {
       }
 
       break;
-    case  '': // ctrl+x
-      println("ctrl+x");
-      break;
-    case  '?':
-      println("ctrl+a");
-      break;
-
     case 'a':
       rotateListElement(list.size()-1);
       listOrder=(listOrder+list.size()-1)%list.size();
@@ -113,7 +106,48 @@ void keyPressed() {
       break;
     case '9':
       break;
-    case '':
+    case '-':
+
+      scaleFactor-=0.05;
+      cameraCoord.sub((width*0.5-mouseX)*scaleFactor, (height*0.5-mouseY)*scaleFactor, 0);
+      scaleFactor=constrain(scaleFactor, 0.1, 2);
+
+      break;
+    case '+':
+
+      scaleFactor+=0.05;
+      cameraCoord.add((width*0.5-mouseX)*scaleFactor, (height*0.5-mouseY)*scaleFactor, 0);
+      scaleFactor=constrain(scaleFactor, 0.1, 2);
+
+      break;
+    case '':// ctrl +c
+      println("ctrl+c");
+      clipBoard.clear();
+      clipBoardCoord.set(mouseX, mouseY);
+      for (Obstacle s : selected)clipBoard.add(s.clone());
+      for (Obstacle o : clipBoard) {
+        o.x-=mouseX/scaleFactor-cameraCoord.x; // offsetx
+        o.y-=mouseY/scaleFactor-cameraCoord.y; // offsety
+      }
+      break;
+    case  '': // ctrl+x
+      println("ctrl+x");
+      clipBoard.clear();
+      clipBoardCoord.set(mouseX, mouseY);
+      clipBoard.addAll(selected);
+      obstacles.removeAll(selected);
+      selected.clear();
+      for (Obstacle o : clipBoard) {
+        o.x-=mouseX/scaleFactor-cameraCoord.x; // offsetx
+        o.y-=mouseY/scaleFactor-cameraCoord.y; // offsety
+      }
+      break;
+    case '':// ctrl +v
+      println("ctrl+v");
+      pasteing=true;
+      // obstacles.addAll(clipBoard);
+      break;
+    case '': // ctrl+d
 
       returnVal=JOptionPane.showConfirmDialog(null, "Do you want to delete all Obstacles?", "Confirm", 
       JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
@@ -126,14 +160,18 @@ void keyPressed() {
       }
 
       break;
+    case '': // ctrl +z
+      println("ctrl+z");
+
+      break;
     }
     // background(255);
 
     int amount=200;
     switch(keyCode) {
     case 65:
-    println("select All");
-    for(Obstacle o:obstacles) if(!selected.contains(o)) selected.add(o);
+      println("select All");
+      for (Obstacle o : obstacles) if (!selected.contains(o)) selected.add(o);
       break;
     case DELETE:
       deleteSelected();
