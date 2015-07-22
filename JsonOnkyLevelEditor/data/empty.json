@@ -1,6 +1,3574 @@
-{"empty": {"courseProperties": {
-  "name": "empty",
-  "courseSize": 2200,
-  "randomAmount": 4,
-  "difficultyLevel": 0
-}}}
+{
+  "simple": {
+    "Rock49": {
+      "id": 49,
+      "text": "",
+      "xCoord": 300,
+      "class": "Rock",
+      "yCoord": 1100,
+      "type": 0
+    },
+    "Rock48": {
+      "id": 48,
+      "text": "",
+      "xCoord": 400,
+      "class": "Rock",
+      "yCoord": 1200,
+      "type": 0
+    },
+    "Rock47": {
+      "id": 47,
+      "text": "",
+      "xCoord": 500,
+      "class": "Rock",
+      "yCoord": 1200,
+      "type": 0
+    },
+    "Rock42": {
+      "id": 42,
+      "text": "",
+      "xCoord": 1000,
+      "class": "Rock",
+      "yCoord": 1300,
+      "type": 0
+    },
+    "Rock41": {
+      "id": 41,
+      "text": "",
+      "xCoord": 1100,
+      "class": "Rock",
+      "yCoord": 1300,
+      "type": 0
+    },
+    "Rock40": {
+      "id": 40,
+      "text": "",
+      "xCoord": 1200,
+      "class": "Rock",
+      "yCoord": 1300,
+      "type": 0
+    },
+    "Rock46": {
+      "id": 46,
+      "text": "",
+      "xCoord": 600,
+      "class": "Rock",
+      "yCoord": 1200,
+      "type": 0
+    },
+    "Rock45": {
+      "id": 45,
+      "text": "",
+      "xCoord": 700,
+      "class": "Rock",
+      "yCoord": 1300,
+      "type": 0
+    },
+    "Rock44": {
+      "id": 44,
+      "text": "",
+      "xCoord": 800,
+      "class": "Rock",
+      "yCoord": 1300,
+      "type": 0
+    },
+    "Rock43": {
+      "id": 43,
+      "text": "",
+      "xCoord": 900,
+      "class": "Rock",
+      "yCoord": 1300,
+      "type": 0
+    },
+    "Rock59": {
+      "id": 59,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock58": {
+      "id": 58,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock51": {
+      "id": 51,
+      "text": "",
+      "xCoord": 100,
+      "class": "Rock",
+      "yCoord": 1000,
+      "type": 0
+    },
+    "Rock50": {
+      "id": 50,
+      "text": "",
+      "xCoord": 200,
+      "class": "Rock",
+      "yCoord": 1100,
+      "type": 0
+    },
+    "Rock53": {
+      "id": 53,
+      "text": "",
+      "xCoord": 0,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock52": {
+      "id": 52,
+      "text": "",
+      "xCoord": 0,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock55": {
+      "id": 55,
+      "text": "",
+      "xCoord": 0,
+      "class": "Rock",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock54": {
+      "id": 54,
+      "text": "",
+      "xCoord": 0,
+      "class": "Rock",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock57": {
+      "id": 57,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock56": {
+      "id": 56,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 800,
+      "type": 0
+    },
+    "IronBox10": {
+      "id": 10,
+      "text": "",
+      "xCoord": 400,
+      "class": "IronBox",
+      "yCoord": 400,
+      "type": 0
+    },
+    "IronBox11": {
+      "id": 11,
+      "text": "",
+      "xCoord": 400,
+      "class": "IronBox",
+      "yCoord": 200,
+      "type": 0
+    },
+    "LaserPowerup8": {
+      "id": 8,
+      "text": "",
+      "xCoord": 0,
+      "class": "LaserPowerup",
+      "yCoord": 650,
+      "type": 0
+    },
+    "Rock60": {
+      "id": 60,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock29": {
+      "id": 29,
+      "text": "",
+      "xCoord": 1700,
+      "class": "Rock",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Rock28": {
+      "id": 28,
+      "text": "",
+      "xCoord": 1600,
+      "class": "Rock",
+      "yCoord": 300,
+      "type": 0
+    },
+    "Rock27": {
+      "id": 27,
+      "text": "",
+      "xCoord": 1500,
+      "class": "Rock",
+      "yCoord": 300,
+      "type": 0
+    },
+    "Rock26": {
+      "id": 26,
+      "text": "",
+      "xCoord": 1400,
+      "class": "Rock",
+      "yCoord": 300,
+      "type": 0
+    },
+    "Rock25": {
+      "id": 25,
+      "text": "",
+      "xCoord": 1300,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock24": {
+      "id": 24,
+      "text": "",
+      "xCoord": 1200,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock23": {
+      "id": 23,
+      "text": "",
+      "xCoord": 1100,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock22": {
+      "id": 22,
+      "text": "",
+      "xCoord": 1000,
+      "class": "Rock",
+      "yCoord": 300,
+      "type": 0
+    },
+    "Rock21": {
+      "id": 21,
+      "text": "",
+      "xCoord": 1000,
+      "class": "Rock",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Rock20": {
+      "id": 20,
+      "text": "",
+      "xCoord": 1000,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock37": {
+      "id": 37,
+      "text": "",
+      "xCoord": 1500,
+      "class": "Rock",
+      "yCoord": 1300,
+      "type": 0
+    },
+    "Rock36": {
+      "id": 36,
+      "text": "",
+      "xCoord": 1600,
+      "class": "Rock",
+      "yCoord": 1300,
+      "type": 0
+    },
+    "Rock39": {
+      "id": 39,
+      "text": "",
+      "xCoord": 1300,
+      "class": "Rock",
+      "yCoord": 1300,
+      "type": 0
+    },
+    "Rock38": {
+      "id": 38,
+      "text": "",
+      "xCoord": 1400,
+      "class": "Rock",
+      "yCoord": 1300,
+      "type": 0
+    },
+    "Rock33": {
+      "id": 33,
+      "text": "",
+      "xCoord": 1900,
+      "class": "Rock",
+      "yCoord": 1000,
+      "type": 0
+    },
+    "Rock32": {
+      "id": 32,
+      "text": "",
+      "xCoord": 1900,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock35": {
+      "id": 35,
+      "text": "",
+      "xCoord": 1700,
+      "class": "Rock",
+      "yCoord": 1200,
+      "type": 0
+    },
+    "Rock34": {
+      "id": 34,
+      "text": "",
+      "xCoord": 1800,
+      "class": "Rock",
+      "yCoord": 1100,
+      "type": 0
+    },
+    "courseProperties": {
+      "maxSpeedLevel": 5,
+      "name": "empty",
+      "minSpeedLevel": 0,
+      "courseSize": 2200,
+      "randomAmount": 4,
+      "difficultyLevel": 0
+    },
+    "Rock31": {
+      "id": 31,
+      "text": "",
+      "xCoord": 1900,
+      "class": "Rock",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock30": {
+      "id": 30,
+      "text": "",
+      "xCoord": 1800,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock177": {
+      "id": 177,
+      "text": "",
+      "xCoord": 2500,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock178": {
+      "id": 178,
+      "text": "",
+      "xCoord": 2800,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock179": {
+      "id": 179,
+      "text": "",
+      "xCoord": 2900,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock173": {
+      "id": 173,
+      "text": "",
+      "xCoord": 1500,
+      "class": "Rock",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Rock174": {
+      "id": 174,
+      "text": "",
+      "xCoord": 1700,
+      "class": "Rock",
+      "yCoord": 300,
+      "type": 0
+    },
+    "Rock175": {
+      "id": 175,
+      "text": "",
+      "xCoord": 2100,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock176": {
+      "id": 176,
+      "text": "",
+      "xCoord": 2400,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock170": {
+      "id": 170,
+      "text": "",
+      "xCoord": 1200,
+      "class": "Rock",
+      "yCoord": 1200,
+      "type": 0
+    },
+    "Rock171": {
+      "id": 171,
+      "text": "",
+      "xCoord": 1100,
+      "class": "Rock",
+      "yCoord": 1100,
+      "type": 0
+    },
+    "Rock172": {
+      "id": 172,
+      "text": "",
+      "xCoord": 1400,
+      "class": "Rock",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Rock10": {
+      "id": 10,
+      "text": "",
+      "xCoord": 1700,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock11": {
+      "id": 11,
+      "text": "",
+      "xCoord": 1800,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock12": {
+      "id": 12,
+      "text": "",
+      "xCoord": 1900,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock13": {
+      "id": 13,
+      "text": "",
+      "xCoord": 2000,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Sign12": {
+      "id": 12,
+      "text": "",
+      "xCoord": 200,
+      "class": "Sign",
+      "yCoord": 600,
+      "type": 0
+    },
+    "Rock14": {
+      "id": 14,
+      "text": "",
+      "xCoord": 2100,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock15": {
+      "id": 15,
+      "text": "",
+      "xCoord": 2200,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock16": {
+      "id": 16,
+      "text": "",
+      "xCoord": 2300,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock17": {
+      "id": 17,
+      "text": "",
+      "xCoord": 2400,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock18": {
+      "id": 18,
+      "text": "",
+      "xCoord": 2500,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock19": {
+      "id": 19,
+      "text": "",
+      "xCoord": 1100,
+      "class": "Rock",
+      "yCoord": 600,
+      "type": 0
+    },
+    "Rock168": {
+      "id": 168,
+      "text": "",
+      "xCoord": 2000,
+      "class": "Rock",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Rock169": {
+      "id": 169,
+      "text": "",
+      "xCoord": 2000,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock166": {
+      "id": 166,
+      "text": "",
+      "xCoord": 1900,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock167": {
+      "id": 167,
+      "text": "",
+      "xCoord": 2000,
+      "class": "Rock",
+      "yCoord": 300,
+      "type": 0
+    },
+    "Rock164": {
+      "id": 164,
+      "text": "",
+      "xCoord": 1100,
+      "class": "Rock",
+      "yCoord": 300,
+      "type": 0
+    },
+    "Rock165": {
+      "id": 165,
+      "text": "",
+      "xCoord": 1900,
+      "class": "Rock",
+      "yCoord": 100,
+      "type": 0
+    },
+    "Rock162": {
+      "id": 162,
+      "text": "",
+      "xCoord": 1200,
+      "class": "Rock",
+      "yCoord": 1000,
+      "type": 0
+    },
+    "Rock163": {
+      "id": 163,
+      "text": "",
+      "xCoord": 1100,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock160": {
+      "id": 160,
+      "text": "",
+      "xCoord": 2100,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock161": {
+      "id": 161,
+      "text": "",
+      "xCoord": 1300,
+      "class": "Rock",
+      "yCoord": 1000,
+      "type": 0
+    },
+    "Rock195": {
+      "id": 195,
+      "text": "",
+      "xCoord": 800,
+      "class": "Rock",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Rock190": {
+      "id": 190,
+      "text": "",
+      "xCoord": 2700,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock191": {
+      "id": 191,
+      "text": "",
+      "xCoord": 2600,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock192": {
+      "id": 192,
+      "text": "",
+      "xCoord": 1300,
+      "class": "Rock",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock193": {
+      "id": 193,
+      "text": "",
+      "xCoord": 800,
+      "class": "Rock",
+      "yCoord": 600,
+      "type": 0
+    },
+    "Rock194": {
+      "id": 194,
+      "text": "",
+      "xCoord": 700,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock186": {
+      "id": 186,
+      "text": "",
+      "xCoord": 3100,
+      "class": "Rock",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock187": {
+      "id": 187,
+      "text": "",
+      "xCoord": 3000,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock184": {
+      "id": 184,
+      "text": "",
+      "xCoord": 3200,
+      "class": "Rock",
+      "yCoord": 600,
+      "type": 0
+    },
+    "Rock185": {
+      "id": 185,
+      "text": "",
+      "xCoord": 3200,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock188": {
+      "id": 188,
+      "text": "",
+      "xCoord": 2900,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock189": {
+      "id": 189,
+      "text": "",
+      "xCoord": 2800,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock182": {
+      "id": 182,
+      "text": "",
+      "xCoord": 3200,
+      "class": "Rock",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Rock183": {
+      "id": 183,
+      "text": "",
+      "xCoord": 3200,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock180": {
+      "id": 180,
+      "text": "",
+      "xCoord": 3000,
+      "class": "Rock",
+      "yCoord": 300,
+      "type": 0
+    },
+    "Rock181": {
+      "id": 181,
+      "text": "",
+      "xCoord": 3100,
+      "class": "Rock",
+      "yCoord": 300,
+      "type": 0
+    },
+    "Rock136": {
+      "id": 136,
+      "text": "",
+      "xCoord": 2200,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock135": {
+      "id": 135,
+      "text": "",
+      "xCoord": 2300,
+      "class": "Rock",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock134": {
+      "id": 134,
+      "text": "",
+      "xCoord": 2400,
+      "class": "Rock",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock133": {
+      "id": 133,
+      "text": "",
+      "xCoord": 2700,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock132": {
+      "id": 132,
+      "text": "",
+      "xCoord": 2700,
+      "class": "Rock",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Rock131": {
+      "id": 131,
+      "text": "",
+      "xCoord": 2700,
+      "class": "Rock",
+      "yCoord": 300,
+      "type": 0
+    },
+    "Rock130": {
+      "id": 130,
+      "text": "",
+      "xCoord": 2700,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock139": {
+      "id": 139,
+      "text": "",
+      "xCoord": 1700,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock137": {
+      "id": 137,
+      "text": "",
+      "xCoord": 2100,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock138": {
+      "id": 138,
+      "text": "",
+      "xCoord": 1800,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Grass15": {
+      "id": 15,
+      "text": "",
+      "xCoord": 2000,
+      "class": "Grass",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Grass13": {
+      "id": 13,
+      "text": "",
+      "xCoord": 1800,
+      "class": "Grass",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Grass14": {
+      "id": 14,
+      "text": "",
+      "xCoord": 1600,
+      "class": "Grass",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock123": {
+      "id": 123,
+      "text": "",
+      "xCoord": 2200,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock122": {
+      "id": 122,
+      "text": "",
+      "xCoord": 2100,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock125": {
+      "id": 125,
+      "text": "",
+      "xCoord": 2200,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock124": {
+      "id": 124,
+      "text": "",
+      "xCoord": 2200,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock121": {
+      "id": 121,
+      "text": "",
+      "xCoord": 2100,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock120": {
+      "id": 120,
+      "text": "",
+      "xCoord": 2000,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock126": {
+      "id": 126,
+      "text": "",
+      "xCoord": 2300,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock127": {
+      "id": 127,
+      "text": "",
+      "xCoord": 2400,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock128": {
+      "id": 128,
+      "text": "",
+      "xCoord": 2500,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock129": {
+      "id": 129,
+      "text": "",
+      "xCoord": 2600,
+      "class": "Rock",
+      "yCoord": 100,
+      "type": 0
+    },
+    "Rock150": {
+      "id": 150,
+      "text": "",
+      "xCoord": 1800,
+      "class": "Rock",
+      "yCoord": -100,
+      "type": 0
+    },
+    "Rock154": {
+      "id": 154,
+      "text": "",
+      "xCoord": 2200,
+      "class": "Rock",
+      "yCoord": -100,
+      "type": 0
+    },
+    "Rock153": {
+      "id": 153,
+      "text": "",
+      "xCoord": 2100,
+      "class": "Rock",
+      "yCoord": -100,
+      "type": 0
+    },
+    "Rock152": {
+      "id": 152,
+      "text": "",
+      "xCoord": 2000,
+      "class": "Rock",
+      "yCoord": -100,
+      "type": 0
+    },
+    "Rock151": {
+      "id": 151,
+      "text": "",
+      "xCoord": 1900,
+      "class": "Rock",
+      "yCoord": -100,
+      "type": 0
+    },
+    "Rock158": {
+      "id": 158,
+      "text": "",
+      "xCoord": 2300,
+      "class": "Rock",
+      "yCoord": 300,
+      "type": 0
+    },
+    "Rock157": {
+      "id": 157,
+      "text": "",
+      "xCoord": 2300,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock156": {
+      "id": 156,
+      "text": "",
+      "xCoord": 2300,
+      "class": "Rock",
+      "yCoord": 100,
+      "type": 0
+    },
+    "Rock155": {
+      "id": 155,
+      "text": "",
+      "xCoord": 2300,
+      "class": "Rock",
+      "yCoord": -100,
+      "type": 0
+    },
+    "Rock159": {
+      "id": 159,
+      "text": "",
+      "xCoord": 2200,
+      "class": "Rock",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Rock9": {
+      "id": 9,
+      "text": "",
+      "xCoord": 1600,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock7": {
+      "id": 7,
+      "text": "",
+      "xCoord": 1400,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock8": {
+      "id": 8,
+      "text": "",
+      "xCoord": 1500,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock5": {
+      "id": 5,
+      "text": "",
+      "xCoord": 1200,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock6": {
+      "id": 6,
+      "text": "",
+      "xCoord": 1300,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock141": {
+      "id": 141,
+      "text": "",
+      "xCoord": 1500,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock140": {
+      "id": 140,
+      "text": "",
+      "xCoord": 1600,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock143": {
+      "id": 143,
+      "text": "",
+      "xCoord": 1300,
+      "class": "Rock",
+      "yCoord": 600,
+      "type": 0
+    },
+    "Rock142": {
+      "id": 142,
+      "text": "",
+      "xCoord": 1400,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock145": {
+      "id": 145,
+      "text": "",
+      "xCoord": 1400,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock144": {
+      "id": 144,
+      "text": "",
+      "xCoord": 1300,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock147": {
+      "id": 147,
+      "text": "",
+      "xCoord": 1700,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock146": {
+      "id": 146,
+      "text": "",
+      "xCoord": 1700,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock148": {
+      "id": 148,
+      "text": "",
+      "xCoord": 1800,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock149": {
+      "id": 149,
+      "text": "",
+      "xCoord": 1800,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock4": {
+      "id": 4,
+      "text": "",
+      "xCoord": 1100,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock3": {
+      "id": 3,
+      "text": "",
+      "xCoord": 1000,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock2": {
+      "id": 2,
+      "text": "",
+      "xCoord": 900,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock1": {
+      "id": 1,
+      "text": "",
+      "xCoord": 800,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock0": {
+      "id": 0,
+      "text": "",
+      "xCoord": 700,
+      "class": "Rock",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock91": {
+      "id": 91,
+      "text": "",
+      "xCoord": 700,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock90": {
+      "id": 90,
+      "text": "",
+      "xCoord": 700,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock93": {
+      "id": 93,
+      "text": "",
+      "xCoord": 800,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock92": {
+      "id": 92,
+      "text": "",
+      "xCoord": 800,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock83": {
+      "id": 83,
+      "text": "",
+      "xCoord": 300,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock84": {
+      "id": 84,
+      "text": "",
+      "xCoord": 400,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock85": {
+      "id": 85,
+      "text": "",
+      "xCoord": 500,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock86": {
+      "id": 86,
+      "text": "",
+      "xCoord": 500,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Grass6": {
+      "id": 6,
+      "text": "",
+      "xCoord": 1200,
+      "class": "Grass",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock87": {
+      "id": 87,
+      "text": "",
+      "xCoord": 600,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Grass7": {
+      "id": 7,
+      "text": "",
+      "xCoord": 1400,
+      "class": "Grass",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock88": {
+      "id": 88,
+      "text": "",
+      "xCoord": 600,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock89": {
+      "id": 89,
+      "text": "",
+      "xCoord": 700,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Box1": {
+      "id": 1,
+      "text": "",
+      "xCoord": 1800,
+      "class": "Box",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Box2": {
+      "id": 2,
+      "text": "",
+      "xCoord": 1600,
+      "class": "Box",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Box0": {
+      "id": 0,
+      "text": "",
+      "xCoord": 2000,
+      "class": "Box",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Grass5": {
+      "id": 5,
+      "text": "",
+      "xCoord": 1000,
+      "class": "Grass",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Box9": {
+      "id": 9,
+      "text": "",
+      "xCoord": 200,
+      "class": "Box",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Grass4": {
+      "id": 4,
+      "text": "",
+      "xCoord": 800,
+      "class": "Grass",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Box7": {
+      "id": 7,
+      "text": "",
+      "xCoord": 600,
+      "class": "Box",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Grass3": {
+      "id": 3,
+      "text": "",
+      "xCoord": 600,
+      "class": "Grass",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Box8": {
+      "id": 8,
+      "text": "",
+      "xCoord": 400,
+      "class": "Box",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Grass2": {
+      "id": 2,
+      "text": "",
+      "xCoord": 400,
+      "class": "Grass",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Box5": {
+      "id": 5,
+      "text": "",
+      "xCoord": 1000,
+      "class": "Box",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Grass1": {
+      "id": 1,
+      "text": "",
+      "xCoord": 0,
+      "class": "Grass",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Box6": {
+      "id": 6,
+      "text": "",
+      "xCoord": 800,
+      "class": "Box",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Grass0": {
+      "id": 0,
+      "text": "",
+      "xCoord": 200,
+      "class": "Grass",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Box3": {
+      "id": 3,
+      "text": "",
+      "xCoord": 1400,
+      "class": "Box",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Box4": {
+      "id": 4,
+      "text": "",
+      "xCoord": 1200,
+      "class": "Box",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock96": {
+      "id": 96,
+      "text": "",
+      "xCoord": 1000,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock97": {
+      "id": 97,
+      "text": "",
+      "xCoord": 1000,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock94": {
+      "id": 94,
+      "text": "",
+      "xCoord": 900,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock95": {
+      "id": 95,
+      "text": "",
+      "xCoord": 900,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Box10": {
+      "id": 10,
+      "text": "",
+      "xCoord": 0,
+      "class": "Box",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock98": {
+      "id": 98,
+      "text": "",
+      "xCoord": 1100,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock99": {
+      "id": 99,
+      "text": "",
+      "xCoord": 1100,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock110": {
+      "id": 110,
+      "text": "",
+      "xCoord": 1600,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock113": {
+      "id": 113,
+      "text": "",
+      "xCoord": 1700,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock114": {
+      "id": 114,
+      "text": "",
+      "xCoord": 1800,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock111": {
+      "id": 111,
+      "text": "",
+      "xCoord": 1700,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock112": {
+      "id": 112,
+      "text": "",
+      "xCoord": 1700,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock71": {
+      "id": 71,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock70": {
+      "id": 70,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock65": {
+      "id": 65,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 600,
+      "type": 0
+    },
+    "Rock66": {
+      "id": 66,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 600,
+      "type": 0
+    },
+    "Rock67": {
+      "id": 67,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 600,
+      "type": 0
+    },
+    "Rock68": {
+      "id": 68,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 600,
+      "type": 0
+    },
+    "Rock61": {
+      "id": 61,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock62": {
+      "id": 62,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock63": {
+      "id": 63,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 600,
+      "type": 0
+    },
+    "Rock64": {
+      "id": 64,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 600,
+      "type": 0
+    },
+    "Rock118": {
+      "id": 118,
+      "text": "",
+      "xCoord": 1900,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock117": {
+      "id": 117,
+      "text": "",
+      "xCoord": 1900,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock116": {
+      "id": 116,
+      "text": "",
+      "xCoord": 1900,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock115": {
+      "id": 115,
+      "text": "",
+      "xCoord": 1800,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock69": {
+      "id": 69,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 600,
+      "type": 0
+    },
+    "Rock119": {
+      "id": 119,
+      "text": "",
+      "xCoord": 2000,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock100": {
+      "id": 100,
+      "text": "",
+      "xCoord": 1200,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock101": {
+      "id": 101,
+      "text": "",
+      "xCoord": 1200,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock102": {
+      "id": 102,
+      "text": "",
+      "xCoord": 1200,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock103": {
+      "id": 103,
+      "text": "",
+      "xCoord": 1300,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock82": {
+      "id": 82,
+      "text": "",
+      "xCoord": 200,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock81": {
+      "id": 81,
+      "text": "",
+      "xCoord": 100,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock80": {
+      "id": 80,
+      "text": "",
+      "xCoord": 0,
+      "class": "Rock",
+      "yCoord": 100,
+      "type": 0
+    },
+    "Rock78": {
+      "id": 78,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 300,
+      "type": 0
+    },
+    "Rock79": {
+      "id": 79,
+      "text": "",
+      "xCoord": 0,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock76": {
+      "id": 76,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Rock77": {
+      "id": 77,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Rock74": {
+      "id": 74,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock75": {
+      "id": 75,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Rock72": {
+      "id": 72,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock73": {
+      "id": 73,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock105": {
+      "id": 105,
+      "text": "",
+      "xCoord": 1400,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock104": {
+      "id": 104,
+      "text": "",
+      "xCoord": 1300,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock107": {
+      "id": 107,
+      "text": "",
+      "xCoord": 1500,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock106": {
+      "id": 106,
+      "text": "",
+      "xCoord": 1400,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock109": {
+      "id": 109,
+      "text": "",
+      "xCoord": 1600,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock108": {
+      "id": 108,
+      "text": "",
+      "xCoord": 1500,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    }
+  },
+  "empty": {
+    "Rock49": {
+      "id": 49,
+      "text": "",
+      "xCoord": 300,
+      "class": "Rock",
+      "yCoord": 1100,
+      "type": 0
+    },
+    "Rock48": {
+      "id": 48,
+      "text": "",
+      "xCoord": 400,
+      "class": "Rock",
+      "yCoord": 1200,
+      "type": 0
+    },
+    "Rock47": {
+      "id": 47,
+      "text": "",
+      "xCoord": 500,
+      "class": "Rock",
+      "yCoord": 1200,
+      "type": 0
+    },
+    "Rock42": {
+      "id": 42,
+      "text": "",
+      "xCoord": 1000,
+      "class": "Rock",
+      "yCoord": 1300,
+      "type": 0
+    },
+    "Rock41": {
+      "id": 41,
+      "text": "",
+      "xCoord": 1100,
+      "class": "Rock",
+      "yCoord": 1300,
+      "type": 0
+    },
+    "Rock40": {
+      "id": 40,
+      "text": "",
+      "xCoord": 1200,
+      "class": "Rock",
+      "yCoord": 1300,
+      "type": 0
+    },
+    "Rock46": {
+      "id": 46,
+      "text": "",
+      "xCoord": 600,
+      "class": "Rock",
+      "yCoord": 1200,
+      "type": 0
+    },
+    "Rock45": {
+      "id": 45,
+      "text": "",
+      "xCoord": 700,
+      "class": "Rock",
+      "yCoord": 1300,
+      "type": 0
+    },
+    "Rock44": {
+      "id": 44,
+      "text": "",
+      "xCoord": 800,
+      "class": "Rock",
+      "yCoord": 1300,
+      "type": 0
+    },
+    "Rock43": {
+      "id": 43,
+      "text": "",
+      "xCoord": 900,
+      "class": "Rock",
+      "yCoord": 1300,
+      "type": 0
+    },
+    "Rock59": {
+      "id": 59,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock58": {
+      "id": 58,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock51": {
+      "id": 51,
+      "text": "",
+      "xCoord": 100,
+      "class": "Rock",
+      "yCoord": 1000,
+      "type": 0
+    },
+    "Rock50": {
+      "id": 50,
+      "text": "",
+      "xCoord": 200,
+      "class": "Rock",
+      "yCoord": 1100,
+      "type": 0
+    },
+    "Rock53": {
+      "id": 53,
+      "text": "",
+      "xCoord": 0,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock52": {
+      "id": 52,
+      "text": "",
+      "xCoord": 0,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock55": {
+      "id": 55,
+      "text": "",
+      "xCoord": 0,
+      "class": "Rock",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock54": {
+      "id": 54,
+      "text": "",
+      "xCoord": 0,
+      "class": "Rock",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock57": {
+      "id": 57,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock56": {
+      "id": 56,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 800,
+      "type": 0
+    },
+    "IronBox10": {
+      "id": 10,
+      "text": "",
+      "xCoord": 400,
+      "class": "IronBox",
+      "yCoord": 400,
+      "type": 0
+    },
+    "IronBox11": {
+      "id": 11,
+      "text": "",
+      "xCoord": 400,
+      "class": "IronBox",
+      "yCoord": 200,
+      "type": 0
+    },
+    "LaserPowerup8": {
+      "id": 8,
+      "text": "",
+      "xCoord": 0,
+      "class": "LaserPowerup",
+      "yCoord": 650,
+      "type": 0
+    },
+    "Rock60": {
+      "id": 60,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock29": {
+      "id": 29,
+      "text": "",
+      "xCoord": 1700,
+      "class": "Rock",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Rock28": {
+      "id": 28,
+      "text": "",
+      "xCoord": 1600,
+      "class": "Rock",
+      "yCoord": 300,
+      "type": 0
+    },
+    "Rock27": {
+      "id": 27,
+      "text": "",
+      "xCoord": 1500,
+      "class": "Rock",
+      "yCoord": 300,
+      "type": 0
+    },
+    "Rock26": {
+      "id": 26,
+      "text": "",
+      "xCoord": 1400,
+      "class": "Rock",
+      "yCoord": 300,
+      "type": 0
+    },
+    "Rock25": {
+      "id": 25,
+      "text": "",
+      "xCoord": 1300,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock24": {
+      "id": 24,
+      "text": "",
+      "xCoord": 1200,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock23": {
+      "id": 23,
+      "text": "",
+      "xCoord": 1100,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock22": {
+      "id": 22,
+      "text": "",
+      "xCoord": 1000,
+      "class": "Rock",
+      "yCoord": 300,
+      "type": 0
+    },
+    "Rock21": {
+      "id": 21,
+      "text": "",
+      "xCoord": 1000,
+      "class": "Rock",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Rock20": {
+      "id": 20,
+      "text": "",
+      "xCoord": 1000,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock37": {
+      "id": 37,
+      "text": "",
+      "xCoord": 1500,
+      "class": "Rock",
+      "yCoord": 1300,
+      "type": 0
+    },
+    "Rock36": {
+      "id": 36,
+      "text": "",
+      "xCoord": 1600,
+      "class": "Rock",
+      "yCoord": 1300,
+      "type": 0
+    },
+    "Rock39": {
+      "id": 39,
+      "text": "",
+      "xCoord": 1300,
+      "class": "Rock",
+      "yCoord": 1300,
+      "type": 0
+    },
+    "Rock38": {
+      "id": 38,
+      "text": "",
+      "xCoord": 1400,
+      "class": "Rock",
+      "yCoord": 1300,
+      "type": 0
+    },
+    "Rock33": {
+      "id": 33,
+      "text": "",
+      "xCoord": 1900,
+      "class": "Rock",
+      "yCoord": 1000,
+      "type": 0
+    },
+    "Rock32": {
+      "id": 32,
+      "text": "",
+      "xCoord": 1900,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock35": {
+      "id": 35,
+      "text": "",
+      "xCoord": 1700,
+      "class": "Rock",
+      "yCoord": 1200,
+      "type": 0
+    },
+    "Rock34": {
+      "id": 34,
+      "text": "",
+      "xCoord": 1800,
+      "class": "Rock",
+      "yCoord": 1100,
+      "type": 0
+    },
+    "courseProperties": {
+      "maxSpeedLevel": 5,
+      "name": "empty",
+      "minSpeedLevel": 0,
+      "courseSize": 2200,
+      "randomAmount": 4,
+      "difficultyLevel": 0
+    },
+    "Rock31": {
+      "id": 31,
+      "text": "",
+      "xCoord": 1900,
+      "class": "Rock",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock30": {
+      "id": 30,
+      "text": "",
+      "xCoord": 1800,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock177": {
+      "id": 177,
+      "text": "",
+      "xCoord": 2500,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock178": {
+      "id": 178,
+      "text": "",
+      "xCoord": 2800,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock179": {
+      "id": 179,
+      "text": "",
+      "xCoord": 2900,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock173": {
+      "id": 173,
+      "text": "",
+      "xCoord": 1500,
+      "class": "Rock",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Rock174": {
+      "id": 174,
+      "text": "",
+      "xCoord": 1700,
+      "class": "Rock",
+      "yCoord": 300,
+      "type": 0
+    },
+    "Rock175": {
+      "id": 175,
+      "text": "",
+      "xCoord": 2100,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock176": {
+      "id": 176,
+      "text": "",
+      "xCoord": 2400,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock170": {
+      "id": 170,
+      "text": "",
+      "xCoord": 1200,
+      "class": "Rock",
+      "yCoord": 1200,
+      "type": 0
+    },
+    "Rock171": {
+      "id": 171,
+      "text": "",
+      "xCoord": 1100,
+      "class": "Rock",
+      "yCoord": 1100,
+      "type": 0
+    },
+    "Rock172": {
+      "id": 172,
+      "text": "",
+      "xCoord": 1400,
+      "class": "Rock",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Rock10": {
+      "id": 10,
+      "text": "",
+      "xCoord": 1700,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock11": {
+      "id": 11,
+      "text": "",
+      "xCoord": 1800,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock12": {
+      "id": 12,
+      "text": "",
+      "xCoord": 1900,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock13": {
+      "id": 13,
+      "text": "",
+      "xCoord": 2000,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Sign12": {
+      "id": 12,
+      "text": "",
+      "xCoord": 200,
+      "class": "Sign",
+      "yCoord": 600,
+      "type": 0
+    },
+    "Rock14": {
+      "id": 14,
+      "text": "",
+      "xCoord": 2100,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock15": {
+      "id": 15,
+      "text": "",
+      "xCoord": 2200,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock16": {
+      "id": 16,
+      "text": "",
+      "xCoord": 2300,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock17": {
+      "id": 17,
+      "text": "",
+      "xCoord": 2400,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock18": {
+      "id": 18,
+      "text": "",
+      "xCoord": 2500,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock19": {
+      "id": 19,
+      "text": "",
+      "xCoord": 1100,
+      "class": "Rock",
+      "yCoord": 600,
+      "type": 0
+    },
+    "Rock168": {
+      "id": 168,
+      "text": "",
+      "xCoord": 2000,
+      "class": "Rock",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Rock169": {
+      "id": 169,
+      "text": "",
+      "xCoord": 2000,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock166": {
+      "id": 166,
+      "text": "",
+      "xCoord": 1900,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock167": {
+      "id": 167,
+      "text": "",
+      "xCoord": 2000,
+      "class": "Rock",
+      "yCoord": 300,
+      "type": 0
+    },
+    "Rock164": {
+      "id": 164,
+      "text": "",
+      "xCoord": 1100,
+      "class": "Rock",
+      "yCoord": 300,
+      "type": 0
+    },
+    "Rock165": {
+      "id": 165,
+      "text": "",
+      "xCoord": 1900,
+      "class": "Rock",
+      "yCoord": 100,
+      "type": 0
+    },
+    "Rock162": {
+      "id": 162,
+      "text": "",
+      "xCoord": 1200,
+      "class": "Rock",
+      "yCoord": 1000,
+      "type": 0
+    },
+    "Rock163": {
+      "id": 163,
+      "text": "",
+      "xCoord": 1100,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock160": {
+      "id": 160,
+      "text": "",
+      "xCoord": 2100,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock161": {
+      "id": 161,
+      "text": "",
+      "xCoord": 1300,
+      "class": "Rock",
+      "yCoord": 1000,
+      "type": 0
+    },
+    "Rock195": {
+      "id": 195,
+      "text": "",
+      "xCoord": 800,
+      "class": "Rock",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Rock190": {
+      "id": 190,
+      "text": "",
+      "xCoord": 2700,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock191": {
+      "id": 191,
+      "text": "",
+      "xCoord": 2600,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock192": {
+      "id": 192,
+      "text": "",
+      "xCoord": 1300,
+      "class": "Rock",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock193": {
+      "id": 193,
+      "text": "",
+      "xCoord": 800,
+      "class": "Rock",
+      "yCoord": 600,
+      "type": 0
+    },
+    "Rock194": {
+      "id": 194,
+      "text": "",
+      "xCoord": 700,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock186": {
+      "id": 186,
+      "text": "",
+      "xCoord": 3100,
+      "class": "Rock",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock187": {
+      "id": 187,
+      "text": "",
+      "xCoord": 3000,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock184": {
+      "id": 184,
+      "text": "",
+      "xCoord": 3200,
+      "class": "Rock",
+      "yCoord": 600,
+      "type": 0
+    },
+    "Rock185": {
+      "id": 185,
+      "text": "",
+      "xCoord": 3200,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock188": {
+      "id": 188,
+      "text": "",
+      "xCoord": 2900,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock189": {
+      "id": 189,
+      "text": "",
+      "xCoord": 2800,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock182": {
+      "id": 182,
+      "text": "",
+      "xCoord": 3200,
+      "class": "Rock",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Rock183": {
+      "id": 183,
+      "text": "",
+      "xCoord": 3200,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock180": {
+      "id": 180,
+      "text": "",
+      "xCoord": 3000,
+      "class": "Rock",
+      "yCoord": 300,
+      "type": 0
+    },
+    "Rock181": {
+      "id": 181,
+      "text": "",
+      "xCoord": 3100,
+      "class": "Rock",
+      "yCoord": 300,
+      "type": 0
+    },
+    "Rock136": {
+      "id": 136,
+      "text": "",
+      "xCoord": 2200,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock135": {
+      "id": 135,
+      "text": "",
+      "xCoord": 2300,
+      "class": "Rock",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock134": {
+      "id": 134,
+      "text": "",
+      "xCoord": 2400,
+      "class": "Rock",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock133": {
+      "id": 133,
+      "text": "",
+      "xCoord": 2700,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock132": {
+      "id": 132,
+      "text": "",
+      "xCoord": 2700,
+      "class": "Rock",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Rock131": {
+      "id": 131,
+      "text": "",
+      "xCoord": 2700,
+      "class": "Rock",
+      "yCoord": 300,
+      "type": 0
+    },
+    "Rock130": {
+      "id": 130,
+      "text": "",
+      "xCoord": 2700,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock139": {
+      "id": 139,
+      "text": "",
+      "xCoord": 1700,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock137": {
+      "id": 137,
+      "text": "",
+      "xCoord": 2100,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock138": {
+      "id": 138,
+      "text": "",
+      "xCoord": 1800,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Grass15": {
+      "id": 15,
+      "text": "",
+      "xCoord": 2000,
+      "class": "Grass",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Grass13": {
+      "id": 13,
+      "text": "",
+      "xCoord": 1800,
+      "class": "Grass",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Grass14": {
+      "id": 14,
+      "text": "",
+      "xCoord": 1600,
+      "class": "Grass",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock123": {
+      "id": 123,
+      "text": "",
+      "xCoord": 2200,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock122": {
+      "id": 122,
+      "text": "",
+      "xCoord": 2100,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock125": {
+      "id": 125,
+      "text": "",
+      "xCoord": 2200,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock124": {
+      "id": 124,
+      "text": "",
+      "xCoord": 2200,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock121": {
+      "id": 121,
+      "text": "",
+      "xCoord": 2100,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock120": {
+      "id": 120,
+      "text": "",
+      "xCoord": 2000,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock126": {
+      "id": 126,
+      "text": "",
+      "xCoord": 2300,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock127": {
+      "id": 127,
+      "text": "",
+      "xCoord": 2400,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock128": {
+      "id": 128,
+      "text": "",
+      "xCoord": 2500,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock129": {
+      "id": 129,
+      "text": "",
+      "xCoord": 2600,
+      "class": "Rock",
+      "yCoord": 100,
+      "type": 0
+    },
+    "Rock150": {
+      "id": 150,
+      "text": "",
+      "xCoord": 1800,
+      "class": "Rock",
+      "yCoord": -100,
+      "type": 0
+    },
+    "Rock154": {
+      "id": 154,
+      "text": "",
+      "xCoord": 2200,
+      "class": "Rock",
+      "yCoord": -100,
+      "type": 0
+    },
+    "Rock153": {
+      "id": 153,
+      "text": "",
+      "xCoord": 2100,
+      "class": "Rock",
+      "yCoord": -100,
+      "type": 0
+    },
+    "Rock152": {
+      "id": 152,
+      "text": "",
+      "xCoord": 2000,
+      "class": "Rock",
+      "yCoord": -100,
+      "type": 0
+    },
+    "Rock151": {
+      "id": 151,
+      "text": "",
+      "xCoord": 1900,
+      "class": "Rock",
+      "yCoord": -100,
+      "type": 0
+    },
+    "Rock158": {
+      "id": 158,
+      "text": "",
+      "xCoord": 2300,
+      "class": "Rock",
+      "yCoord": 300,
+      "type": 0
+    },
+    "Rock157": {
+      "id": 157,
+      "text": "",
+      "xCoord": 2300,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock156": {
+      "id": 156,
+      "text": "",
+      "xCoord": 2300,
+      "class": "Rock",
+      "yCoord": 100,
+      "type": 0
+    },
+    "Rock155": {
+      "id": 155,
+      "text": "",
+      "xCoord": 2300,
+      "class": "Rock",
+      "yCoord": -100,
+      "type": 0
+    },
+    "Rock159": {
+      "id": 159,
+      "text": "",
+      "xCoord": 2200,
+      "class": "Rock",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Rock9": {
+      "id": 9,
+      "text": "",
+      "xCoord": 1600,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock7": {
+      "id": 7,
+      "text": "",
+      "xCoord": 1400,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock8": {
+      "id": 8,
+      "text": "",
+      "xCoord": 1500,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock5": {
+      "id": 5,
+      "text": "",
+      "xCoord": 1200,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock6": {
+      "id": 6,
+      "text": "",
+      "xCoord": 1300,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock141": {
+      "id": 141,
+      "text": "",
+      "xCoord": 1500,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock140": {
+      "id": 140,
+      "text": "",
+      "xCoord": 1600,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock143": {
+      "id": 143,
+      "text": "",
+      "xCoord": 1300,
+      "class": "Rock",
+      "yCoord": 600,
+      "type": 0
+    },
+    "Rock142": {
+      "id": 142,
+      "text": "",
+      "xCoord": 1400,
+      "class": "Rock",
+      "yCoord": 900,
+      "type": 0
+    },
+    "Rock145": {
+      "id": 145,
+      "text": "",
+      "xCoord": 1400,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock144": {
+      "id": 144,
+      "text": "",
+      "xCoord": 1300,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock147": {
+      "id": 147,
+      "text": "",
+      "xCoord": 1700,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock146": {
+      "id": 146,
+      "text": "",
+      "xCoord": 1700,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock148": {
+      "id": 148,
+      "text": "",
+      "xCoord": 1800,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock149": {
+      "id": 149,
+      "text": "",
+      "xCoord": 1800,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock4": {
+      "id": 4,
+      "text": "",
+      "xCoord": 1100,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock3": {
+      "id": 3,
+      "text": "",
+      "xCoord": 1000,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock2": {
+      "id": 2,
+      "text": "",
+      "xCoord": 900,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock1": {
+      "id": 1,
+      "text": "",
+      "xCoord": 800,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock0": {
+      "id": 0,
+      "text": "",
+      "xCoord": 700,
+      "class": "Rock",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock91": {
+      "id": 91,
+      "text": "",
+      "xCoord": 700,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock90": {
+      "id": 90,
+      "text": "",
+      "xCoord": 700,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock93": {
+      "id": 93,
+      "text": "",
+      "xCoord": 800,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock92": {
+      "id": 92,
+      "text": "",
+      "xCoord": 800,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock83": {
+      "id": 83,
+      "text": "",
+      "xCoord": 300,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock84": {
+      "id": 84,
+      "text": "",
+      "xCoord": 400,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock85": {
+      "id": 85,
+      "text": "",
+      "xCoord": 500,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock86": {
+      "id": 86,
+      "text": "",
+      "xCoord": 500,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Grass6": {
+      "id": 6,
+      "text": "",
+      "xCoord": 1200,
+      "class": "Grass",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock87": {
+      "id": 87,
+      "text": "",
+      "xCoord": 600,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Grass7": {
+      "id": 7,
+      "text": "",
+      "xCoord": 1400,
+      "class": "Grass",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock88": {
+      "id": 88,
+      "text": "",
+      "xCoord": 600,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock89": {
+      "id": 89,
+      "text": "",
+      "xCoord": 700,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Box1": {
+      "id": 1,
+      "text": "",
+      "xCoord": 1800,
+      "class": "Box",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Box2": {
+      "id": 2,
+      "text": "",
+      "xCoord": 1600,
+      "class": "Box",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Box0": {
+      "id": 0,
+      "text": "",
+      "xCoord": 2000,
+      "class": "Box",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Grass5": {
+      "id": 5,
+      "text": "",
+      "xCoord": 1000,
+      "class": "Grass",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Box9": {
+      "id": 9,
+      "text": "",
+      "xCoord": 200,
+      "class": "Box",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Grass4": {
+      "id": 4,
+      "text": "",
+      "xCoord": 800,
+      "class": "Grass",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Box7": {
+      "id": 7,
+      "text": "",
+      "xCoord": 600,
+      "class": "Box",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Grass3": {
+      "id": 3,
+      "text": "",
+      "xCoord": 600,
+      "class": "Grass",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Box8": {
+      "id": 8,
+      "text": "",
+      "xCoord": 400,
+      "class": "Box",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Grass2": {
+      "id": 2,
+      "text": "",
+      "xCoord": 400,
+      "class": "Grass",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Box5": {
+      "id": 5,
+      "text": "",
+      "xCoord": 1000,
+      "class": "Box",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Grass1": {
+      "id": 1,
+      "text": "",
+      "xCoord": 0,
+      "class": "Grass",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Box6": {
+      "id": 6,
+      "text": "",
+      "xCoord": 800,
+      "class": "Box",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Grass0": {
+      "id": 0,
+      "text": "",
+      "xCoord": 200,
+      "class": "Grass",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Box3": {
+      "id": 3,
+      "text": "",
+      "xCoord": 1400,
+      "class": "Box",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Box4": {
+      "id": 4,
+      "text": "",
+      "xCoord": 1200,
+      "class": "Box",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock96": {
+      "id": 96,
+      "text": "",
+      "xCoord": 1000,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock97": {
+      "id": 97,
+      "text": "",
+      "xCoord": 1000,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock94": {
+      "id": 94,
+      "text": "",
+      "xCoord": 900,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock95": {
+      "id": 95,
+      "text": "",
+      "xCoord": 900,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Box10": {
+      "id": 10,
+      "text": "",
+      "xCoord": 0,
+      "class": "Box",
+      "yCoord": 800,
+      "type": 0
+    },
+    "Rock98": {
+      "id": 98,
+      "text": "",
+      "xCoord": 1100,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock99": {
+      "id": 99,
+      "text": "",
+      "xCoord": 1100,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock110": {
+      "id": 110,
+      "text": "",
+      "xCoord": 1600,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock113": {
+      "id": 113,
+      "text": "",
+      "xCoord": 1700,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock114": {
+      "id": 114,
+      "text": "",
+      "xCoord": 1800,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock111": {
+      "id": 111,
+      "text": "",
+      "xCoord": 1700,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock112": {
+      "id": 112,
+      "text": "",
+      "xCoord": 1700,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock71": {
+      "id": 71,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock70": {
+      "id": 70,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock65": {
+      "id": 65,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 600,
+      "type": 0
+    },
+    "Rock66": {
+      "id": 66,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 600,
+      "type": 0
+    },
+    "Rock67": {
+      "id": 67,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 600,
+      "type": 0
+    },
+    "Rock68": {
+      "id": 68,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 600,
+      "type": 0
+    },
+    "Rock61": {
+      "id": 61,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock62": {
+      "id": 62,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 700,
+      "type": 0
+    },
+    "Rock63": {
+      "id": 63,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 600,
+      "type": 0
+    },
+    "Rock64": {
+      "id": 64,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 600,
+      "type": 0
+    },
+    "Rock118": {
+      "id": 118,
+      "text": "",
+      "xCoord": 1900,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock117": {
+      "id": 117,
+      "text": "",
+      "xCoord": 1900,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock116": {
+      "id": 116,
+      "text": "",
+      "xCoord": 1900,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock115": {
+      "id": 115,
+      "text": "",
+      "xCoord": 1800,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock69": {
+      "id": 69,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 600,
+      "type": 0
+    },
+    "Rock119": {
+      "id": 119,
+      "text": "",
+      "xCoord": 2000,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock100": {
+      "id": 100,
+      "text": "",
+      "xCoord": 1200,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock101": {
+      "id": 101,
+      "text": "",
+      "xCoord": 1200,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock102": {
+      "id": 102,
+      "text": "",
+      "xCoord": 1200,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock103": {
+      "id": 103,
+      "text": "",
+      "xCoord": 1300,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock82": {
+      "id": 82,
+      "text": "",
+      "xCoord": 200,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock81": {
+      "id": 81,
+      "text": "",
+      "xCoord": 100,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock80": {
+      "id": 80,
+      "text": "",
+      "xCoord": 0,
+      "class": "Rock",
+      "yCoord": 100,
+      "type": 0
+    },
+    "Rock78": {
+      "id": 78,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 300,
+      "type": 0
+    },
+    "Rock79": {
+      "id": 79,
+      "text": "",
+      "xCoord": 0,
+      "class": "Rock",
+      "yCoord": 200,
+      "type": 0
+    },
+    "Rock76": {
+      "id": 76,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Rock77": {
+      "id": 77,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Rock74": {
+      "id": 74,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock75": {
+      "id": 75,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 400,
+      "type": 0
+    },
+    "Rock72": {
+      "id": 72,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock73": {
+      "id": 73,
+      "text": "",
+      "xCoord": -100,
+      "class": "Rock",
+      "yCoord": 500,
+      "type": 0
+    },
+    "Rock105": {
+      "id": 105,
+      "text": "",
+      "xCoord": 1400,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock104": {
+      "id": 104,
+      "text": "",
+      "xCoord": 1300,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock107": {
+      "id": 107,
+      "text": "",
+      "xCoord": 1500,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock106": {
+      "id": 106,
+      "text": "",
+      "xCoord": 1400,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock109": {
+      "id": 109,
+      "text": "",
+      "xCoord": 1600,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    },
+    "Rock108": {
+      "id": 108,
+      "text": "",
+      "xCoord": 1500,
+      "class": "Rock",
+      "yCoord": 0,
+      "type": 0
+    }
+  }
+}

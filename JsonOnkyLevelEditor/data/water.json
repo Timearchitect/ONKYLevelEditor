@@ -1,0 +1,96 @@
+{"water": {
+  "Water8": {
+    "id": 8,
+    "text": "",
+    "xCoord": 1600,
+    "class": "Water",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Water7": {
+    "id": 7,
+    "text": "",
+    "xCoord": 1400,
+    "class": "Water",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Water9": {
+    "id": 9,
+    "text": "",
+    "xCoord": 1800,
+    "class": "Water",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Water1": {
+    "id": 1,
+    "text": "",
+    "xCoord": 200,
+    "class": "Water",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Water2": {
+    "id": 2,
+    "text": "",
+    "xCoord": 400,
+    "class": "Water",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Water0": {
+    "id": 0,
+    "text": "",
+    "xCoord": 0,
+    "class": "Water",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Water5": {
+    "id": 5,
+    "text": "",
+    "xCoord": 1000,
+    "class": "Water",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Water10": {
+    "id": 10,
+    "text": "",
+    "xCoord": 2000,
+    "class": "Water",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Water6": {
+    "id": 6,
+    "text": "",
+    "xCoord": 1200,
+    "class": "Water",
+    "yCoord": 800,
+    "type": 0
+  },
+  "courseProperties": {
+    "name": "water",
+    "courseSize": 2200,
+    "randomAmount": 4,
+    "difficultyLevel": 0
+  },
+  "Water3": {
+    "id": 3,
+    "text": "",
+    "xCoord": 600,
+    "class": "Water",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Water4": {
+    "id": 4,
+    "text": "",
+    "xCoord": 800,
+    "class": "Water",
+    "yCoord": 800,
+    "type": 0
+  }
+}}

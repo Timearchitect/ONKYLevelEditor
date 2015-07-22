@@ -84,10 +84,12 @@ void keyPressed() {
     case 'w':
       list.get(0).changeType(1);
       for (Obstacle o : selected)if (list.get(0).getClass()==o.getClass()) o.type=list.get(0).type;
+      if(selected.size()>0)record(); //record undostate
       break;
     case 's':
       list.get(0).changeType(-1);
       for (Obstacle o : selected)if (list.get(0).getClass()==o.getClass())o.type=list.get(0).type;
+       if(selected.size()>0)record(); //record undostate
       break;
     case '1':
       break;
@@ -171,10 +173,10 @@ void keyPressed() {
 
     int amount=200;
     switch(keyCode) {
-    case 65:
+   /* case 65:
       println("select All");
       for (Obstacle o : obstacles) if (!selected.contains(o)) selected.add(o);
-      break;
+      break;*/
     case DELETE:
       deleteSelected();
       break;

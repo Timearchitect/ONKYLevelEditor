@@ -245,6 +245,8 @@ void exportJSON() {
   courseProperties.setString("name", courseName);
   courseProperties.setInt("courseSize", int(defaultCourseSize.x));
   courseProperties.setInt("difficultyLevel", difficultyLevel);
+  courseProperties.setInt("minSpeedLevel", 0);
+  courseProperties.setInt("maxSpeedLevel", 5);
   courseProperties.setInt("randomAmount", randomLevel);
 
   course.setJSONObject("courseProperties", courseProperties);
