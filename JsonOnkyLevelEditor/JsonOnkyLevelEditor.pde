@@ -10,7 +10,7 @@ FileFilter fileFilter = new ExtensionFileFilter(".json", new String[] {
   "json"
 }
 );
-
+ArrayList<ArrayList<Obstacle>> undoState = new ArrayList<ArrayList<Obstacle>>();
 ArrayList<Obstacle> obstacles= new ArrayList<Obstacle>();
 ArrayList<Obstacle> list= new ArrayList<Obstacle>();
 ArrayList<Obstacle> selected= new ArrayList<Obstacle>();
@@ -176,7 +176,9 @@ void displayCourseSize() {
 void showGrid() {
   float interval=200;
   stroke(0, 255, 0);
-  strokeWeight(2);
+  if(scaleFactor>.4)strokeWeight(2);
+  else   strokeWeight(1);
+
   for (int i=0; i< (width); i+=interval*scaleFactor) {
     float xLine=i+((cameraCoord.x)%interval)*scaleFactor;
     line(xLine, 0, xLine, height);
@@ -337,11 +339,9 @@ void exit() {  // override second processing level listener of close
 
 void changeAppIcon(PImage img) {
   final PGraphics pg = createGraphics(64, 64, JAVA2D);
-
   pg.beginDraw();
   pg.image(img, 0, 0, 64, 64);
   pg.endDraw();
-
   frame.setIconImage(pg.image);
 }
 

@@ -9,8 +9,8 @@ void keyPressed() {
     switch(key) {
     case '': // ctrl+h
       JOptionPane.showMessageDialog(frame, 
-      "[ctrl+s] save \n[ctrl+l & ctrl+o] load/open\n[ctrl+d] delete all obstacles  \n[Mouse LeftClick] add Obstacle  \n[Mouse RightClick] delete\n"+
-        "[Mouse middleButton] pan\n[Mouse scroll] zoom\n[a] previous obstacle \n[d] next obstacle\n[w] previous type  \n[s] next type \n[h] hide grid.");
+      "[ctrl+s] save course\n[ctrl+l & ctrl+o] load/open course\n[ctrl+d] delete all obstacles\n[ctrl+x] cut obstacles\n[ctrl+c] copy obstacles \n[ctrl+v] paste obstacles\n[ctrl+z] undo change \n[Mouse LeftClick] add Obstacle  \n[Mouse RightClick] delete\n"+
+        "[Mouse middleButton] pan\n[Mouse scroll] zoom\n[Mouse doubleclick] change obstacle attribute\n[a] previous obstacle \n[d] next obstacle\n[w] previous type  \n[s] next type \n[h] hide grid.");
       break;
     case 'h':
       hide=!hide;
@@ -53,6 +53,7 @@ void keyPressed() {
       fc.addChoosableFileFilter(fileFilter);
       returnVal = fc.showOpenDialog(this); 
       if (returnVal == JFileChooser.APPROVE_OPTION) {
+        record(); //record undostate
         File file = fc.getSelectedFile(); 
         myInputFile = file.getAbsolutePath();
         String[] sTemp= splitTokens(file.getName(), ".");
@@ -132,6 +133,7 @@ void keyPressed() {
       break;
     case  '': // ctrl+x
       println("ctrl+x");
+      record(); //record undostate
       clipBoard.clear();
       clipBoardCoord.set(mouseX, mouseY);
       clipBoard.addAll(selected);
@@ -154,6 +156,7 @@ void keyPressed() {
       if (returnVal == JOptionPane.NO_OPTION) {
         System.out.println("No button clicked");
       } else if (returnVal == JOptionPane.YES_OPTION) {
+        record(); //record undostate
         deleteAllObstacle();
       } else if (returnVal == JOptionPane.CLOSED_OPTION) {
         System.out.println("Cancel");
@@ -161,8 +164,7 @@ void keyPressed() {
 
       break;
     case '': // ctrl +z
-      println("ctrl+z");
-
+      undo();
       break;
     }
     // background(255);
@@ -206,5 +208,24 @@ void deleteAllObstacle() {
   obstacles.clear();
   selected.clear();
   println("[all obstacle is deleted]");
+}
+void record() {
+  ArrayList<Obstacle> temp=new  ArrayList<Obstacle> ();
+  for (Obstacle o : obstacles)temp.add(o.clone());
+  undoState.add(temp);
+  println("recorded:"+undoState.size());
+}
+void undo() {
+  if (undoState.size()>0) {
+    selected.clear();
+    obstacles.clear();
+    for (Obstacle o : undoState.get (undoState.size ()-1)) {
+      obstacles.add(o);
+    }
+    // obstacles = undoState.get(undoState.size()-1).copy();
+    undoState.remove(undoState.size()-1);
+    println("ctrl+z");
+  }
+  println("undo states left:"+undoState.size());
 }
 

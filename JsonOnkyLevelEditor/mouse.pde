@@ -16,11 +16,11 @@ void mousePressed() {
     searchFocusableObstacle();
     if (mouseButton==LEFT) {  // regular left
       if (pasteing) { // paste Mode
+        record(); //record undostate
         for (Obstacle o : clipBoard) {
           Obstacle temp =o.clone();
           temp.x+=mouseX/scaleFactor-cameraCoord.x;
           temp.y+=mouseY/scaleFactor-cameraCoord.y;
-
 
           int interval=int(temp.h*0.5);
           int xRounded = round((temp.x -interval*0.25) / interval ) * interval;
@@ -29,16 +29,19 @@ void mousePressed() {
           temp.y=yRounded;
           obstacles.add(temp);
         }
-        //obstacles.addAll(clipBoard);
         pasteing=false;
       } else {
-        if (focus==null) addObstacle();
-        else {
+        if (focus==null) {
+          record(); //record undostate
+          addObstacle();
+        } else {
           searchFocusableObstacle();
           select(focus);
-          if (mouseEvent.getClickCount()==2) {  // double-click
+          if (mouseEvent.getClickCount()==2) {  // double-click edit attributes
             println("double-click");
-            focus.edit();
+            record(); //record undostate
+             focus.edit();
+             for (Obstacle o : selected)o.text=focus.text;
           }
         }
       }
@@ -47,7 +50,8 @@ void mousePressed() {
       if (pasteing) { // paste Mode cancel
         pasteing=false;
       } else {
-        if (focus!=null) { // remove bstacle
+        if (focus!=null) { // remove obstacle
+          record(); //record undostate
           removeObstacle();
         } else {
           selected.clear();
@@ -64,7 +68,9 @@ void mousePressed() {
 void mouseDragged() {
   searchFocusableObstacle();
   if (mouseButton==LEFT) {
-    if (focus==null)addObstacle();
+    if (focus==null) {
+      addObstacle();
+    }
     searchFocusableObstacle();
   }
   if (mouseButton==RIGHT) {
