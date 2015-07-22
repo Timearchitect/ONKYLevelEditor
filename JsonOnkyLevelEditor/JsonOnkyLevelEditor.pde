@@ -239,6 +239,9 @@ void importJSON() {
 }
 
 void exportJSON() {
+   json=new JSONObject();
+ course=new JSONObject();
+ 
   json.setJSONObject(courseName, course);
 
   JSONObject courseProperties = new JSONObject();
