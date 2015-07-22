@@ -1,0 +1,738 @@
+{"play it slow": {
+  "Sign1": {
+    "id": 1,
+    "text": "Metal path",
+    "xCoord": 0,
+    "class": "Sign",
+    "yCoord": 600,
+    "type": 0
+  },
+  "Grass42": {
+    "id": 42,
+    "text": "",
+    "xCoord": 400,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass45": {
+    "id": 45,
+    "text": "",
+    "xCoord": 600,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "IronBox51": {
+    "id": 51,
+    "text": "",
+    "xCoord": 1200,
+    "class": "IronBox",
+    "yCoord": 0,
+    "type": 0
+  },
+  "Grass44": {
+    "id": 44,
+    "text": "",
+    "xCoord": 1000,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass49": {
+    "id": 49,
+    "text": "",
+    "xCoord": 600,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Sign36": {
+    "id": 36,
+    "text": "Metal path",
+    "xCoord": 0,
+    "class": "Sign",
+    "yCoord": 600,
+    "type": 0
+  },
+  "Bush57": {
+    "id": 57,
+    "text": "",
+    "xCoord": 1200,
+    "class": "Bush",
+    "yCoord": 600,
+    "type": 0
+  },
+  "Grass6": {
+    "id": 6,
+    "text": "",
+    "xCoord": 1000,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass7": {
+    "id": 7,
+    "text": "",
+    "xCoord": 600,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass9": {
+    "id": 9,
+    "text": "",
+    "xCoord": 0,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "TokenPowerup75": {
+    "id": 75,
+    "text": "",
+    "xCoord": 1300,
+    "class": "TokenPowerup",
+    "yCoord": 450,
+    "type": 0
+  },
+  "Bush82": {
+    "id": 82,
+    "text": "",
+    "xCoord": 1200,
+    "class": "Bush",
+    "yCoord": 650,
+    "type": 0
+  },
+  "Grass50": {
+    "id": 50,
+    "text": "",
+    "xCoord": 1000,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Bush80": {
+    "id": 80,
+    "text": "",
+    "xCoord": 1200,
+    "class": "Bush",
+    "yCoord": 600,
+    "type": 0
+  },
+  "Grass90": {
+    "id": 90,
+    "text": "",
+    "xCoord": 1800,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass56": {
+    "id": 56,
+    "text": "",
+    "xCoord": 2000,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass55": {
+    "id": 55,
+    "text": "",
+    "xCoord": 600,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass54": {
+    "id": 54,
+    "text": "",
+    "xCoord": 1000,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass5": {
+    "id": 5,
+    "text": "",
+    "xCoord": 600,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass59": {
+    "id": 59,
+    "text": "",
+    "xCoord": 400,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass58": {
+    "id": 58,
+    "text": "",
+    "xCoord": 2000,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass3": {
+    "id": 3,
+    "text": "",
+    "xCoord": 1000,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass2": {
+    "id": 2,
+    "text": "",
+    "xCoord": 800,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass11": {
+    "id": 11,
+    "text": "",
+    "xCoord": 800,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Sign48": {
+    "id": 48,
+    "text": "Wall",
+    "xCoord": 0,
+    "class": "Sign",
+    "yCoord": 600,
+    "type": 0
+  },
+  "Grass12": {
+    "id": 12,
+    "text": "",
+    "xCoord": 200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass0": {
+    "id": 0,
+    "text": "",
+    "xCoord": 800,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "TokenPowerup25": {
+    "id": 25,
+    "text": "",
+    "xCoord": 1300,
+    "class": "TokenPowerup",
+    "yCoord": 450,
+    "type": 0
+  },
+  "Tire89": {
+    "id": 89,
+    "text": "",
+    "xCoord": 1200,
+    "class": "Tire",
+    "yCoord": 1000,
+    "type": 0
+  },
+  "Tire88": {
+    "id": 88,
+    "text": "",
+    "xCoord": 1400,
+    "class": "Tire",
+    "yCoord": 1000,
+    "type": 0
+  },
+  "Sign52": {
+    "id": 52,
+    "text": "Play it slow",
+    "xCoord": 0,
+    "class": "Sign",
+    "yCoord": 600,
+    "type": 0
+  },
+  "Tire85": {
+    "id": 85,
+    "text": "",
+    "xCoord": 1400,
+    "class": "Tire",
+    "yCoord": 800,
+    "type": 0
+  },
+  "IronBox18": {
+    "id": 18,
+    "text": "",
+    "xCoord": 1800,
+    "class": "IronBox",
+    "yCoord": 400,
+    "type": 0
+  },
+  "Tire84": {
+    "id": 84,
+    "text": "",
+    "xCoord": 1200,
+    "class": "Tire",
+    "yCoord": 800,
+    "type": 0
+  },
+  "IronBox19": {
+    "id": 19,
+    "text": "",
+    "xCoord": 1800,
+    "class": "IronBox",
+    "yCoord": 600,
+    "type": 0
+  },
+  "Tire87": {
+    "id": 87,
+    "text": "",
+    "xCoord": 1600,
+    "class": "Tire",
+    "yCoord": 1000,
+    "type": 0
+  },
+  "Tire86": {
+    "id": 86,
+    "text": "",
+    "xCoord": 1600,
+    "class": "Tire",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Bush40": {
+    "id": 40,
+    "text": "",
+    "xCoord": 1300,
+    "class": "Bush",
+    "yCoord": 600,
+    "type": 0
+  },
+  "Bush41": {
+    "id": 41,
+    "text": "",
+    "xCoord": 1300,
+    "class": "Bush",
+    "yCoord": 700,
+    "type": 0
+  },
+  "Tire46": {
+    "id": 46,
+    "text": "",
+    "xCoord": 1200,
+    "class": "Tire",
+    "yCoord": 1200,
+    "type": 0
+  },
+  "Tire47": {
+    "id": 47,
+    "text": "",
+    "xCoord": 1200,
+    "class": "Tire",
+    "yCoord": 1400,
+    "type": 0
+  },
+  "Bush43": {
+    "id": 43,
+    "text": "",
+    "xCoord": 1300,
+    "class": "Bush",
+    "yCoord": 550,
+    "type": 0
+  },
+  "Grass65": {
+    "id": 65,
+    "text": "",
+    "xCoord": 600,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass28": {
+    "id": 28,
+    "text": "",
+    "xCoord": 2000,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass67": {
+    "id": 67,
+    "text": "",
+    "xCoord": 800,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass66": {
+    "id": 66,
+    "text": "",
+    "xCoord": 0,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass61": {
+    "id": 61,
+    "text": "",
+    "xCoord": 600,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass24": {
+    "id": 24,
+    "text": "",
+    "xCoord": 600,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass60": {
+    "id": 60,
+    "text": "",
+    "xCoord": 600,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass63": {
+    "id": 63,
+    "text": "",
+    "xCoord": 800,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass62": {
+    "id": 62,
+    "text": "",
+    "xCoord": 0,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass27": {
+    "id": 27,
+    "text": "",
+    "xCoord": 200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass22": {
+    "id": 22,
+    "text": "",
+    "xCoord": 800,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass23": {
+    "id": 23,
+    "text": "",
+    "xCoord": 1000,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass69": {
+    "id": 69,
+    "text": "",
+    "xCoord": 200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass68": {
+    "id": 68,
+    "text": "",
+    "xCoord": 1000,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "IronBox26": {
+    "id": 26,
+    "text": "",
+    "xCoord": 1200,
+    "class": "IronBox",
+    "yCoord": 200,
+    "type": 0
+  },
+  "Bush79": {
+    "id": 79,
+    "text": "",
+    "xCoord": 1200,
+    "class": "Bush",
+    "yCoord": 700,
+    "type": 0
+  },
+  "IronBox20": {
+    "id": 20,
+    "text": "",
+    "xCoord": 1200,
+    "class": "IronBox",
+    "yCoord": 200,
+    "type": 0
+  },
+  "Bush39": {
+    "id": 39,
+    "text": "",
+    "xCoord": 1300,
+    "class": "Bush",
+    "yCoord": 650,
+    "type": 0
+  },
+  "IronBox64": {
+    "id": 64,
+    "text": "",
+    "xCoord": 1200,
+    "class": "IronBox",
+    "yCoord": 0,
+    "type": 0
+  },
+  "TokenPowerup53": {
+    "id": 53,
+    "text": "",
+    "xCoord": 1200,
+    "class": "TokenPowerup",
+    "yCoord": 450,
+    "type": 0
+  },
+  "IronBox83": {
+    "id": 83,
+    "text": "",
+    "xCoord": 1200,
+    "class": "IronBox",
+    "yCoord": 200,
+    "type": 0
+  },
+  "IronBox81": {
+    "id": 81,
+    "text": "",
+    "xCoord": 1200,
+    "class": "IronBox",
+    "yCoord": 400,
+    "type": 0
+  },
+  "Grass37": {
+    "id": 37,
+    "text": "",
+    "xCoord": 0,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass38": {
+    "id": 38,
+    "text": "",
+    "xCoord": 2000,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass72": {
+    "id": 72,
+    "text": "",
+    "xCoord": 200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Tire10": {
+    "id": 10,
+    "text": "",
+    "xCoord": 1400,
+    "class": "Tire",
+    "yCoord": 1400,
+    "type": 0
+  },
+  "Grass71": {
+    "id": 71,
+    "text": "",
+    "xCoord": 2000,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass33": {
+    "id": 33,
+    "text": "",
+    "xCoord": 1000,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Tire14": {
+    "id": 14,
+    "text": "",
+    "xCoord": 1400,
+    "class": "Tire",
+    "yCoord": 1600,
+    "type": 0
+  },
+  "Grass31": {
+    "id": 31,
+    "text": "",
+    "xCoord": 600,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Tire13": {
+    "id": 13,
+    "text": "",
+    "xCoord": 1200,
+    "class": "Tire",
+    "yCoord": 1600,
+    "type": 0
+  },
+  "Grass32": {
+    "id": 32,
+    "text": "",
+    "xCoord": 2000,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Tire16": {
+    "id": 16,
+    "text": "",
+    "xCoord": 1400,
+    "class": "Tire",
+    "yCoord": 1200,
+    "type": 0
+  },
+  "Tire15": {
+    "id": 15,
+    "text": "",
+    "xCoord": 1600,
+    "class": "Tire",
+    "yCoord": 1400,
+    "type": 0
+  },
+  "courseProperties": {
+    "maxSpeedLevel": 5,
+    "name": "play it slow",
+    "minSpeedLevel": 0,
+    "courseSize": 2200,
+    "randomAmount": 4,
+    "difficultyLevel": 0
+  },
+  "Grass30": {
+    "id": 30,
+    "text": "",
+    "xCoord": 400,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Tire17": {
+    "id": 17,
+    "text": "",
+    "xCoord": 1600,
+    "class": "Tire",
+    "yCoord": 1200,
+    "type": 0
+  },
+  "Sign73": {
+    "id": 73,
+    "text": "Play it slow",
+    "xCoord": 0,
+    "class": "Sign",
+    "yCoord": 600,
+    "type": 0
+  },
+  "TokenPowerup8": {
+    "id": 8,
+    "text": "",
+    "xCoord": 1200,
+    "class": "TokenPowerup",
+    "yCoord": 450,
+    "type": 0
+  },
+  "Bush21": {
+    "id": 21,
+    "text": "",
+    "xCoord": 1200,
+    "class": "Bush",
+    "yCoord": 550,
+    "type": 0
+  },
+  "IronBox34": {
+    "id": 34,
+    "text": "",
+    "xCoord": 1200,
+    "class": "IronBox",
+    "yCoord": 200,
+    "type": 0
+  },
+  "Sign74": {
+    "id": 74,
+    "text": "Wall",
+    "xCoord": 0,
+    "class": "Sign",
+    "yCoord": 600,
+    "type": 0
+  },
+  "IronBox35": {
+    "id": 35,
+    "text": "",
+    "xCoord": 1200,
+    "class": "IronBox",
+    "yCoord": 400,
+    "type": 0
+  },
+  "Sign77": {
+    "id": 77,
+    "text": "Play it slow",
+    "xCoord": 0,
+    "class": "Sign",
+    "yCoord": 600,
+    "type": 0
+  },
+  "Tire4": {
+    "id": 4,
+    "text": "",
+    "xCoord": 1600,
+    "class": "Tire",
+    "yCoord": 1600,
+    "type": 0
+  },
+  "Sign29": {
+    "id": 29,
+    "text": "Play it slow",
+    "xCoord": 0,
+    "class": "Sign",
+    "yCoord": 600,
+    "type": 0
+  },
+  "Grass70": {
+    "id": 70,
+    "text": "",
+    "xCoord": 400,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "IronBox78": {
+    "id": 78,
+    "text": "",
+    "xCoord": 1200,
+    "class": "IronBox",
+    "yCoord": 200,
+    "type": 0
+  },
+  "IronBox76": {
+    "id": 76,
+    "text": "",
+    "xCoord": 1200,
+    "class": "IronBox",
+    "yCoord": 200,
+    "type": 0
+  }
+}}
