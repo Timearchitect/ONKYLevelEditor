@@ -237,7 +237,7 @@ class RandomPowerup extends Obstacle {
      }*/
     image(image, x, y, w, h);
   }
-      void changeType(int _amount) {
+    void changeType(int _amount) {
     super.changeType(_amount);
   }
 }

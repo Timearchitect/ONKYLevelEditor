@@ -326,7 +326,7 @@ void rotateListElement(int index) {
 }
 @Override
 void exit() {  // override second processing level listener of close
-  if (!saveChanged) {
+  if (!saveChanged ) {
     returnVal=JOptionPane.showConfirmDialog(null, "Do you want to exit without saving?", "Confirm", 
     JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
     if (returnVal == JOptionPane.NO_OPTION) {

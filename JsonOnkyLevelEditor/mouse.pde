@@ -40,8 +40,8 @@ void mousePressed() {
           if (mouseEvent.getClickCount()==2) {  // double-click edit attributes
             println("double-click");
             record(); //record undostate
-             focus.edit();
-             for (Obstacle o : selected)o.text=focus.text;
+            focus.edit();
+            for (Obstacle o : selected)o.text=focus.text;
           }
         }
       }
@@ -70,6 +70,8 @@ void mouseDragged() {
   if (mouseButton==LEFT) {
     if (focus==null) {
       addObstacle();
+    } else {
+      stretch();
     }
     searchFocusableObstacle();
   }
@@ -90,6 +92,12 @@ void mouseReleased() {
   if (mouseButton==CENTER) {
     cursor(0);
     //  pCameraCoord=cameraCoord;
+  }
+  if (mouseButton==LEFT) {
+    if (focus!=null) {          
+      record(); //record undostate
+      GridInline();
+    }
   }
 }
 void mouseWheel(MouseEvent event) {
@@ -120,6 +128,7 @@ void addObstacle() {
   //  if (selected!=null) {
   list.get(0).x=xRounded;
   list.get(0).y=yRounded;
+
   obstacles.add(list.get(0).clone());
   //  }
   //obstacles.add(new Box(xRounded, yRounded));
@@ -136,4 +145,33 @@ void select(Obstacle temp) {
     selected.add(focus);
   else selected.remove(focus);
 }
+void stretch() {
+  if (focus.stretchable) {
+    int scalex=int(mouseX/scaleFactor-cameraCoord.x);
+    int scaley=int(mouseY/scaleFactor-cameraCoord.y);
+    int margin=25;
+    println(scalex +" :mouseX | x: "+focus.x);
+    if (scalex-margin<focus.x) {
+      focus.w+=focus.x-scalex+margin;
+      focus.x=scalex-margin;
+    }
+    if (scalex+margin>focus.x+focus.w) {
+      focus.w=scalex+margin-focus.x;
+    }
+    if (scaley-margin<focus.y) {
+      focus.h+=focus.y-scaley+margin;
+      focus.y=scaley-margin;
+    }
+    if (scaley+margin>focus.y+focus.h) {
+      focus.h=scaley+margin-focus.y;
+    }
+  }
+}
+void GridInline() {
+  int interval=50;
+  focus.x = round((focus.x -interval*0.25) / interval ) * interval;
+  focus.y = round((focus.y -interval*0.25) / interval ) * interval;
+  focus.w = round((focus.w -interval*0.25) / interval ) * interval;
+  focus.h = round((focus.h -interval*0.25) / interval ) * interval;
+} 
 
