@@ -2,7 +2,7 @@ abstract class Obstacle implements Cloneable {
   float impactForce, x, y, vx, vy, w=200, h=200;
   PVector coord, vel, accel, size;
   color obstacleColor;
-  int hitBrightness, defaultHealth=1, health=defaultHealth, type, maxType;
+  int increment=100,hitBrightness, defaultHealth=1, health=defaultHealth, type, maxType;
   String[] tooltip;
   String text="";
   boolean marked, randomized, stretchable, unBreakable, regenerating, underlay, highLight;
@@ -179,6 +179,7 @@ class PlatForm extends Obstacle {
     tooltip=new String[maxType+1];
     tooltip[0]=" legacy breakable platform obstacle.";
     stretchable=true;
+    increment=50;
   }
   PlatForm(int _x, int _y, int _w, int _h) {
     super(_x, _y);
@@ -218,6 +219,7 @@ class Lumber extends Obstacle {
     tooltip=new String[maxType+1];
     tooltip[0]=" standard breakable platform obstacle.";
     stretchable=true;
+    increment=50;
   }
   Lumber(int _x, int _y, int _w, int _h) {
     super(_x, _y);
@@ -340,6 +342,7 @@ class Grass extends Obstacle {
     unBreakable=true;
     tooltip=new String[maxType+1];
     tooltip[0]=" unbreakable none interactive ground obstacle.";
+    increment=50;
   }
   Grass(int _x, int _y, int _w, int _h) {
     super(_x, _y);

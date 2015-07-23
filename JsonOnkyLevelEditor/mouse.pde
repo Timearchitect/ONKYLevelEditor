@@ -110,7 +110,8 @@ void searchFocusableObstacle() {
 
 void addObstacle() {
   saveChanged=false;
-  int interval=int(list.get(0).h*0.5);
+  // int interval=int(list.get(0).h*0.5);
+  int interval=int(list.get(0).increment);
   int xRounded = int(((mouseX/scaleFactor-cameraCoord.x) -interval*0.5) / interval ) * interval;
   int yRounded = int(((mouseY/scaleFactor-cameraCoord.y) -interval*0.5) / interval ) * interval;
   //obstacles.add(new Box(int(mouseX/scaleFactor-cameraCoord.x),int(mouseY/scaleFactor-cameraCoord.y)));
@@ -139,7 +140,7 @@ void stretch() {
     int scalex=int(mouseX/scaleFactor-cameraCoord.x);
     int scaley=int(mouseY/scaleFactor-cameraCoord.y);
     int margin=25;
-//    println(scalex +" :mouseX | x: "+focus.x);
+    //    println(scalex +" :mouseX | x: "+focus.x);
     if (scalex-margin<focus.x) {
       focus.w+=focus.x-scalex+margin;
       focus.x=scalex-margin;
@@ -169,7 +170,8 @@ void paste() {
     temp.x+=mouseX/scaleFactor-cameraCoord.x;
     temp.y+=mouseY/scaleFactor-cameraCoord.y;
 
-    int interval=int(temp.h*0.5);
+    //int interval=int(temp.h*0.5);
+    int interval=int(temp.increment);
     if (interval<50)interval=50;
     int xRounded = round((temp.x -interval*0.25) / interval ) * interval;
     int yRounded = round((temp.y -interval*0.25) / interval ) * interval;
