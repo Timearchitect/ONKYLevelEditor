@@ -17,18 +17,7 @@ void mousePressed() {
     if (mouseButton==LEFT) {  // regular left
       if (pasteing) { // paste Mode
         record(); //record undostate
-        for (Obstacle o : clipBoard) {
-          Obstacle temp =o.clone();
-          temp.x+=mouseX/scaleFactor-cameraCoord.x;
-          temp.y+=mouseY/scaleFactor-cameraCoord.y;
-
-          int interval=int(temp.h*0.5);
-          int xRounded = round((temp.x -interval*0.25) / interval ) * interval;
-          int yRounded = round((temp.y -interval*0.25) / interval ) * interval;
-          temp.x=xRounded;
-          temp.y=yRounded;
-          obstacles.add(temp);
-        }
+        paste();
         pasteing=false;
       } else {
         if (focus==null) {
@@ -150,7 +139,7 @@ void stretch() {
     int scalex=int(mouseX/scaleFactor-cameraCoord.x);
     int scaley=int(mouseY/scaleFactor-cameraCoord.y);
     int margin=25;
-    println(scalex +" :mouseX | x: "+focus.x);
+//    println(scalex +" :mouseX | x: "+focus.x);
     if (scalex-margin<focus.x) {
       focus.w+=focus.x-scalex+margin;
       focus.x=scalex-margin;
@@ -174,4 +163,19 @@ void GridInline() {
   focus.w = round((focus.w -interval*0.25) / interval ) * interval;
   focus.h = round((focus.h -interval*0.25) / interval ) * interval;
 } 
+void paste() {
+  for (Obstacle o : clipBoard) {
+    Obstacle temp =o.clone();
+    temp.x+=mouseX/scaleFactor-cameraCoord.x;
+    temp.y+=mouseY/scaleFactor-cameraCoord.y;
+
+    int interval=int(temp.h*0.5);
+    if (interval<50)interval=50;
+    int xRounded = round((temp.x -interval*0.25) / interval ) * interval;
+    int yRounded = round((temp.y -interval*0.25) / interval ) * interval;
+    temp.x=xRounded;
+    temp.y=yRounded;
+    obstacles.add(temp);
+  }
+}
 

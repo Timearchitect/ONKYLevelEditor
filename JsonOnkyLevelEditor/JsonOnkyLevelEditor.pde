@@ -34,7 +34,7 @@ int difficultyLevel=0, randomLevel=4;
 
 String courseName ="testCourse";
 String courseFilePath;
-boolean saveChanged=true;
+boolean transparent,saveChanged=true;
 void setup() {
   changeAppIcon( loadImage("icon/Qwerty-icon.png") );
   changeAppTitle("QWERTY");
@@ -78,7 +78,9 @@ void draw() {
   scale(scaleFactor);
   translate(cameraCoord.x, cameraCoord.y);
   displayCourseSize();
+  if(transparent)tint(255,150);
   for (Obstacle o : obstacles)  o.display();
+  if(transparent)noTint();
   for (Obstacle o : selected)  o.highLight();
   /*  if (pasteing) {
    tint(255,100);

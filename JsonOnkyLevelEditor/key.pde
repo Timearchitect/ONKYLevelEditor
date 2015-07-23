@@ -94,6 +94,9 @@ void keyPressed() {
       for (Obstacle o : selected)if (list.get(0).getClass()==o.getClass())o.type=list.get(0).type;
       if (selected.size()>0)record(); //record undostate
       break;
+      case ' ':
+      transparent=!transparent;
+      break;
     case '1':
       break;
     case '2':
