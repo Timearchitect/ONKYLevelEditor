@@ -1,0 +1,138 @@
+{"hill": {
+  "Grass5": {
+    "id": 5,
+    "text": "",
+    "xCoord": 600,
+    "class": "Grass",
+    "yCoord": 650,
+    "type": 0
+  },
+  "Grass4": {
+    "id": 4,
+    "text": "",
+    "xCoord": 400,
+    "class": "Grass",
+    "yCoord": 700,
+    "type": 0
+  },
+  "Grass3": {
+    "id": 3,
+    "text": "",
+    "xCoord": 200,
+    "class": "Grass",
+    "yCoord": 750,
+    "type": 0
+  },
+  "Grass11": {
+    "id": 11,
+    "text": "",
+    "xCoord": 2000,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass1": {
+    "id": 1,
+    "text": "",
+    "xCoord": 2200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass12": {
+    "id": 12,
+    "text": "",
+    "xCoord": 1000,
+    "class": "Grass",
+    "yCoord": 600,
+    "type": 0
+  },
+  "courseProperties": {
+    "maxSpeedLevel": 5,
+    "name": "hill",
+    "minSpeedLevel": 0,
+    "courseSize": 2200,
+    "randomAmount": 4,
+    "difficultyLevel": 0
+  },
+  "Grass0": {
+    "id": 0,
+    "text": "",
+    "xCoord": 0,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Lumber13": {
+    "id": 13,
+    "text": "",
+    "xCoord": 1450,
+    "class": "Lumber",
+    "yCoord": 250,
+    "type": 0
+  },
+  "Grass10": {
+    "id": 10,
+    "text": "",
+    "xCoord": 1800,
+    "class": "Grass",
+    "yCoord": 750,
+    "type": 0
+  },
+  "Sign15": {
+    "id": 15,
+    "text": "Hill",
+    "xCoord": 0,
+    "class": "Sign",
+    "yCoord": 600,
+    "type": 0
+  },
+  "Barrel14": {
+    "id": 14,
+    "text": "",
+    "xCoord": 1500,
+    "class": "Barrel",
+    "yCoord": 0,
+    "type": 0
+  },
+  "Grass6": {
+    "id": 6,
+    "text": "",
+    "xCoord": 800,
+    "class": "Grass",
+    "yCoord": 600,
+    "type": 0
+  },
+  "Grass7": {
+    "id": 7,
+    "text": "",
+    "xCoord": 1200,
+    "class": "Grass",
+    "yCoord": 600,
+    "type": 0
+  },
+  "Grass8": {
+    "id": 8,
+    "text": "",
+    "xCoord": 1400,
+    "class": "Grass",
+    "yCoord": 650,
+    "type": 0
+  },
+  "Grass9": {
+    "id": 9,
+    "text": "",
+    "xCoord": 1600,
+    "class": "Grass",
+    "yCoord": 700,
+    "type": 0
+  },
+  "Bush2": {
+    "id": 2,
+    "text": "",
+    "xCoord": 800,
+    "class": "Bush",
+    "yCoord": 1300,
+    "type": 0
+  }
+}}

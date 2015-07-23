@@ -437,6 +437,7 @@ class Snake extends Obstacle {
     image=animSprite[0];
     tooltip=new String[maxType+1];
     tooltip[0]="inflict poison powerdown effect.";
+    increment=50;
   }
   PImage cutSprite (int index) {
     final int interval= 82, imageWidth=82, imageheight=35;

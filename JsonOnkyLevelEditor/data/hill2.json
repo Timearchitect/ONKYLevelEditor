@@ -1,0 +1,258 @@
+{"hill2": {
+  "TokenPowerup30": {
+    "id": 30,
+    "text": "",
+    "xCoord": 2300,
+    "class": "TokenPowerup",
+    "yCoord": 600,
+    "type": 0
+  },
+  "Sign1": {
+    "id": 1,
+    "text": "Hill",
+    "xCoord": 0,
+    "class": "Sign",
+    "yCoord": 600,
+    "type": 0
+  },
+  "TokenPowerup17": {
+    "id": 17,
+    "text": "",
+    "xCoord": 1400,
+    "class": "TokenPowerup",
+    "yCoord": 800,
+    "type": 0
+  },
+  "TokenPowerup19": {
+    "id": 19,
+    "text": "",
+    "xCoord": 1500,
+    "class": "TokenPowerup",
+    "yCoord": 800,
+    "type": 0
+  },
+  "TokenPowerup18": {
+    "id": 18,
+    "text": "",
+    "xCoord": 1400,
+    "class": "TokenPowerup",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass6": {
+    "id": 6,
+    "text": "",
+    "xCoord": 800,
+    "class": "Grass",
+    "yCoord": 700,
+    "type": 0
+  },
+  "Grass7": {
+    "id": 7,
+    "text": "",
+    "xCoord": 1000,
+    "class": "Grass",
+    "yCoord": 650,
+    "type": 0
+  },
+  "Grass8": {
+    "id": 8,
+    "text": "",
+    "xCoord": 1200,
+    "class": "Grass",
+    "yCoord": 600,
+    "type": 0
+  },
+  "Grass9": {
+    "id": 9,
+    "text": "",
+    "xCoord": 1400,
+    "class": "Grass",
+    "yCoord": 950,
+    "type": 0
+  },
+  "Grass15": {
+    "id": 15,
+    "text": "",
+    "xCoord": 2000,
+    "class": "Grass",
+    "yCoord": 850,
+    "type": 0
+  },
+  "TokenPowerup22": {
+    "id": 22,
+    "text": "",
+    "xCoord": 1600,
+    "class": "TokenPowerup",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass16": {
+    "id": 16,
+    "text": "",
+    "xCoord": 2200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "TokenPowerup21": {
+    "id": 21,
+    "text": "",
+    "xCoord": 1600,
+    "class": "TokenPowerup",
+    "yCoord": 800,
+    "type": 0
+  },
+  "TokenPowerup20": {
+    "id": 20,
+    "text": "",
+    "xCoord": 1500,
+    "class": "TokenPowerup",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass14": {
+    "id": 14,
+    "text": "",
+    "xCoord": 1800,
+    "class": "Grass",
+    "yCoord": 900,
+    "type": 0
+  },
+  "Grass5": {
+    "id": 5,
+    "text": "",
+    "xCoord": 600,
+    "class": "Grass",
+    "yCoord": 750,
+    "type": 0
+  },
+  "TokenPowerup29": {
+    "id": 29,
+    "text": "",
+    "xCoord": 2200,
+    "class": "TokenPowerup",
+    "yCoord": 600,
+    "type": 0
+  },
+  "Grass4": {
+    "id": 4,
+    "text": "",
+    "xCoord": 850,
+    "class": "Grass",
+    "yCoord": 1600,
+    "type": 0
+  },
+  "TokenPowerup28": {
+    "id": 28,
+    "text": "",
+    "xCoord": 2100,
+    "class": "TokenPowerup",
+    "yCoord": 700,
+    "type": 0
+  },
+  "Grass3": {
+    "id": 3,
+    "text": "",
+    "xCoord": 400,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "TokenPowerup27": {
+    "id": 27,
+    "text": "",
+    "xCoord": 2000,
+    "class": "TokenPowerup",
+    "yCoord": 700,
+    "type": 0
+  },
+  "Grass2": {
+    "id": 2,
+    "text": "",
+    "xCoord": 0,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "TokenPowerup26": {
+    "id": 26,
+    "text": "",
+    "xCoord": 1900,
+    "class": "TokenPowerup",
+    "yCoord": 700,
+    "type": 0
+  },
+  "TokenPowerup25": {
+    "id": 25,
+    "text": "",
+    "xCoord": 1800,
+    "class": "TokenPowerup",
+    "yCoord": 700,
+    "type": 0
+  },
+  "Grass0": {
+    "id": 0,
+    "text": "",
+    "xCoord": 200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "courseProperties": {
+    "maxSpeedLevel": 5,
+    "name": "hill2",
+    "minSpeedLevel": 0,
+    "courseSize": 2200,
+    "randomAmount": 4,
+    "difficultyLevel": 0
+  },
+  "TokenPowerup24": {
+    "id": 24,
+    "text": "",
+    "xCoord": 1700,
+    "class": "TokenPowerup",
+    "yCoord": 800,
+    "type": 0
+  },
+  "TokenPowerup23": {
+    "id": 23,
+    "text": "",
+    "xCoord": 1600,
+    "class": "TokenPowerup",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass10": {
+    "id": 10,
+    "text": "",
+    "xCoord": 1600,
+    "class": "Grass",
+    "yCoord": 950,
+    "type": 0
+  },
+  "IronBox11": {
+    "id": 11,
+    "text": "",
+    "xCoord": 1800,
+    "class": "IronBox",
+    "yCoord": 0,
+    "type": 0
+  },
+  "IronBox12": {
+    "id": 12,
+    "text": "",
+    "xCoord": 1800,
+    "class": "IronBox",
+    "yCoord": 200,
+    "type": 0
+  },
+  "IronBox13": {
+    "id": 13,
+    "text": "",
+    "xCoord": 1800,
+    "class": "IronBox",
+    "yCoord": 400,
+    "type": 0
+  }
+}}
