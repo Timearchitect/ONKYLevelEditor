@@ -1,64 +1,128 @@
 {"metal path": {
-  "Sign4": {
-    "id": 4,
+  "TokenPowerup31": {
+    "id": 31,
+    "text": "",
+    "xCoord": 2100,
+    "class": "TokenPowerup",
+    "yCoord": 650,
+    "type": 0
+  },
+  "TokenPowerup30": {
+    "id": 30,
+    "text": "",
+    "xCoord": 2000,
+    "class": "TokenPowerup",
+    "yCoord": 650,
+    "type": 0
+  },
+  "Grass41": {
+    "id": 41,
+    "text": "",
+    "xCoord": 800,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Sign0": {
+    "id": 0,
     "text": "Metal path",
     "xCoord": 0,
     "class": "Sign",
     "yCoord": 600,
     "type": 0
   },
-  "Box25": {
-    "id": 25,
+  "TokenPowerup32": {
+    "id": 32,
     "text": "",
-    "xCoord": 1400,
-    "class": "Box",
-    "yCoord": 200,
-    "type": 0
-  },
-  "Grass9": {
-    "id": 9,
-    "text": "",
-    "xCoord": 800,
-    "class": "Grass",
-    "yCoord": 800,
-    "type": 0
-  },
-  "IronBox41": {
-    "id": 41,
-    "text": "",
-    "xCoord": 2000,
-    "class": "IronBox",
-    "yCoord": 400,
-    "type": 0
-  },
-  "IronBox48": {
-    "id": 48,
-    "text": "",
-    "xCoord": 1200,
-    "class": "IronBox",
-    "yCoord": 200,
-    "type": 0
-  },
-  "TokenPowerup22": {
-    "id": 22,
-    "text": "",
-    "xCoord": 700,
+    "xCoord": 1600,
     "class": "TokenPowerup",
-    "yCoord": 650,
+    "yCoord": 550,
     "type": 0
   },
-  "Grass16": {
-    "id": 16,
+  "Grass40": {
+    "id": 40,
     "text": "",
     "xCoord": 600,
     "class": "Grass",
     "yCoord": 800,
     "type": 0
   },
-  "TokenPowerup20": {
-    "id": 20,
+  "Grass42": {
+    "id": 42,
     "text": "",
-    "xCoord": 800,
+    "xCoord": 1800,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "TokenPowerup38": {
+    "id": 38,
+    "text": "",
+    "xCoord": 1900,
+    "class": "TokenPowerup",
+    "yCoord": 550,
+    "type": 0
+  },
+  "TokenPowerup34": {
+    "id": 34,
+    "text": "",
+    "xCoord": 1700,
+    "class": "TokenPowerup",
+    "yCoord": 550,
+    "type": 0
+  },
+  "TokenPowerup36": {
+    "id": 36,
+    "text": "",
+    "xCoord": 1800,
+    "class": "TokenPowerup",
+    "yCoord": 550,
+    "type": 0
+  },
+  "Grass6": {
+    "id": 6,
+    "text": "",
+    "xCoord": 600,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass8": {
+    "id": 8,
+    "text": "",
+    "xCoord": 400,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass9": {
+    "id": 9,
+    "text": "",
+    "xCoord": 2000,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "IronBox44": {
+    "id": 44,
+    "text": "",
+    "xCoord": 2000,
+    "class": "IronBox",
+    "yCoord": 200,
+    "type": 0
+  },
+  "Box1": {
+    "id": 1,
+    "text": "",
+    "xCoord": 1400,
+    "class": "Box",
+    "yCoord": 200,
+    "type": 0
+  },
+  "TokenPowerup21": {
+    "id": 21,
+    "text": "",
+    "xCoord": 1000,
     "class": "TokenPowerup",
     "yCoord": 650,
     "type": 0
@@ -66,15 +130,63 @@
   "Grass13": {
     "id": 13,
     "text": "",
-    "xCoord": 400,
+    "xCoord": 1000,
     "class": "Grass",
     "yCoord": 800,
+    "type": 0
+  },
+  "IronBox61": {
+    "id": 61,
+    "text": "",
+    "xCoord": 1600,
+    "class": "IronBox",
+    "yCoord": 200,
     "type": 0
   },
   "Grass19": {
     "id": 19,
     "text": "",
-    "xCoord": 2000,
+    "xCoord": 1400,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "Grass17": {
+    "id": 17,
+    "text": "",
+    "xCoord": 1200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "IronBox60": {
+    "id": 60,
+    "text": "",
+    "xCoord": 600,
+    "class": "IronBox",
+    "yCoord": 200,
+    "type": 0
+  },
+  "Grass18": {
+    "id": 18,
+    "text": "",
+    "xCoord": 1600,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0
+  },
+  "TokenPowerup28": {
+    "id": 28,
+    "text": "",
+    "xCoord": 1700,
+    "class": "TokenPowerup",
+    "yCoord": 650,
+    "type": 0
+  },
+  "Grass2": {
+    "id": 2,
+    "text": "",
+    "xCoord": 800,
     "class": "Grass",
     "yCoord": 800,
     "type": 0
@@ -82,23 +194,31 @@
   "Grass11": {
     "id": 11,
     "text": "",
-    "xCoord": 1800,
+    "xCoord": 600,
     "class": "Grass",
     "yCoord": 800,
     "type": 0
   },
-  "Grass12": {
-    "id": 12,
+  "TokenPowerup26": {
+    "id": 26,
     "text": "",
-    "xCoord": 600,
-    "class": "Grass",
-    "yCoord": 800,
+    "xCoord": 1600,
+    "class": "TokenPowerup",
+    "yCoord": 650,
+    "type": 0
+  },
+  "TokenPowerup25": {
+    "id": 25,
+    "text": "",
+    "xCoord": 1800,
+    "class": "TokenPowerup",
+    "yCoord": 650,
     "type": 0
   },
   "TokenPowerup24": {
     "id": 24,
     "text": "",
-    "xCoord": 600,
+    "xCoord": 900,
     "class": "TokenPowerup",
     "yCoord": 650,
     "type": 0
@@ -106,63 +226,103 @@
   "Grass10": {
     "id": 10,
     "text": "",
-    "xCoord": 1000,
+    "xCoord": 1800,
     "class": "Grass",
     "yCoord": 800,
     "type": 0
   },
-  "IronBox59": {
-    "id": 59,
+  "TokenPowerup23": {
+    "id": 23,
+    "text": "",
+    "xCoord": 1100,
+    "class": "TokenPowerup",
+    "yCoord": 650,
+    "type": 0
+  },
+  "IronBox14": {
+    "id": 14,
     "text": "",
     "xCoord": 1200,
     "class": "IronBox",
     "yCoord": 600,
     "type": 0
   },
-  "TokenPowerup60": {
-    "id": 60,
-    "text": "",
-    "xCoord": 1400,
-    "class": "TokenPowerup",
-    "yCoord": 450,
-    "type": 0
-  },
-  "TokenPowerup61": {
-    "id": 61,
-    "text": "",
-    "xCoord": 1500,
-    "class": "TokenPowerup",
-    "yCoord": 450,
-    "type": 0
-  },
-  "Grass64": {
-    "id": 64,
-    "text": "",
-    "xCoord": 1200,
-    "class": "Grass",
-    "yCoord": 800,
-    "type": 0
-  },
-  "Grass63": {
+  "TokenPowerup63": {
     "id": 63,
     "text": "",
-    "xCoord": 1600,
-    "class": "Grass",
-    "yCoord": 800,
+    "xCoord": 1900,
+    "class": "TokenPowerup",
+    "yCoord": 450,
     "type": 0
   },
-  "Grass62": {
-    "id": 62,
+  "TokenPowerup64": {
+    "id": 64,
+    "text": "",
+    "xCoord": 800,
+    "class": "TokenPowerup",
+    "yCoord": 550,
+    "type": 0
+  },
+  "IronBox54": {
+    "id": 54,
+    "text": "",
+    "xCoord": 1200,
+    "class": "IronBox",
+    "yCoord": 200,
+    "type": 0
+  },
+  "IronBox59": {
+    "id": 59,
+    "text": "",
+    "xCoord": 1800,
+    "class": "IronBox",
+    "yCoord": 200,
+    "type": 0
+  },
+  "IronBox57": {
+    "id": 57,
     "text": "",
     "xCoord": 1400,
+    "class": "IronBox",
+    "yCoord": 200,
+    "type": 0
+  },
+  "Box55": {
+    "id": 55,
+    "text": "",
+    "xCoord": 1300,
+    "class": "Box",
+    "yCoord": 0,
+    "type": 3
+  },
+  "TokenPowerup62": {
+    "id": 62,
+    "text": "",
+    "xCoord": 1800,
+    "class": "TokenPowerup",
+    "yCoord": 450,
+    "type": 0
+  },
+  "Grass20": {
+    "id": 20,
+    "text": "",
+    "xCoord": 200,
     "class": "Grass",
     "yCoord": 800,
     "type": 0
   },
-  "Grass21": {
-    "id": 21,
+  "TokenPowerup12": {
+    "id": 12,
     "text": "",
-    "xCoord": 200,
+    "xCoord": 600,
+    "class": "TokenPowerup",
+    "yCoord": 650,
+    "type": 0
+  },
+  "Grass22": {
+    "id": 22,
+    "text": "",
+    "xCoord": 0,
     "class": "Grass",
     "yCoord": 800,
     "type": 0
@@ -170,39 +330,23 @@
   "TokenPowerup15": {
     "id": 15,
     "text": "",
-    "xCoord": 1000,
+    "xCoord": 1400,
     "class": "TokenPowerup",
-    "yCoord": 650,
+    "yCoord": 450,
     "type": 0
   },
-  "TokenPowerup14": {
-    "id": 14,
+  "TokenPowerup16": {
+    "id": 16,
     "text": "",
-    "xCoord": 1100,
+    "xCoord": 1500,
     "class": "TokenPowerup",
-    "yCoord": 650,
-    "type": 0
-  },
-  "Grass23": {
-    "id": 23,
-    "text": "",
-    "xCoord": 0,
-    "class": "Grass",
-    "yCoord": 800,
-    "type": 0
-  },
-  "TokenPowerup18": {
-    "id": 18,
-    "text": "",
-    "xCoord": 900,
-    "class": "TokenPowerup",
-    "yCoord": 650,
+    "yCoord": 450,
     "type": 0
   },
   "TokenPowerup58": {
     "id": 58,
     "text": "",
-    "xCoord": 1800,
+    "xCoord": 1900,
     "class": "TokenPowerup",
     "yCoord": 650,
     "type": 0
@@ -210,105 +354,49 @@
   "TokenPowerup56": {
     "id": 56,
     "text": "",
-    "xCoord": 1600,
+    "xCoord": 900,
     "class": "TokenPowerup",
-    "yCoord": 650,
+    "yCoord": 450,
     "type": 0
   },
-  "Sign17": {
-    "id": 17,
-    "text": "Wall",
-    "xCoord": 0,
-    "class": "Sign",
-    "yCoord": 600,
-    "type": 0
-  },
-  "TokenPowerup57": {
-    "id": 57,
+  "TokenPowerup50": {
+    "id": 50,
     "text": "",
-    "xCoord": 1700,
+    "xCoord": 900,
     "class": "TokenPowerup",
-    "yCoord": 650,
+    "yCoord": 550,
     "type": 0
   },
-  "IronBox26": {
-    "id": 26,
+  "TokenPowerup51": {
+    "id": 51,
+    "text": "",
+    "xCoord": 1300,
+    "class": "TokenPowerup",
+    "yCoord": 450,
+    "type": 0
+  },
+  "TokenPowerup52": {
+    "id": 52,
+    "text": "",
+    "xCoord": 800,
+    "class": "TokenPowerup",
+    "yCoord": 450,
+    "type": 0
+  },
+  "IronBox29": {
+    "id": 29,
     "text": "",
     "xCoord": 1400,
     "class": "IronBox",
     "yCoord": 600,
     "type": 0
   },
-  "TokenPowerup50": {
-    "id": 50,
-    "text": "",
-    "xCoord": 2000,
-    "class": "TokenPowerup",
-    "yCoord": 650,
-    "type": 0
-  },
-  "TokenPowerup51": {
-    "id": 51,
-    "text": "",
-    "xCoord": 2100,
-    "class": "TokenPowerup",
-    "yCoord": 650,
-    "type": 0
-  },
-  "TokenPowerup54": {
-    "id": 54,
-    "text": "",
-    "xCoord": 1600,
-    "class": "TokenPowerup",
-    "yCoord": 550,
-    "type": 0
-  },
-  "IronBox27": {
-    "id": 27,
-    "text": "",
-    "xCoord": 800,
-    "class": "IronBox",
-    "yCoord": 200,
-    "type": 0
-  },
-  "TokenPowerup55": {
-    "id": 55,
-    "text": "",
-    "xCoord": 1700,
-    "class": "TokenPowerup",
-    "yCoord": 550,
-    "type": 0
-  },
-  "IronBox28": {
-    "id": 28,
-    "text": "",
-    "xCoord": 1000,
-    "class": "IronBox",
-    "yCoord": 200,
-    "type": 0
-  },
-  "TokenPowerup52": {
-    "id": 52,
-    "text": "",
-    "xCoord": 1800,
-    "class": "TokenPowerup",
-    "yCoord": 550,
-    "type": 0
-  },
-  "IronBox29": {
-    "id": 29,
-    "text": "",
-    "xCoord": 600,
-    "class": "IronBox",
-    "yCoord": 400,
-    "type": 0
-  },
   "TokenPowerup53": {
     "id": 53,
     "text": "",
-    "xCoord": 1900,
+    "xCoord": 1200,
     "class": "TokenPowerup",
-    "yCoord": 550,
+    "yCoord": 450,
     "type": 0
   },
   "Grass39": {
@@ -319,60 +407,20 @@
     "yCoord": 800,
     "type": 0
   },
-  "Grass37": {
-    "id": 37,
+  "IronBox4": {
+    "id": 4,
     "text": "",
-    "xCoord": 600,
-    "class": "Grass",
-    "yCoord": 800,
-    "type": 0
-  },
-  "Grass38": {
-    "id": 38,
-    "text": "",
-    "xCoord": 800,
-    "class": "Grass",
-    "yCoord": 800,
-    "type": 0
-  },
-  "Grass36": {
-    "id": 36,
-    "text": "",
-    "xCoord": 1800,
-    "class": "Grass",
-    "yCoord": 800,
-    "type": 0
-  },
-  "TokenPowerup0": {
-    "id": 0,
-    "text": "",
-    "xCoord": 1100,
-    "class": "TokenPowerup",
-    "yCoord": 550,
-    "type": 0
-  },
-  "IronBox40": {
-    "id": 40,
-    "text": "",
-    "xCoord": 2000,
+    "xCoord": 1200,
     "class": "IronBox",
     "yCoord": 200,
     "type": 0
   },
-  "TokenPowerup2": {
-    "id": 2,
+  "IronBox3": {
+    "id": 3,
     "text": "",
-    "xCoord": 1100,
-    "class": "TokenPowerup",
-    "yCoord": 450,
-    "type": 0
-  },
-  "TokenPowerup1": {
-    "id": 1,
-    "text": "",
-    "xCoord": 1000,
-    "class": "TokenPowerup",
-    "yCoord": 550,
+    "xCoord": 2000,
+    "class": "IronBox",
+    "yCoord": 400,
     "type": 0
   },
   "courseProperties": {
@@ -383,90 +431,74 @@
     "randomAmount": 4,
     "difficultyLevel": 0
   },
-  "TokenPowerup3": {
-    "id": 3,
+  "TokenPowerup5": {
+    "id": 5,
+    "text": "",
+    "xCoord": 700,
+    "class": "TokenPowerup",
+    "yCoord": 650,
+    "type": 0
+  },
+  "TokenPowerup7": {
+    "id": 7,
+    "text": "",
+    "xCoord": 800,
+    "class": "TokenPowerup",
+    "yCoord": 650,
+    "type": 0
+  },
+  "TokenPowerup45": {
+    "id": 45,
+    "text": "",
+    "xCoord": 1100,
+    "class": "TokenPowerup",
+    "yCoord": 450,
+    "type": 0
+  },
+  "Sign27": {
+    "id": 27,
+    "text": "Metal path",
+    "xCoord": 0,
+    "class": "Sign",
+    "yCoord": 600,
+    "type": 0
+  },
+  "IronBox37": {
+    "id": 37,
+    "text": "",
+    "xCoord": 600,
+    "class": "IronBox",
+    "yCoord": 400,
+    "type": 0
+  },
+  "TokenPowerup46": {
+    "id": 46,
+    "text": "",
+    "xCoord": 1000,
+    "class": "TokenPowerup",
+    "yCoord": 550,
+    "type": 0
+  },
+  "TokenPowerup47": {
+    "id": 47,
     "text": "",
     "xCoord": 1000,
     "class": "TokenPowerup",
     "yCoord": 450,
     "type": 0
   },
-  "TokenPowerup6": {
-    "id": 6,
+  "TokenPowerup48": {
+    "id": 48,
     "text": "",
     "xCoord": 1600,
     "class": "TokenPowerup",
     "yCoord": 450,
     "type": 0
   },
-  "TokenPowerup5": {
-    "id": 5,
-    "text": "",
-    "xCoord": 1700,
-    "class": "TokenPowerup",
-    "yCoord": 450,
-    "type": 0
-  },
-  "TokenPowerup7": {
-    "id": 7,
-    "text": "",
-    "xCoord": 1300,
-    "class": "TokenPowerup",
-    "yCoord": 450,
-    "type": 0
-  },
-  "TokenPowerup45": {
-    "id": 45,
-    "text": "",
-    "xCoord": 900,
-    "class": "TokenPowerup",
-    "yCoord": 550,
-    "type": 0
-  },
-  "TokenPowerup8": {
-    "id": 8,
-    "text": "",
-    "xCoord": 1200,
-    "class": "TokenPowerup",
-    "yCoord": 450,
-    "type": 0
-  },
-  "TokenPowerup46": {
-    "id": 46,
-    "text": "",
-    "xCoord": 800,
-    "class": "TokenPowerup",
-    "yCoord": 450,
-    "type": 0
-  },
-  "TokenPowerup47": {
-    "id": 47,
-    "text": "",
-    "xCoord": 900,
-    "class": "TokenPowerup",
-    "yCoord": 450,
-    "type": 0
-  },
-  "Box32": {
-    "id": 32,
-    "text": "",
-    "xCoord": 1300,
-    "class": "Box",
-    "yCoord": 0,
-    "type": 3
-  },
-  "IronBox34": {
-    "id": 34,
-    "text": "",
-    "xCoord": 1200,
-    "class": "IronBox",
-    "yCoord": 200,
-    "type": 0
-  },
   "IronBox35": {
     "id": 35,
     "text": "",
-    "xCoord": 1400,
+    "xCoord": 1000,
     "class": "IronBox",
     "yCoord": 200,
     "type": 0
@@ -474,55 +506,23 @@
   "TokenPowerup49": {
     "id": 49,
     "text": "",
-    "xCoord": 1900,
+    "xCoord": 1700,
     "class": "TokenPowerup",
-    "yCoord": 650,
+    "yCoord": 450,
     "type": 0
   },
   "IronBox33": {
     "id": 33,
     "text": "",
-    "xCoord": 1800,
+    "xCoord": 800,
     "class": "IronBox",
     "yCoord": 200,
-    "type": 0
-  },
-  "IronBox30": {
-    "id": 30,
-    "text": "",
-    "xCoord": 600,
-    "class": "IronBox",
-    "yCoord": 200,
-    "type": 0
-  },
-  "IronBox31": {
-    "id": 31,
-    "text": "",
-    "xCoord": 1600,
-    "class": "IronBox",
-    "yCoord": 200,
-    "type": 0
-  },
-  "TokenPowerup42": {
-    "id": 42,
-    "text": "",
-    "xCoord": 1800,
-    "class": "TokenPowerup",
-    "yCoord": 450,
     "type": 0
   },
   "TokenPowerup43": {
     "id": 43,
     "text": "",
-    "xCoord": 1900,
-    "class": "TokenPowerup",
-    "yCoord": 450,
-    "type": 0
-  },
-  "TokenPowerup44": {
-    "id": 44,
-    "text": "",
-    "xCoord": 800,
+    "xCoord": 1100,
     "class": "TokenPowerup",
     "yCoord": 550,
     "type": 0
