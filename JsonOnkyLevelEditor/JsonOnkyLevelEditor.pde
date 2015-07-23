@@ -34,7 +34,7 @@ int difficultyLevel=0, randomLevel=4;
 
 String courseName ="testCourse";
 String courseFilePath;
-boolean saveChanged=true;
+boolean transparent,saveChanged=true;
 void setup() {
   changeAppIcon( loadImage("icon/Qwerty-icon.png") );
   changeAppTitle("QWERTY");
@@ -78,7 +78,9 @@ void draw() {
   scale(scaleFactor);
   translate(cameraCoord.x, cameraCoord.y);
   displayCourseSize();
+  if(transparent)tint(255,150);
   for (Obstacle o : obstacles)  o.display();
+  if(transparent)noTint();
   for (Obstacle o : selected)  o.highLight();
   /*  if (pasteing) {
    tint(255,100);
@@ -239,6 +241,9 @@ void importJSON() {
 }
 
 void exportJSON() {
+   json=new JSONObject();
+ course=new JSONObject();
+ 
   json.setJSONObject(courseName, course);
 
   JSONObject courseProperties = new JSONObject();
@@ -323,7 +328,7 @@ void rotateListElement(int index) {
 }
 @Override
 void exit() {  // override second processing level listener of close
-  if (!saveChanged) {
+  if (!saveChanged ) {
     returnVal=JOptionPane.showConfirmDialog(null, "Do you want to exit without saving?", "Confirm", 
     JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
     if (returnVal == JOptionPane.NO_OPTION) {

@@ -1,0 +1,26 @@
+{"box": {
+  "Box1": {
+    "id": 1,
+    "text": "",
+    "xCoord": 1000,
+    "class": "Box",
+    "yCoord": 600,
+    "type": 0
+  },
+  "Box0": {
+    "id": 0,
+    "text": "",
+    "xCoord": 800,
+    "class": "Box",
+    "yCoord": 600,
+    "type": 0
+  },
+  "courseProperties": {
+    "maxSpeedLevel": 5,
+    "name": "box",
+    "minSpeedLevel": 0,
+    "courseSize": 2200,
+    "randomAmount": 4,
+    "difficultyLevel": 0
+  }
+}}

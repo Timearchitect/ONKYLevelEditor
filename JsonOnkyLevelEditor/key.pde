@@ -2,8 +2,11 @@ void keyPressed() {
   if (!mousePressed) {
     key= Character.toLowerCase(key);
     println(key);
+    println(int(key));
     println(keyCode);
-    if (key=='a') {
+    if (key==1) {
+      println("select All");
+      for (Obstacle o : obstacles) if (!selected.contains(o)) selected.add(o);
     }
     Obstacle temp, temp2;
     switch(key) {
@@ -84,12 +87,15 @@ void keyPressed() {
     case 'w':
       list.get(0).changeType(1);
       for (Obstacle o : selected)if (list.get(0).getClass()==o.getClass()) o.type=list.get(0).type;
-      if(selected.size()>0)record(); //record undostate
+      if (selected.size()>0)record(); //record undostate
       break;
     case 's':
       list.get(0).changeType(-1);
       for (Obstacle o : selected)if (list.get(0).getClass()==o.getClass())o.type=list.get(0).type;
-       if(selected.size()>0)record(); //record undostate
+      if (selected.size()>0)record(); //record undostate
+      break;
+      case ' ':
+      transparent=!transparent;
       break;
     case '1':
       break;
@@ -166,17 +172,13 @@ void keyPressed() {
 
       break;
     case '': // ctrl +z
-      undo();
+      undo(); // magic
       break;
     }
     // background(255);
 
     int amount=200;
     switch(keyCode) {
-   /* case 65:
-      println("select All");
-      for (Obstacle o : obstacles) if (!selected.contains(o)) selected.add(o);
-      break;*/
     case DELETE:
       deleteSelected();
       break;

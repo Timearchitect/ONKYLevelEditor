@@ -119,26 +119,7 @@ class Tire extends Obstacle {
     tooltip=new String[maxType+1];
     tooltip[0]=" slowing breakable obstacle.";
   }
-  Tire(int _x, int _y) {
-    super(_x, _y);
-    obstacleColor = color(0, 0, 0);
-    defaultHealth=3;
-    image=Tire;
-    switch(int(random(4))) {
-    case 0:
-      radianer = HALF_PI;
-      break;
-    case 1:
-      radianer = PI;
-      break;
-    case 2:
-      radianer = PI+HALF_PI;
-      break;
-    case 3:
-      radianer = PI*2;
-      break;
-    }
-  }
+
   void display() {
     pushMatrix();
     translate(x+w*0.5+random(-offset, offset), y+h*0.5+random(-offset, offset));
@@ -191,12 +172,13 @@ class PlatForm extends Obstacle {
   PlatForm() {
     super();
     image=Vines;
-    w=100;
-    h=100;
+    w=50;
+    h=50;
     defaultHealth=4;
     obstacleColor = color(255, 50, 50);
     tooltip=new String[maxType+1];
     tooltip[0]=" legacy breakable platform obstacle.";
+    stretchable=true;
   }
   PlatForm(int _x, int _y, int _w, int _h) {
     super(_x, _y);
@@ -229,12 +211,13 @@ class Lumber extends Obstacle {
   Lumber() {
     super();
     image=lumber;
-    w=100;
-    h=100;
+    w=50;
+    h=50;
     defaultHealth=4;
     obstacleColor = color(182, 69, 0);
     tooltip=new String[maxType+1];
     tooltip[0]=" standard breakable platform obstacle.";
+    stretchable=true;
   }
   Lumber(int _x, int _y, int _w, int _h) {
     super(_x, _y);
@@ -262,13 +245,14 @@ class Lumber extends Obstacle {
 class Glass extends Obstacle {
   Glass() {
     super();
-    w=100;
-    h=100;
+    w=50;
+    h=50;
     image=glass;
     obstacleColor = color(0, 150, 255, 100);
     defaultHealth=1;
     tooltip=new String[maxType+1];
     tooltip[0]=" breakable dodad.";
+    stretchable=true;
   }
   Glass(int _x, int _y, int _w, int _h) {
     super(_x, _y);
@@ -518,7 +502,6 @@ class stoneSign extends Obstacle {
     obstacleColor = color(150);
     image=rockSign;
     defaultHealth=5;
-
     w=400;
     h=200;
     underlay=true;
