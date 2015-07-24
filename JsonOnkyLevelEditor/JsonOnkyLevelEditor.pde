@@ -34,7 +34,7 @@ int difficultyLevel=0, randomLevel=4;
 
 String courseName ="testCourse";
 String courseFilePath;
-boolean transparent,saveChanged=true;
+boolean transparent, saveChanged=true;
 void setup() {
   changeAppIcon( loadImage("icon/Qwerty-icon.png") );
   changeAppTitle("QWERTY");
@@ -55,7 +55,7 @@ void setup() {
   list.add(new Sign());
   list.add(new Barrel());
   list.add(new Rock());
-  list.add(new stoneSign());
+  list.add(new StoneSign());
   list.add(new TokenPowerup());
   list.add(new LifePowerup());
   list.add(new LaserPowerup());
@@ -78,9 +78,9 @@ void draw() {
   scale(scaleFactor);
   translate(cameraCoord.x, cameraCoord.y);
   displayCourseSize();
-  if(transparent)tint(255,150);
+  if (transparent)tint(255, 150);
   for (Obstacle o : obstacles)  o.display();
-  if(transparent)noTint();
+  if (transparent)noTint();
   for (Obstacle o : selected)  o.highLight();
   /*  if (pasteing) {
    tint(255,100);
@@ -178,7 +178,7 @@ void displayCourseSize() {
 void showGrid() {
   float interval=200;
   stroke(0, 255, 0);
-  if(scaleFactor>.4)strokeWeight(2);
+  if (scaleFactor>.4)strokeWeight(2);
   else   strokeWeight(1);
 
   for (int i=0; i< (width); i+=interval*scaleFactor) {
@@ -234,6 +234,8 @@ void importJSON() {
       correspondingObstacle.text=element.getString("text"); 
       correspondingObstacle.x=element.getInt("xCoord");
       correspondingObstacle.y=element.getInt("yCoord");
+         // obstacle.setInt("xSize", int(obstacles.get(i).w));
+    //obstacle.setInt("ySize", int(obstacles.get(i).h));
       obstacles.add(correspondingObstacle);
     }
   }
@@ -241,9 +243,9 @@ void importJSON() {
 }
 
 void exportJSON() {
-   json=new JSONObject();
- course=new JSONObject();
- 
+  json=new JSONObject();
+  course=new JSONObject();
+
   json.setJSONObject(courseName, course);
 
   JSONObject courseProperties = new JSONObject();
@@ -265,6 +267,8 @@ void exportJSON() {
     obstacle.setInt("type", int(obstacles.get(i).type));
     obstacle.setInt("xCoord", int(obstacles.get(i).x));
     obstacle.setInt("yCoord", int(obstacles.get(i).y));
+    obstacle.setInt("xSize", int(obstacles.get(i).w));
+    obstacle.setInt("ySize", int(obstacles.get(i).h));
     course.setJSONObject(obstacles.get(i).getClass().getSimpleName()+i, obstacle);
     println(i+" "+ obstacles.get(i).getClass().getSimpleName()+ " obstacle is exported");
   }

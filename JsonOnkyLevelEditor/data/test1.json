@@ -1,0 +1,260 @@
+{"test1": {
+  "IronBox23": {
+    "id": 23,
+    "text": "",
+    "xCoord": 800,
+    "xSize": 200,
+    "class": "IronBox",
+    "yCoord": 400,
+    "type": 0,
+    "ySize": 200
+  },
+  "IronBox24": {
+    "id": 24,
+    "text": "",
+    "xCoord": 0,
+    "xSize": 200,
+    "class": "IronBox",
+    "yCoord": 600,
+    "type": 0,
+    "ySize": 200
+  },
+  "IronBox20": {
+    "id": 20,
+    "text": "",
+    "xCoord": 1400,
+    "xSize": 200,
+    "class": "IronBox",
+    "yCoord": 400,
+    "type": 0,
+    "ySize": 200
+  },
+  "IronBox21": {
+    "id": 21,
+    "text": "",
+    "xCoord": 1600,
+    "xSize": 200,
+    "class": "IronBox",
+    "yCoord": 400,
+    "type": 0,
+    "ySize": 200
+  },
+  "IronBox22": {
+    "id": 22,
+    "text": "",
+    "xCoord": 800,
+    "xSize": 200,
+    "class": "IronBox",
+    "yCoord": 600,
+    "type": 0,
+    "ySize": 200
+  },
+  "Box1": {
+    "id": 1,
+    "text": "",
+    "xCoord": 2000,
+    "xSize": 200,
+    "class": "Box",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Box2": {
+    "id": 2,
+    "text": "",
+    "xCoord": 0,
+    "xSize": 200,
+    "class": "Box",
+    "yCoord": 0,
+    "type": 0,
+    "ySize": 200
+  },
+  "Box0": {
+    "id": 0,
+    "text": "",
+    "xCoord": 2000,
+    "xSize": 200,
+    "class": "Box",
+    "yCoord": 0,
+    "type": 0,
+    "ySize": 200
+  },
+  "Box9": {
+    "id": 9,
+    "text": "",
+    "xCoord": 600,
+    "xSize": 200,
+    "class": "Box",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Box7": {
+    "id": 7,
+    "text": "",
+    "xCoord": 1300,
+    "xSize": 200,
+    "class": "Box",
+    "yCoord": 600,
+    "type": 0,
+    "ySize": 200
+  },
+  "Box8": {
+    "id": 8,
+    "text": "",
+    "xCoord": 200,
+    "xSize": 200,
+    "class": "Box",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Box5": {
+    "id": 5,
+    "text": "",
+    "xCoord": 400,
+    "xSize": 200,
+    "class": "Box",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Box6": {
+    "id": 6,
+    "text": "",
+    "xCoord": 0,
+    "xSize": 200,
+    "class": "Box",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "courseProperties": {
+    "maxSpeedLevel": 5,
+    "name": "test1",
+    "minSpeedLevel": 0,
+    "courseSize": 2200,
+    "randomAmount": 4,
+    "difficultyLevel": 0
+  },
+  "Box16": {
+    "id": 16,
+    "text": "",
+    "xCoord": 1600,
+    "xSize": 200,
+    "class": "Box",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Box3": {
+    "id": 3,
+    "text": "",
+    "xCoord": 1500,
+    "xSize": 200,
+    "class": "Box",
+    "yCoord": 200,
+    "type": 0,
+    "ySize": 200
+  },
+  "Box4": {
+    "id": 4,
+    "text": "",
+    "xCoord": 1800,
+    "xSize": 200,
+    "class": "Box",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Box12": {
+    "id": 12,
+    "text": "",
+    "xCoord": 800,
+    "xSize": 200,
+    "class": "Box",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Box13": {
+    "id": 13,
+    "text": "",
+    "xCoord": 1000,
+    "xSize": 200,
+    "class": "Box",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Box14": {
+    "id": 14,
+    "text": "",
+    "xCoord": 1200,
+    "xSize": 200,
+    "class": "Box",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Box15": {
+    "id": 15,
+    "text": "",
+    "xCoord": 1400,
+    "xSize": 200,
+    "class": "Box",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Box10": {
+    "id": 10,
+    "text": "",
+    "xCoord": 1500,
+    "xSize": 200,
+    "class": "Box",
+    "yCoord": 600,
+    "type": 0,
+    "ySize": 200
+  },
+  "Box11": {
+    "id": 11,
+    "text": "",
+    "xCoord": 1700,
+    "xSize": 200,
+    "class": "Box",
+    "yCoord": 600,
+    "type": 0,
+    "ySize": 200
+  },
+  "IronBox18": {
+    "id": 18,
+    "text": "",
+    "xCoord": 400,
+    "xSize": 200,
+    "class": "IronBox",
+    "yCoord": 400,
+    "type": 0,
+    "ySize": 200
+  },
+  "IronBox19": {
+    "id": 19,
+    "text": "",
+    "xCoord": 400,
+    "xSize": 200,
+    "class": "IronBox",
+    "yCoord": 200,
+    "type": 0,
+    "ySize": 200
+  },
+  "IronBox17": {
+    "id": 17,
+    "text": "",
+    "xCoord": 400,
+    "xSize": 200,
+    "class": "IronBox",
+    "yCoord": 600,
+    "type": 0,
+    "ySize": 200
+  }
+}}

@@ -498,9 +498,9 @@ class Rock extends Obstacle {
     image(image, x, y, w, h);
   }
 }
-class stoneSign extends Obstacle {
+class StoneSign extends Obstacle {
   int debrisCooldown;
-  stoneSign() {
+  StoneSign() {
     super();
     obstacleColor = color(150);
     image=rockSign;
