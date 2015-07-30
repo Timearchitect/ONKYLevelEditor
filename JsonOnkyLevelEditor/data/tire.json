@@ -1,0 +1,480 @@
+{"tire": {
+  "TokenPowerup31": {
+    "id": 31,
+    "text": "",
+    "xCoord": 1700,
+    "xSize": 100,
+    "class": "TokenPowerup",
+    "yCoord": 700,
+    "type": 0,
+    "ySize": 100
+  },
+  "Tire21": {
+    "id": 21,
+    "text": "",
+    "xCoord": 1800,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 1200,
+    "type": 0,
+    "ySize": 200
+  },
+  "Tire20": {
+    "id": 20,
+    "text": "",
+    "xCoord": 1800,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 1300,
+    "type": 0,
+    "ySize": 200
+  },
+  "Grass41": {
+    "id": 41,
+    "text": "",
+    "xCoord": 200,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Grass40": {
+    "id": 40,
+    "text": "",
+    "xCoord": 0,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Grass43": {
+    "id": 43,
+    "text": "",
+    "xCoord": 600,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Grass42": {
+    "id": 42,
+    "text": "",
+    "xCoord": 400,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Grass45": {
+    "id": 45,
+    "text": "",
+    "xCoord": 1000,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Grass44": {
+    "id": 44,
+    "text": "",
+    "xCoord": 800,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Tire29": {
+    "id": 29,
+    "text": "",
+    "xCoord": 1600,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Grass46": {
+    "id": 46,
+    "text": "",
+    "xCoord": 1200,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "TokenPowerup38": {
+    "id": 38,
+    "text": "",
+    "xCoord": 1600,
+    "xSize": 100,
+    "class": "TokenPowerup",
+    "yCoord": 700,
+    "type": 0,
+    "ySize": 100
+  },
+  "TokenPowerup35": {
+    "id": 35,
+    "text": "",
+    "xCoord": 1500,
+    "xSize": 100,
+    "class": "TokenPowerup",
+    "yCoord": 700,
+    "type": 0,
+    "ySize": 100
+  },
+  "TokenPowerup34": {
+    "id": 34,
+    "text": "",
+    "xCoord": 1400,
+    "xSize": 100,
+    "class": "TokenPowerup",
+    "yCoord": 700,
+    "type": 0,
+    "ySize": 100
+  },
+  "Tire24": {
+    "id": 24,
+    "text": "",
+    "xCoord": 1600,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 400,
+    "type": 0,
+    "ySize": 200
+  },
+  "TokenPowerup37": {
+    "id": 37,
+    "text": "",
+    "xCoord": 1300,
+    "xSize": 100,
+    "class": "TokenPowerup",
+    "yCoord": 700,
+    "type": 0,
+    "ySize": 100
+  },
+  "Tire23": {
+    "id": 23,
+    "text": "",
+    "xCoord": 1800,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 1400,
+    "type": 0,
+    "ySize": 200
+  },
+  "TokenPowerup36": {
+    "id": 36,
+    "text": "",
+    "xCoord": 1200,
+    "xSize": 100,
+    "class": "TokenPowerup",
+    "yCoord": 700,
+    "type": 0,
+    "ySize": 100
+  },
+  "Tire22": {
+    "id": 22,
+    "text": "",
+    "xCoord": 1800,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 1600,
+    "type": 0,
+    "ySize": 200
+  },
+  "IronBox25": {
+    "id": 25,
+    "text": "",
+    "xCoord": 1800,
+    "xSize": 200,
+    "class": "IronBox",
+    "yCoord": 300,
+    "type": 0,
+    "ySize": 200
+  },
+  "IronBox26": {
+    "id": 26,
+    "text": "",
+    "xCoord": 2000,
+    "xSize": 200,
+    "class": "IronBox",
+    "yCoord": 300,
+    "type": 0,
+    "ySize": 200
+  },
+  "TeleportPowerup33": {
+    "id": 33,
+    "text": "",
+    "xCoord": 1800,
+    "xSize": 100,
+    "class": "TeleportPowerup",
+    "yCoord": 600,
+    "type": 0,
+    "ySize": 100
+  },
+  "IronBox27": {
+    "id": 27,
+    "text": "",
+    "xCoord": 2000,
+    "xSize": 200,
+    "class": "IronBox",
+    "yCoord": 500,
+    "type": 0,
+    "ySize": 200
+  },
+  "Tire30": {
+    "id": 30,
+    "text": "",
+    "xCoord": 1400,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Grass39": {
+    "id": 39,
+    "text": "",
+    "xCoord": 0,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 1350,
+    "type": 0,
+    "ySize": 200
+  },
+  "Tire32": {
+    "id": 32,
+    "text": "",
+    "xCoord": 1800,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Grass13": {
+    "id": 13,
+    "text": "",
+    "xCoord": 2400,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Grass14": {
+    "id": 14,
+    "text": "",
+    "xCoord": 2200,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 850,
+    "type": 0,
+    "ySize": 200
+  },
+  "Tire10": {
+    "id": 10,
+    "text": "",
+    "xCoord": 1800,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 1000,
+    "type": 0,
+    "ySize": 200
+  },
+  "Tire8": {
+    "id": 8,
+    "text": "",
+    "xCoord": 1400,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 1200,
+    "type": 0,
+    "ySize": 200
+  },
+  "Tire12": {
+    "id": 12,
+    "text": "",
+    "xCoord": 1600,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 1500,
+    "type": 0,
+    "ySize": 200
+  },
+  "Tire9": {
+    "id": 9,
+    "text": "",
+    "xCoord": 1300,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 1700,
+    "type": 0,
+    "ySize": 200
+  },
+  "TokenPowerup28": {
+    "id": 28,
+    "text": "",
+    "xCoord": 1100,
+    "xSize": 100,
+    "class": "TokenPowerup",
+    "yCoord": 700,
+    "type": 0,
+    "ySize": 100
+  },
+  "Grass2": {
+    "id": 2,
+    "text": "",
+    "xCoord": 2000,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 900,
+    "type": 0,
+    "ySize": 200
+  },
+  "Tire16": {
+    "id": 16,
+    "text": "",
+    "xCoord": 1600,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 1600,
+    "type": 0,
+    "ySize": 200
+  },
+  "courseProperties": {
+    "maxSpeedLevel": 5,
+    "name": "tire",
+    "minSpeedLevel": 0,
+    "courseSize": 2200,
+    "randomAmount": 4,
+    "difficultyLevel": 0
+  },
+  "Tire15": {
+    "id": 15,
+    "text": "",
+    "xCoord": 1600,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 1700,
+    "type": 0,
+    "ySize": 200
+  },
+  "Tire18": {
+    "id": 18,
+    "text": "",
+    "xCoord": 1800,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 1700,
+    "type": 0,
+    "ySize": 200
+  },
+  "Tire17": {
+    "id": 17,
+    "text": "",
+    "xCoord": 1400,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 500,
+    "type": 0,
+    "ySize": 200
+  },
+  "Tire1": {
+    "id": 1,
+    "text": "",
+    "xCoord": 1400,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 1000,
+    "type": 0,
+    "ySize": 200
+  },
+  "Tire19": {
+    "id": 19,
+    "text": "",
+    "xCoord": 1400,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 400,
+    "type": 0,
+    "ySize": 200
+  },
+  "Tire0": {
+    "id": 0,
+    "text": "",
+    "xCoord": 1600,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 1000,
+    "type": 0,
+    "ySize": 200
+  },
+  "IronBox11": {
+    "id": 11,
+    "text": "",
+    "xCoord": 2000,
+    "xSize": 200,
+    "class": "IronBox",
+    "yCoord": 700,
+    "type": 0,
+    "ySize": 200
+  },
+  "Tire3": {
+    "id": 3,
+    "text": "",
+    "xCoord": 1600,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 1400,
+    "type": 0,
+    "ySize": 200
+  },
+  "Tire5": {
+    "id": 5,
+    "text": "",
+    "xCoord": 1600,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 1200,
+    "type": 0,
+    "ySize": 200
+  },
+  "Tire4": {
+    "id": 4,
+    "text": "",
+    "xCoord": 1600,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 1300,
+    "type": 0,
+    "ySize": 200
+  },
+  "Tire7": {
+    "id": 7,
+    "text": "",
+    "xCoord": 1400,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 1400,
+    "type": 0,
+    "ySize": 200
+  },
+  "Tire6": {
+    "id": 6,
+    "text": "",
+    "xCoord": 1400,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 1500,
+    "type": 0,
+    "ySize": 200
+  }
+}}

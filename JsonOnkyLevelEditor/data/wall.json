@@ -1,0 +1,180 @@
+{"wall": {
+  "Grass5": {
+    "id": 5,
+    "text": "",
+    "xCoord": 1000,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Grass4": {
+    "id": 4,
+    "text": "",
+    "xCoord": 800,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Grass3": {
+    "id": 3,
+    "text": "",
+    "xCoord": 600,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Grass2": {
+    "id": 2,
+    "text": "",
+    "xCoord": 400,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Grass1": {
+    "id": 1,
+    "text": "",
+    "xCoord": 200,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "courseProperties": {
+    "maxSpeedLevel": 5,
+    "name": "wall",
+    "minSpeedLevel": 0,
+    "courseSize": 2200,
+    "randomAmount": 4,
+    "difficultyLevel": 0
+  },
+  "Grass0": {
+    "id": 0,
+    "text": "",
+    "xCoord": 0,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Grass10": {
+    "id": 10,
+    "text": "",
+    "xCoord": 2000,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "IronBox11": {
+    "id": 11,
+    "text": "",
+    "xCoord": 1200,
+    "xSize": 200,
+    "class": "IronBox",
+    "yCoord": 300,
+    "type": 0,
+    "ySize": 200
+  },
+  "Box14": {
+    "id": 14,
+    "text": "",
+    "xCoord": 1100,
+    "xSize": 200,
+    "class": "Box",
+    "yCoord": 500,
+    "type": 0,
+    "ySize": 200
+  },
+  "Sign16": {
+    "id": 16,
+    "text": "wall",
+    "xCoord": 0,
+    "xSize": 200,
+    "class": "Sign",
+    "yCoord": 600,
+    "type": 0,
+    "ySize": 200
+  },
+  "Box15": {
+    "id": 15,
+    "text": "",
+    "xCoord": 1300,
+    "xSize": 200,
+    "class": "Box",
+    "yCoord": 500,
+    "type": 0,
+    "ySize": 200
+  },
+  "Grass6": {
+    "id": 6,
+    "text": "",
+    "xCoord": 1200,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Grass7": {
+    "id": 7,
+    "text": "",
+    "xCoord": 1400,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "IronBox12": {
+    "id": 12,
+    "text": "",
+    "xCoord": 1200,
+    "xSize": 200,
+    "class": "IronBox",
+    "yCoord": 100,
+    "type": 0,
+    "ySize": 200
+  },
+  "Grass8": {
+    "id": 8,
+    "text": "",
+    "xCoord": 1600,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "IronBox13": {
+    "id": 13,
+    "text": "",
+    "xCoord": 1200,
+    "xSize": 200,
+    "class": "IronBox",
+    "yCoord": -100,
+    "type": 0,
+    "ySize": 200
+  },
+  "Grass9": {
+    "id": 9,
+    "text": "",
+    "xCoord": 1800,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  }
+}}

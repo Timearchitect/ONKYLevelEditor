@@ -1,67 +1,93 @@
 {"downhill": {
-  "Bush19": {
+  "Grass16": {
+    "id": 16,
+    "text": "",
+    "xCoord": 1200,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 1050,
+    "type": 0,
+    "ySize": 200
+  },
+  "Grass19": {
     "id": 19,
     "text": "",
-    "xCoord": 900,
-    "class": "Bush",
+    "xCoord": 1800,
+    "xSize": 200,
+    "class": "Grass",
     "yCoord": 900,
-    "type": 0
+    "type": 0,
+    "ySize": 200
+  },
+  "Grass17": {
+    "id": 17,
+    "text": "",
+    "xCoord": 1400,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 1000,
+    "type": 0,
+    "ySize": 200
+  },
+  "Grass18": {
+    "id": 18,
+    "text": "",
+    "xCoord": 1600,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 950,
+    "type": 0,
+    "ySize": 200
   },
   "Grass5": {
     "id": 5,
     "text": "",
-    "xCoord": 1000,
+    "xCoord": 400,
+    "xSize": 200,
     "class": "Grass",
-    "yCoord": 1050,
-    "type": 0
+    "yCoord": 900,
+    "type": 0,
+    "ySize": 200
   },
   "Grass4": {
     "id": 4,
     "text": "",
-    "xCoord": 800,
+    "xCoord": 600,
+    "xSize": 200,
     "class": "Grass",
-    "yCoord": 1000,
-    "type": 0
+    "yCoord": 950,
+    "type": 0,
+    "ySize": 200
   },
   "Grass3": {
     "id": 3,
     "text": "",
-    "xCoord": 600,
+    "xCoord": 800,
+    "xSize": 200,
     "class": "Grass",
-    "yCoord": 950,
-    "type": 0
+    "yCoord": 1000,
+    "type": 0,
+    "ySize": 200
   },
   "Grass2": {
     "id": 2,
     "text": "",
-    "xCoord": 400,
+    "xCoord": 1000,
+    "xSize": 200,
     "class": "Grass",
-    "yCoord": 900,
-    "type": 0
+    "yCoord": 1050,
+    "type": 0,
+    "ySize": 200
   },
-  "Grass11": {
-    "id": 11,
-    "text": "",
-    "xCoord": 2200,
-    "class": "Grass",
-    "yCoord": 800,
-    "type": 0
-  },
-  "Grass1": {
-    "id": 1,
-    "text": "",
-    "xCoord": 200,
-    "class": "Grass",
-    "yCoord": 850,
-    "type": 0
-  },
-  "Box16": {
-    "id": 16,
+  "Box8": {
+    "id": 8,
     "text": "",
     "xCoord": 1200,
+    "xSize": 200,
     "class": "Box",
     "yCoord": 400,
-    "type": 0
+    "type": 0,
+    "ySize": 200
   },
   "courseProperties": {
     "maxSpeedLevel": 5,
@@ -75,120 +101,140 @@
     "id": 0,
     "text": "",
     "xCoord": 0,
+    "xSize": 200,
     "class": "Grass",
     "yCoord": 800,
-    "type": 0
-  },
-  "Grass10": {
-    "id": 10,
-    "text": "",
-    "xCoord": 2000,
-    "class": "Grass",
-    "yCoord": 850,
-    "type": 0
+    "type": 0,
+    "ySize": 200
   },
   "Box12": {
     "id": 12,
     "text": "",
-    "xCoord": 900,
+    "xCoord": 1300,
+    "xSize": 200,
     "class": "Box",
     "yCoord": 600,
-    "type": 0
-  },
-  "Box13": {
-    "id": 13,
-    "text": "",
-    "xCoord": 1100,
-    "class": "Box",
-    "yCoord": 600,
-    "type": 3
+    "type": 1,
+    "ySize": 200
   },
   "Bush21": {
     "id": 21,
     "text": "",
-    "xCoord": 1500,
+    "xCoord": 800,
+    "xSize": 100,
     "class": "Bush",
-    "yCoord": 900,
-    "type": 0
+    "yCoord": 1300,
+    "type": 0,
+    "ySize": 100
   },
   "Box14": {
     "id": 14,
     "text": "",
-    "xCoord": 1300,
+    "xCoord": 1000,
+    "xSize": 200,
     "class": "Box",
-    "yCoord": 600,
-    "type": 1
+    "yCoord": 400,
+    "type": 1,
+    "ySize": 200
   },
   "Bush20": {
     "id": 20,
     "text": "",
-    "xCoord": 1400,
+    "xCoord": 800,
+    "xSize": 100,
     "class": "Bush",
     "yCoord": 900,
-    "type": 0
-  },
-  "Box15": {
-    "id": 15,
-    "text": "",
-    "xCoord": 1000,
-    "class": "Box",
-    "yCoord": 400,
-    "type": 1
+    "type": 0,
+    "ySize": 100
   },
   "Grass6": {
     "id": 6,
     "text": "",
-    "xCoord": 1200,
+    "xCoord": 2200,
+    "xSize": 200,
     "class": "Grass",
-    "yCoord": 1050,
-    "type": 0
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
   },
   "Grass7": {
     "id": 7,
     "text": "",
-    "xCoord": 1400,
+    "xCoord": 200,
+    "xSize": 200,
     "class": "Grass",
-    "yCoord": 1000,
-    "type": 0
+    "yCoord": 850,
+    "type": 0,
+    "ySize": 200
   },
-  "Grass8": {
-    "id": 8,
+  "Box10": {
+    "id": 10,
     "text": "",
-    "xCoord": 1600,
-    "class": "Grass",
-    "yCoord": 950,
-    "type": 0
+    "xCoord": 900,
+    "xSize": 200,
+    "class": "Box",
+    "yCoord": 600,
+    "type": 0,
+    "ySize": 200
+  },
+  "Box11": {
+    "id": 11,
+    "text": "",
+    "xCoord": 1100,
+    "xSize": 200,
+    "class": "Box",
+    "yCoord": 600,
+    "type": 3,
+    "ySize": 200
   },
   "Grass9": {
     "id": 9,
     "text": "",
-    "xCoord": 1800,
+    "xCoord": 2000,
+    "xSize": 200,
     "class": "Grass",
-    "yCoord": 900,
-    "type": 0
+    "yCoord": 850,
+    "type": 0,
+    "ySize": 200
   },
-  "Bush18": {
-    "id": 18,
+  "Bush13": {
+    "id": 13,
     "text": "",
-    "xCoord": 800,
+    "xCoord": 1500,
+    "xSize": 100,
     "class": "Bush",
     "yCoord": 900,
-    "type": 0
+    "type": 0,
+    "ySize": 100
   },
   "Bush22": {
     "id": 22,
     "text": "",
     "xCoord": 400,
+    "xSize": 100,
     "class": "Bush",
     "yCoord": 800,
-    "type": 0
+    "type": 0,
+    "ySize": 100
   },
-  "Bush17": {
-    "id": 17,
+  "Bush15": {
+    "id": 15,
     "text": "",
-    "xCoord": 800,
+    "xCoord": 1400,
+    "xSize": 100,
     "class": "Bush",
-    "yCoord": 1300,
-    "type": 0
+    "yCoord": 900,
+    "type": 0,
+    "ySize": 100
+  },
+  "Bush1": {
+    "id": 1,
+    "text": "",
+    "xCoord": 900,
+    "xSize": 100,
+    "class": "Bush",
+    "yCoord": 900,
+    "type": 0,
+    "ySize": 100
   }
 }}
