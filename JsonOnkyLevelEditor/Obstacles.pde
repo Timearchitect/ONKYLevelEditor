@@ -255,7 +255,8 @@ class Glass extends Obstacle {
     tooltip=new String[maxType+1];
     tooltip[0]=" breakable dodad.";
     stretchable=true;
-  }
+increment= 50;  
+}
   Glass(int _x, int _y, int _w, int _h) {
     super(_x, _y);
     w=_w;
