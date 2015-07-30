@@ -112,8 +112,8 @@ void addObstacle() {
   saveChanged=false;
   // int interval=int(list.get(0).h*0.5);
   int interval=int(list.get(0).increment);
-  int xRounded = int(((mouseX/scaleFactor-cameraCoord.x) -interval*0.5) / interval ) * interval;
-  int yRounded = int(((mouseY/scaleFactor-cameraCoord.y) -interval*0.5) / interval ) * interval;
+  int xRounded = int(((mouseX/scaleFactor-cameraCoord.x) -interval*0.25) / interval ) * interval;
+  int yRounded = int(((mouseY/scaleFactor-cameraCoord.y) -interval*0.25) / interval ) * interval;
   //obstacles.add(new Box(int(mouseX/scaleFactor-cameraCoord.x),int(mouseY/scaleFactor-cameraCoord.y)));
   //  if (selected!=null) {
   list.get(0).x=xRounded;

@@ -1,0 +1,20 @@
+{"asda": {
+  "Lumber0": {
+    "id": 0,
+    "text": "",
+    "xCoord": 700,
+    "xSize": 300,
+    "class": "Lumber",
+    "yCoord": 500,
+    "type": 0,
+    "ySize": 50
+  },
+  "courseProperties": {
+    "maxSpeedLevel": 5,
+    "name": "asda",
+    "minSpeedLevel": 0,
+    "courseSize": 2200,
+    "randomAmount": 4,
+    "difficultyLevel": 0
+  }
+}}

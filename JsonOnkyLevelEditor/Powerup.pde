@@ -13,6 +13,7 @@ abstract class Powerup implements Cloneable {
     y=_y;
     w=100;
     h=100;
+  
   }
   void display() {
     if (!instant) { 
@@ -32,6 +33,7 @@ class TokenPowerup extends Obstacle {
     h=100;
     tooltip=new String[maxType+1];
     tooltip[0]=" valueble token used as ingame currency.";
+      increment=50;
   }
   void display() {
     super.display();
@@ -54,6 +56,7 @@ class InvisPowerup extends Obstacle {
     h=100;
     tooltip=new String[maxType+1];
     tooltip[0]=" grants player invinciblity.";
+      increment=50;
   }
   void display() {
     super.display();
@@ -78,6 +81,7 @@ class LaserPowerup extends Obstacle {
     h=100;
     tooltip=new String[maxType+1];
     tooltip[0]=" grants player lasershooting.";
+      increment=50;
   }
   void display() {
     super.display();
@@ -102,6 +106,7 @@ class SlowPowerup extends Obstacle {
     h=100;
     tooltip=new String[maxType+1];
     tooltip[0]=" grants player slowmotion.";
+      increment=50;
   }
   void display() {
     super.display();
@@ -126,6 +131,7 @@ class LifePowerup extends Obstacle {
     h=100;
     tooltip=new String[maxType+1];
     tooltip[0]=" grants player extra life.";
+      increment=50;
   }
   void display() {
     super.display();
@@ -152,6 +158,7 @@ class TeleportPowerup extends Obstacle {
     h=100;
     tooltip=new String[maxType+1];
     tooltip[0]=" grants player short teleport.";
+      increment=50;
   }
   void display() {
     super.display();
@@ -200,6 +207,7 @@ class RandomPowerup extends Obstacle {
     image=randomIcon;
     tooltip=new String[maxType+1];
     tooltip[0]=" spawn random powerup.";
+      increment=50;
   }
   RandomPowerup(int _x, int _y, int _time) {
     super(_x, _y);
@@ -227,6 +235,7 @@ class RandomPowerup extends Obstacle {
     default:
       // powerups.add( new TokenPowerup( _x, _y, _time));
     }
+      increment=50;
   }
   void display() {
     super.display();
@@ -251,6 +260,7 @@ class PoisonPowerdown extends Obstacle {
     h=100;
     tooltip=new String[maxType+1];
     tooltip[0]=" inflicts player with tokendrop curse.";
+      increment=50;
   }
   void display() {
     super.display();

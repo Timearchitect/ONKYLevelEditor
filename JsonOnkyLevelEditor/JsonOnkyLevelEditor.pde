@@ -234,8 +234,8 @@ void importJSON() {
       correspondingObstacle.text=element.getString("text"); 
       correspondingObstacle.x=element.getInt("xCoord");
       correspondingObstacle.y=element.getInt("yCoord");
-         // obstacle.setInt("xSize", int(obstacles.get(i).w));
-    //obstacle.setInt("ySize", int(obstacles.get(i).h));
+      correspondingObstacle.w=element.getInt("xSize");
+      correspondingObstacle.h=element.getInt("ySize");
       obstacles.add(correspondingObstacle);
     }
   }

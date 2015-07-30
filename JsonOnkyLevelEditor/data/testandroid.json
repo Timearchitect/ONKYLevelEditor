@@ -1,251 +1,143 @@
 {"testandroid": {
-  "Glass21": {
-    "id": 21,
-    "text": "",
-    "xCoord": 1200,
-    "class": "Glass",
-    "yCoord": 400,
-    "type": 0
-  },
-  "Box43": {
-    "id": 43,
-    "text": "",
-    "xCoord": 1700,
-    "class": "Box",
-    "yCoord": 0,
-    "type": 2
-  },
-  "Bush32": {
-    "id": 32,
-    "text": "",
-    "xCoord": 1500,
-    "class": "Bush",
-    "yCoord": 700,
-    "type": 0
-  },
-  "Bush31": {
-    "id": 31,
-    "text": "",
-    "xCoord": 1400,
-    "class": "Bush",
-    "yCoord": 700,
-    "type": 0
-  },
-  "Box41": {
-    "id": 41,
-    "text": "",
-    "xCoord": 1700,
-    "class": "Box",
-    "yCoord": 400,
-    "type": 0
-  },
-  "Bush30": {
-    "id": 30,
-    "text": "",
-    "xCoord": 1400,
-    "class": "Bush",
-    "yCoord": 700,
-    "type": 0
-  },
-  "Box42": {
-    "id": 42,
-    "text": "",
-    "xCoord": 1700,
-    "class": "Box",
-    "yCoord": 200,
-    "type": 3
-  },
-  "Grass6": {
-    "id": 6,
-    "text": "",
-    "xCoord": 1600,
-    "class": "Grass",
-    "yCoord": 800,
-    "type": 0
-  },
-  "Water19": {
-    "id": 19,
+  "Rock28": {
+    "id": 28,
     "text": "",
     "xCoord": 1000,
-    "class": "Water",
-    "yCoord": 800,
-    "type": 0
-  },
-  "Grass7": {
-    "id": 7,
-    "text": "",
-    "xCoord": 1800,
-    "class": "Grass",
-    "yCoord": 800,
-    "type": 0
-  },
-  "Grass8": {
-    "id": 8,
-    "text": "",
-    "xCoord": 2000,
-    "class": "Grass",
-    "yCoord": 800,
-    "type": 0
-  },
-  "Bush39": {
-    "id": 39,
-    "text": "",
-    "xCoord": 1600,
-    "class": "Bush",
-    "yCoord": 700,
-    "type": 0
-  },
-  "Snake44": {
-    "id": 44,
-    "text": "",
-    "xCoord": 600,
-    "class": "Snake",
-    "yCoord": 450,
-    "type": 0
-  },
-  "Bush38": {
-    "id": 38,
-    "text": "",
-    "xCoord": 1500,
-    "class": "Bush",
-    "yCoord": 700,
-    "type": 0
-  },
-  "Bush37": {
-    "id": 37,
-    "text": "",
-    "xCoord": 1500,
-    "class": "Bush",
-    "yCoord": 700,
-    "type": 0
-  },
-  "Bush36": {
-    "id": 36,
-    "text": "",
-    "xCoord": 1500,
-    "class": "Bush",
-    "yCoord": 700,
-    "type": 0
-  },
-  "stoneSign13": {
-    "id": 13,
-    "text": "",
-    "xCoord": 200,
-    "class": "stoneSign",
-    "yCoord": 600,
-    "type": 0
-  },
-  "Bush35": {
-    "id": 35,
-    "text": "",
-    "xCoord": 1500,
-    "class": "Bush",
-    "yCoord": 700,
-    "type": 0
-  },
-  "Block40": {
-    "id": 40,
-    "text": "",
-    "xCoord": 1700,
-    "class": "Block",
-    "yCoord": 600,
-    "type": 0
-  },
-  "Bush34": {
-    "id": 34,
-    "text": "",
-    "xCoord": 1500,
-    "class": "Bush",
-    "yCoord": 700,
-    "type": 0
-  },
-  "Bush33": {
-    "id": 33,
-    "text": "",
-    "xCoord": 1500,
-    "class": "Bush",
-    "yCoord": 700,
-    "type": 0
-  },
-  "Rock12": {
-    "id": 12,
-    "text": "",
-    "xCoord": 600,
+    "xSize": 200,
     "class": "Rock",
-    "yCoord": 600,
-    "type": 0
+    "yCoord": 400,
+    "type": 0,
+    "ySize": 200
   },
-  "Grass5": {
-    "id": 5,
+  "Lumber20": {
+    "id": 20,
     "text": "",
-    "xCoord": 1400,
-    "class": "Grass",
-    "yCoord": 800,
-    "type": 0
+    "xCoord": 550,
+    "xSize": 50,
+    "class": "Lumber",
+    "yCoord": 750,
+    "type": 0,
+    "ySize": 50
   },
-  "Grass4": {
+  "Lumber21": {
+    "id": 21,
+    "text": "",
+    "xCoord": 550,
+    "xSize": 50,
+    "class": "Lumber",
+    "yCoord": 750,
+    "type": 0,
+    "ySize": 50
+  },
+  "StoneSign29": {
+    "id": 29,
+    "text": "",
+    "xCoord": 600,
+    "xSize": 400,
+    "class": "StoneSign",
+    "yCoord": 200,
+    "type": 0,
+    "ySize": 200
+  },
+  "Lumber22": {
+    "id": 22,
+    "text": "",
+    "xCoord": 600,
+    "xSize": 300,
+    "class": "Lumber",
+    "yCoord": 750,
+    "type": 0,
+    "ySize": 50
+  },
+  "Block4": {
     "id": 4,
     "text": "",
-    "xCoord": 800,
-    "class": "Grass",
-    "yCoord": 800,
-    "type": 0
+    "xCoord": 200,
+    "xSize": 200,
+    "class": "Block",
+    "yCoord": 600,
+    "type": 0,
+    "ySize": 200
   },
-  "Sign10": {
-    "id": 10,
+  "Snake24": {
+    "id": 24,
     "text": "",
-    "xCoord": -100,
-    "class": "Sign",
-    "yCoord": 1200,
-    "type": 0
+    "xCoord": 650,
+    "xSize": 164,
+    "class": "Snake",
+    "yCoord": 950,
+    "type": 0,
+    "ySize": 70
   },
-  "Grass3": {
-    "id": 3,
-    "text": "",
-    "xCoord": 600,
-    "class": "Grass",
-    "yCoord": 800,
-    "type": 0
-  },
-  "Grass2": {
-    "id": 2,
+  "Snake23": {
+    "id": 23,
     "text": "",
     "xCoord": 400,
-    "class": "Grass",
-    "yCoord": 800,
-    "type": 0
+    "xSize": 164,
+    "class": "Snake",
+    "yCoord": 850,
+    "type": 0,
+    "ySize": 70
   },
-  "Sign11": {
-    "id": 11,
-    "text": "",
-    "xCoord": 0,
-    "class": "Sign",
-    "yCoord": 600,
-    "type": 0
-  },
-  "Grass1": {
-    "id": 1,
-    "text": "",
-    "xCoord": 200,
-    "class": "Grass",
-    "yCoord": 800,
-    "type": 0
-  },
-  "Barrel9": {
-    "id": 9,
-    "text": "",
-    "xCoord": 2000,
-    "class": "Barrel",
-    "yCoord": 600,
-    "type": 0
-  },
-  "Grass0": {
+  "Box0": {
     "id": 0,
     "text": "",
     "xCoord": 0,
+    "xSize": 200,
+    "class": "Box",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Lumber10": {
+    "id": 10,
+    "text": "",
+    "xCoord": 550,
+    "xSize": 50,
+    "class": "Lumber",
+    "yCoord": 750,
+    "type": 0,
+    "ySize": 50
+  },
+  "Lumber11": {
+    "id": 11,
+    "text": "",
+    "xCoord": 550,
+    "xSize": 50,
+    "class": "Lumber",
+    "yCoord": 750,
+    "type": 0,
+    "ySize": 50
+  },
+  "Grass31": {
+    "id": 31,
+    "text": "",
+    "xCoord": 1200,
+    "xSize": 200,
     "class": "Grass",
     "yCoord": 800,
-    "type": 0
+    "type": 0,
+    "ySize": 200
+  },
+  "Glass3": {
+    "id": 3,
+    "text": "",
+    "xCoord": 200,
+    "xSize": 50,
+    "class": "Glass",
+    "yCoord": 200,
+    "type": 0,
+    "ySize": 250
+  },
+  "Lumber14": {
+    "id": 14,
+    "text": "",
+    "xCoord": 550,
+    "xSize": 50,
+    "class": "Lumber",
+    "yCoord": 750,
+    "type": 0,
+    "ySize": 50
   },
   "courseProperties": {
     "maxSpeedLevel": 5,
@@ -255,124 +147,184 @@
     "randomAmount": 4,
     "difficultyLevel": 0
   },
+  "Lumber15": {
+    "id": 15,
+    "text": "",
+    "xCoord": 550,
+    "xSize": 50,
+    "class": "Lumber",
+    "yCoord": 750,
+    "type": 0,
+    "ySize": 50
+  },
+  "Lumber12": {
+    "id": 12,
+    "text": "",
+    "xCoord": 550,
+    "xSize": 50,
+    "class": "Lumber",
+    "yCoord": 750,
+    "type": 0,
+    "ySize": 50
+  },
+  "Glass30": {
+    "id": 30,
+    "text": "",
+    "xCoord": 500,
+    "xSize": 300,
+    "class": "Glass",
+    "yCoord": 400,
+    "type": 0,
+    "ySize": 50
+  },
+  "Lumber13": {
+    "id": 13,
+    "text": "",
+    "xCoord": 550,
+    "xSize": 50,
+    "class": "Lumber",
+    "yCoord": 750,
+    "type": 0,
+    "ySize": 50
+  },
+  "Tire1": {
+    "id": 1,
+    "text": "",
+    "xCoord": 0,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 600,
+    "type": 0,
+    "ySize": 200
+  },
+  "Lumber19": {
+    "id": 19,
+    "text": "",
+    "xCoord": 550,
+    "xSize": 50,
+    "class": "Lumber",
+    "yCoord": 750,
+    "type": 0,
+    "ySize": 50
+  },
   "Lumber18": {
     "id": 18,
     "text": "",
-    "xCoord": 1100,
+    "xCoord": 550,
+    "xSize": 50,
     "class": "Lumber",
-    "yCoord": 250,
-    "type": 0
+    "yCoord": 750,
+    "type": 0,
+    "ySize": 50
+  },
+  "Sign26": {
+    "id": 26,
+    "text": "ghfg",
+    "xCoord": 1000,
+    "xSize": 200,
+    "class": "Sign",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
   },
   "Lumber17": {
     "id": 17,
     "text": "",
-    "xCoord": 1100,
+    "xCoord": 550,
+    "xSize": 50,
     "class": "Lumber",
-    "yCoord": 250,
-    "type": 0
+    "yCoord": 750,
+    "type": 0,
+    "ySize": 50
   },
-  "IronBox14": {
-    "id": 14,
-    "text": "",
-    "xCoord": 800,
-    "class": "IronBox",
-    "yCoord": 600,
-    "type": 0
-  },
-  "IronBox15": {
-    "id": 15,
-    "text": "",
-    "xCoord": 800,
-    "class": "IronBox",
-    "yCoord": 400,
-    "type": 2
-  },
-  "Bush27": {
-    "id": 27,
-    "text": "",
-    "xCoord": 1400,
-    "class": "Bush",
-    "yCoord": 700,
-    "type": 0
-  },
-  "Bush26": {
-    "id": 26,
-    "text": "",
-    "xCoord": 1400,
-    "class": "Bush",
-    "yCoord": 700,
-    "type": 0
-  },
-  "Bush29": {
-    "id": 29,
-    "text": "",
-    "xCoord": 1400,
-    "class": "Bush",
-    "yCoord": 700,
-    "type": 0
-  },
-  "IronBox16": {
-    "id": 16,
-    "text": "",
-    "xCoord": 800,
-    "class": "IronBox",
-    "yCoord": 200,
-    "type": 1
-  },
-  "Bush28": {
-    "id": 28,
-    "text": "",
-    "xCoord": 1400,
-    "class": "Bush",
-    "yCoord": 700,
-    "type": 0
-  },
-  "Bush23": {
-    "id": 23,
-    "text": "",
-    "xCoord": 1400,
-    "class": "Bush",
-    "yCoord": 700,
-    "type": 0
-  },
-  "Water20": {
-    "id": 20,
-    "text": "",
-    "xCoord": 1200,
-    "class": "Water",
-    "yCoord": 800,
-    "type": 0
-  },
-  "Tire45": {
-    "id": 45,
-    "text": "",
-    "xCoord": 1000,
-    "class": "Tire",
-    "yCoord": 500,
-    "type": 0
-  },
-  "Bush22": {
-    "id": 22,
-    "text": "",
-    "xCoord": 1400,
-    "class": "Bush",
-    "yCoord": 700,
-    "type": 0
-  },
-  "Bush25": {
+  "Water25": {
     "id": 25,
     "text": "",
-    "xCoord": 1400,
-    "class": "Bush",
-    "yCoord": 700,
-    "type": 0
+    "xCoord": 800,
+    "xSize": 200,
+    "class": "Water",
+    "yCoord": 900,
+    "type": 0,
+    "ySize": 200
   },
-  "Bush24": {
-    "id": 24,
+  "Lumber16": {
+    "id": 16,
     "text": "",
-    "xCoord": 1400,
+    "xCoord": 550,
+    "xSize": 50,
+    "class": "Lumber",
+    "yCoord": 750,
+    "type": 0,
+    "ySize": 50
+  },
+  "Lumber8": {
+    "id": 8,
+    "text": "",
+    "xCoord": 400,
+    "xSize": 50,
+    "class": "Lumber",
+    "yCoord": 350,
+    "type": 0,
+    "ySize": 400
+  },
+  "Lumber9": {
+    "id": 9,
+    "text": "",
+    "xCoord": 550,
+    "xSize": 50,
+    "class": "Lumber",
+    "yCoord": 750,
+    "type": 0,
+    "ySize": 50
+  },
+  "IronBox2": {
+    "id": 2,
+    "text": "",
+    "xCoord": 0,
+    "xSize": 200,
+    "class": "IronBox",
+    "yCoord": 400,
+    "type": 0,
+    "ySize": 200
+  },
+  "Bush6": {
+    "id": 6,
+    "text": "",
+    "xCoord": 200,
+    "xSize": 100,
     "class": "Bush",
-    "yCoord": 700,
-    "type": 0
+    "yCoord": 900,
+    "type": 0,
+    "ySize": 100
+  },
+  "Bush7": {
+    "id": 7,
+    "text": "",
+    "xCoord": 300,
+    "xSize": 100,
+    "class": "Bush",
+    "yCoord": 900,
+    "type": 0,
+    "ySize": 100
+  },
+  "Bush5": {
+    "id": 5,
+    "text": "",
+    "xCoord": 200,
+    "xSize": 100,
+    "class": "Bush",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 100
+  },
+  "Barrel27": {
+    "id": 27,
+    "text": "",
+    "xCoord": 1000,
+    "xSize": 200,
+    "class": "Barrel",
+    "yCoord": 600,
+    "type": 0,
+    "ySize": 200
   }
 }}
