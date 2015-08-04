@@ -1,0 +1,184 @@
+{"dfsf": {
+  "Snake8": {
+    "id": 8,
+    "xVel": -13,
+    "xCoord": 1650,
+    "xSize": 164,
+    "class": "Snake",
+    "yCoord": 650,
+    "yVel": -1,
+    "type": 0,
+    "ySize": 70
+  },
+  "Snake9": {
+    "id": 9,
+    "xCoord": 1850,
+    "xSize": 164,
+    "class": "Snake",
+    "yCoord": 200,
+    "type": 0,
+    "ySize": 70
+  },
+  "Block15": {
+    "id": 15,
+    "xVel": 7,
+    "xCoord": 0,
+    "xSize": 200,
+    "class": "Block",
+    "yCoord": 200,
+    "yVel": 7,
+    "type": 0,
+    "ySize": 200
+  },
+  "Block14": {
+    "id": 14,
+    "xVel": -42,
+    "xCoord": 400,
+    "xSize": 200,
+    "class": "Block",
+    "yCoord": 0,
+    "yVel": 66,
+    "type": 0,
+    "ySize": 200
+  },
+  "Snake7": {
+    "id": 7,
+    "xVel": -13,
+    "xCoord": 1650,
+    "xSize": 164,
+    "class": "Snake",
+    "yCoord": 750,
+    "yVel": -11,
+    "type": 0,
+    "ySize": 70
+  },
+  "courseProperties": {
+    "maxSpeedLevel": 5,
+    "name": "dfsf",
+    "minSpeedLevel": 0,
+    "courseSize": 2200,
+    "randomAmount": 4,
+    "difficultyLevel": 0
+  },
+  "Snake10": {
+    "id": 10,
+    "xVel": -13,
+    "xCoord": 550,
+    "xSize": 164,
+    "class": "Snake",
+    "yCoord": 750,
+    "yVel": -11,
+    "type": 0,
+    "ySize": 70
+  },
+  "Snake0": {
+    "id": 0,
+    "xVel": 7,
+    "xCoord": 1150,
+    "xSize": 164,
+    "class": "Snake",
+    "yCoord": 500,
+    "yVel": -3,
+    "type": 0,
+    "ySize": 70
+  },
+  "Barrel6": {
+    "id": 6,
+    "xVel": -31,
+    "xCoord": 2200,
+    "xSize": 200,
+    "class": "Barrel",
+    "yCoord": 400,
+    "yVel": 2,
+    "type": 0,
+    "ySize": 200
+  },
+  "Block3": {
+    "id": 3,
+    "xVel": -112,
+    "xCoord": 1200,
+    "xSize": 200,
+    "class": "Block",
+    "yCoord": 0,
+    "yVel": 27,
+    "type": 0,
+    "ySize": 200
+  },
+  "Barrel5": {
+    "id": 5,
+    "xVel": -20,
+    "xCoord": 800,
+    "xSize": 200,
+    "class": "Barrel",
+    "yCoord": 0,
+    "yVel": 0,
+    "type": 0,
+    "ySize": 200
+  },
+  "Block4": {
+    "id": 4,
+    "xVel": -8,
+    "xCoord": 1500,
+    "xSize": 200,
+    "class": "Block",
+    "yCoord": 200,
+    "yVel": -4,
+    "type": 0,
+    "ySize": 200
+  },
+  "Block1": {
+    "id": 1,
+    "xVel": 9,
+    "xCoord": 400,
+    "xSize": 200,
+    "class": "Block",
+    "yCoord": 400,
+    "yVel": 0,
+    "type": 0,
+    "ySize": 200
+  },
+  "Block2": {
+    "id": 2,
+    "xVel": -72,
+    "xCoord": 800,
+    "xSize": 200,
+    "class": "Block",
+    "yCoord": 200,
+    "yVel": 7,
+    "type": 0,
+    "ySize": 200
+  },
+  "Snake12": {
+    "id": 12,
+    "xVel": -13,
+    "xCoord": 950,
+    "xSize": 164,
+    "class": "Snake",
+    "yCoord": 650,
+    "yVel": -11,
+    "type": 0,
+    "ySize": 70
+  },
+  "Snake11": {
+    "id": 11,
+    "xVel": -13,
+    "xCoord": 550,
+    "xSize": 164,
+    "class": "Snake",
+    "yCoord": 650,
+    "yVel": -1,
+    "type": 0,
+    "ySize": 70
+  },
+  "Snake13": {
+    "id": 13,
+    "xVel": -13,
+    "xCoord": 950,
+    "xSize": 164,
+    "class": "Snake",
+    "yCoord": 550,
+    "yVel": -1,
+    "type": 0,
+    "ySize": 70
+  }
+}}

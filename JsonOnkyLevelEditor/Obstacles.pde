@@ -459,6 +459,11 @@ class Snake extends Obstacle {
     else if (count%30<20)image(animSprite[2], x, y-40, w, h);
     else image(animSprite[1], x, y-20, w, h);
   }
+    void direction() {
+    stroke(255, 0, 0);
+    strokeWeight(3);
+    line(x+w*0.5, y+h*0.5, x+w*0.5+vx/directionScale, y+h*0.5);
+  }
 }
 
 class Barrel extends Obstacle {

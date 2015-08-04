@@ -121,7 +121,6 @@ void draw() {
     translate(mouseX/scaleFactor, mouseY/scaleFactor);
 
     //translate(cameraCoord.x*scaleFactor+mouseX/scaleFactor, cameraCoord.y*scaleFactor+mouseY/scaleFactor);
-
     tint(255, 100);
     for (Obstacle o : clipBoard)
       o.display();
@@ -186,7 +185,6 @@ void showGrid() {
   stroke(0, 255, 0);
   if (scaleFactor>.4)strokeWeight(2);
   else   strokeWeight(1);
-
   for (int i=0; i< (width); i+=interval*scaleFactor) {
     float xLine=i+((cameraCoord.x)%interval)*scaleFactor;
     line(xLine, 0, xLine, height);
@@ -239,8 +237,8 @@ void importJSON() {
       correspondingObstacle.type=element.getInt("type"); 
       correspondingObstacle.x=element.getInt("xCoord");
       correspondingObstacle.y=element.getInt("yCoord");
-      correspondingObstacle.w=element.getInt("xSize");
-      correspondingObstacle.h=element.getInt("ySize");
+      try {correspondingObstacle.w=element.getInt("xSize");} catch (Exception e) { }
+      try {correspondingObstacle.h=element.getInt("ySize");} catch (Exception e) { }
       try {correspondingObstacle.text=element.getString("text");} catch (Exception e) { }
       try {correspondingObstacle.vx=element.getInt("xVel");} catch (Exception e) { }
       try {correspondingObstacle.vy=element.getInt("yVel");} catch (Exception e) { }

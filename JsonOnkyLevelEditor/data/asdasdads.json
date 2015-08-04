@@ -1,323 +1,219 @@
 {"asdasdads": {
-  "Glass40": {
-    "id": 40,
-    "text": "",
-    "xCoord": 600,
-    "class": "Glass",
-    "yCoord": 650,
-    "type": 0
-  },
   "Glass22": {
     "id": 22,
-    "text": "",
-    "xCoord": 1000,
+    "xCoord": 1100,
+    "xSize": 50,
     "class": "Glass",
-    "yCoord": 700,
-    "type": 0
-  },
-  "Glass41": {
-    "id": 41,
-    "text": "",
-    "xCoord": 350,
-    "class": "Glass",
-    "yCoord": 600,
-    "type": 0
+    "yCoord": 300,
+    "type": 0,
+    "ySize": 50
   },
   "Glass23": {
     "id": 23,
-    "text": "",
-    "xCoord": 1050,
+    "xCoord": 900,
+    "xSize": 450,
     "class": "Glass",
     "yCoord": 750,
-    "type": 0
-  },
-  "Glass42": {
-    "id": 42,
-    "text": "",
-    "xCoord": 200,
-    "class": "Glass",
-    "yCoord": 600,
-    "type": 0
+    "type": 0,
+    "ySize": 50
   },
   "Glass24": {
     "id": 24,
-    "text": "",
-    "xCoord": 1100,
+    "xCoord": 1150,
+    "xSize": 50,
     "class": "Glass",
-    "yCoord": 800,
-    "type": 0
-  },
-  "Glass43": {
-    "id": 43,
-    "text": "",
-    "xCoord": 250,
-    "class": "Glass",
-    "yCoord": 650,
-    "type": 0
+    "yCoord": 350,
+    "type": 0,
+    "ySize": 350
   },
   "Glass25": {
     "id": 25,
-    "text": "",
-    "xCoord": 1150,
+    "xCoord": 1350,
+    "xSize": 100,
     "class": "Glass",
-    "yCoord": 800,
-    "type": 0
-  },
-  "Glass44": {
-    "id": 44,
-    "text": "",
-    "xCoord": 300,
-    "class": "Glass",
-    "yCoord": 700,
-    "type": 0
-  },
-  "Glass45": {
-    "id": 45,
-    "text": "",
-    "xCoord": 350,
-    "class": "Glass",
-    "yCoord": 700,
-    "type": 0
-  },
-  "Glass46": {
-    "id": 46,
-    "text": "",
-    "xCoord": 400,
-    "class": "Glass",
-    "yCoord": 750,
-    "type": 0
+    "yCoord": 300,
+    "type": 0,
+    "ySize": 250
   },
   "Glass20": {
     "id": 20,
-    "text": "",
-    "xCoord": 900,
+    "xCoord": 1200,
+    "xSize": 50,
     "class": "Glass",
-    "yCoord": 650,
-    "type": 0
+    "yCoord": 300,
+    "type": 0,
+    "ySize": 50
   },
   "Glass21": {
     "id": 21,
-    "text": "",
-    "xCoord": 950,
+    "xCoord": 1150,
+    "xSize": 50,
     "class": "Glass",
-    "yCoord": 700,
-    "type": 0
-  },
-  "Glass38": {
-    "id": 38,
-    "text": "",
-    "xCoord": 650,
-    "class": "Glass",
-    "yCoord": 750,
-    "type": 0
-  },
-  "Glass37": {
-    "id": 37,
-    "text": "",
-    "xCoord": 700,
-    "class": "Glass",
-    "yCoord": 750,
-    "type": 0
+    "yCoord": 300,
+    "type": 0,
+    "ySize": 50
   },
   "Glass19": {
     "id": 19,
-    "text": "",
-    "xCoord": 850,
+    "xCoord": 1250,
+    "xSize": 50,
     "class": "Glass",
-    "yCoord": 600,
-    "type": 0
-  },
-  "Glass39": {
-    "id": 39,
-    "text": "",
-    "xCoord": 650,
-    "class": "Glass",
-    "yCoord": 700,
-    "type": 0
+    "yCoord": 350,
+    "type": 0,
+    "ySize": 50
   },
   "Glass16": {
     "id": 16,
-    "text": "",
-    "xCoord": 750,
+    "xCoord": 950,
+    "xSize": 50,
     "class": "Glass",
-    "yCoord": 450,
-    "type": 0
+    "yCoord": 400,
+    "type": 0,
+    "ySize": 50
   },
   "Glass15": {
     "id": 15,
-    "text": "",
-    "xCoord": 700,
+    "xCoord": 800,
+    "xSize": 50,
     "class": "Glass",
-    "yCoord": 350,
-    "type": 0
+    "yCoord": 400,
+    "type": 0,
+    "ySize": 50
   },
   "Glass18": {
     "id": 18,
-    "text": "",
-    "xCoord": 800,
+    "xCoord": 1000,
+    "xSize": 50,
     "class": "Glass",
-    "yCoord": 550,
-    "type": 0
+    "yCoord": 400,
+    "type": 0,
+    "ySize": 50
   },
   "Glass17": {
     "id": 17,
-    "text": "",
-    "xCoord": 800,
+    "xCoord": 850,
+    "xSize": 50,
     "class": "Glass",
-    "yCoord": 500,
-    "type": 0
+    "yCoord": 400,
+    "type": 0,
+    "ySize": 50
   },
   "Glass10": {
     "id": 10,
-    "text": "",
-    "xCoord": 900,
+    "xCoord": 1100,
+    "xSize": 50,
     "class": "Glass",
     "yCoord": 400,
-    "type": 0
+    "type": 0,
+    "ySize": 50
   },
   "Glass7": {
     "id": 7,
-    "text": "",
-    "xCoord": 1050,
+    "xCoord": 800,
+    "xSize": 50,
     "class": "Glass",
-    "yCoord": 400,
-    "type": 0
+    "yCoord": 500,
+    "type": 0,
+    "ySize": 50
   },
   "Glass6": {
     "id": 6,
-    "text": "",
-    "xCoord": 1100,
+    "xCoord": 800,
+    "xSize": 50,
     "class": "Glass",
-    "yCoord": 400,
-    "type": 0
+    "yCoord": 550,
+    "type": 0,
+    "ySize": 50
   },
   "Glass5": {
     "id": 5,
-    "text": "",
-    "xCoord": 1150,
+    "xCoord": 700,
+    "xSize": 50,
     "class": "Glass",
-    "yCoord": 400,
-    "type": 0
+    "yCoord": 350,
+    "type": 0,
+    "ySize": 50
   },
   "Glass4": {
     "id": 4,
-    "text": "",
-    "xCoord": 1200,
+    "xCoord": 750,
+    "xSize": 50,
     "class": "Glass",
-    "yCoord": 400,
-    "type": 0
+    "yCoord": 450,
+    "type": 0,
+    "ySize": 50
   },
   "Glass14": {
     "id": 14,
-    "text": "",
-    "xCoord": 700,
+    "xCoord": 750,
+    "xSize": 50,
     "class": "Glass",
     "yCoord": 400,
-    "type": 0
+    "type": 0,
+    "ySize": 50
   },
   "Glass13": {
     "id": 13,
-    "text": "",
-    "xCoord": 750,
+    "xCoord": 700,
+    "xSize": 50,
     "class": "Glass",
     "yCoord": 400,
-    "type": 0
+    "type": 0,
+    "ySize": 50
   },
   "Glass9": {
     "id": 9,
-    "text": "",
-    "xCoord": 950,
+    "xCoord": 1050,
+    "xSize": 50,
     "class": "Glass",
     "yCoord": 400,
-    "type": 0
+    "type": 0,
+    "ySize": 50
   },
   "Glass12": {
     "id": 12,
-    "text": "",
-    "xCoord": 800,
+    "xCoord": 1200,
+    "xSize": 50,
     "class": "Glass",
     "yCoord": 400,
-    "type": 0
+    "type": 0,
+    "ySize": 50
   },
   "Glass8": {
     "id": 8,
-    "text": "",
-    "xCoord": 1000,
+    "xCoord": 900,
+    "xSize": 50,
     "class": "Glass",
     "yCoord": 400,
-    "type": 0
+    "type": 0,
+    "ySize": 50
   },
   "Glass11": {
     "id": 11,
-    "text": "",
-    "xCoord": 850,
+    "xCoord": 1150,
+    "xSize": 50,
     "class": "Glass",
     "yCoord": 400,
-    "type": 0
-  },
-  "Glass35": {
-    "id": 35,
-    "text": "",
-    "xCoord": 800,
-    "class": "Glass",
-    "yCoord": 700,
-    "type": 0
-  },
-  "Glass36": {
-    "id": 36,
-    "text": "",
-    "xCoord": 750,
-    "class": "Glass",
-    "yCoord": 700,
-    "type": 0
-  },
-  "Glass33": {
-    "id": 33,
-    "text": "",
-    "xCoord": 1100,
-    "class": "Glass",
-    "yCoord": 650,
-    "type": 0
-  },
-  "Glass34": {
-    "id": 34,
-    "text": "",
-    "xCoord": 850,
-    "class": "Glass",
-    "yCoord": 650,
-    "type": 0
-  },
-  "Glass31": {
-    "id": 31,
-    "text": "",
-    "xCoord": 1200,
-    "class": "Glass",
-    "yCoord": 700,
-    "type": 0
+    "type": 0,
+    "ySize": 50
   },
   "Glass3": {
     "id": 3,
-    "text": "",
-    "xCoord": 1250,
+    "xCoord": 850,
+    "xSize": 50,
     "class": "Glass",
-    "yCoord": 350,
-    "type": 0
-  },
-  "Glass32": {
-    "id": 32,
-    "text": "",
-    "xCoord": 1150,
-    "class": "Glass",
-    "yCoord": 650,
-    "type": 0
+    "yCoord": 600,
+    "type": 0,
+    "ySize": 50
   },
   "Glass2": {
     "id": 2,
-    "text": "",
-    "xCoord": 1200,
+    "xCoord": 250,
+    "xSize": 50,
     "class": "Glass",
-    "yCoord": 300,
-    "type": 0
+    "yCoord": 650,
+    "type": 0,
+    "ySize": 50
   },
   "courseProperties": {
     "maxSpeedLevel": 5,
@@ -329,58 +225,65 @@
   },
   "Glass1": {
     "id": 1,
-    "text": "",
-    "xCoord": 1150,
+    "xCoord": 200,
+    "xSize": 50,
     "class": "Glass",
-    "yCoord": 300,
-    "type": 0
+    "yCoord": 600,
+    "type": 0,
+    "ySize": 50
   },
   "Glass30": {
     "id": 30,
-    "text": "",
-    "xCoord": 1250,
+    "xCoord": 850,
+    "xSize": 50,
     "class": "Glass",
-    "yCoord": 700,
-    "type": 0
+    "yCoord": 0,
+    "type": 0,
+    "ySize": 200
   },
   "Glass0": {
     "id": 0,
-    "text": "",
-    "xCoord": 1100,
+    "xCoord": 600,
+    "xSize": 50,
     "class": "Glass",
-    "yCoord": 300,
-    "type": 0
+    "yCoord": 650,
+    "type": 0,
+    "ySize": 50
   },
   "Glass29": {
     "id": 29,
-    "text": "",
-    "xCoord": 1300,
+    "xCoord": 800,
+    "xSize": 50,
     "class": "Glass",
-    "yCoord": 750,
-    "type": 0
+    "yCoord": 0,
+    "type": 0,
+    "ySize": 200
   },
   "Glass28": {
     "id": 28,
-    "text": "",
-    "xCoord": 1300,
+    "xCoord": 1000,
+    "xSize": 150,
     "class": "Glass",
-    "yCoord": 800,
-    "type": 0
+    "yCoord": 100,
+    "type": 0,
+    "ySize": 50
   },
   "Glass27": {
     "id": 27,
-    "text": "",
-    "xCoord": 1250,
+    "xCoord": 1000,
+    "xSize": 200,
     "class": "Glass",
-    "yCoord": 800,
-    "type": 0
+    "yCoord": 150,
+    "type": 0,
+    "ySize": 50
   },
   "Glass26": {
     "id": 26,
-    "text": "",
     "xCoord": 1200,
+    "xSize": 200,
     "class": "Glass",
-    "yCoord": 800,
-    "type": 0
+    "yCoord": 150,
+    "type": 0,
+    "ySize": 100
   }
 }}

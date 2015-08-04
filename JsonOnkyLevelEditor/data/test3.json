@@ -1,0 +1,80 @@
+{"test3": {
+  "Barrel3": {
+    "id": 3,
+    "xVel": -2,
+    "xCoord": 1500,
+    "xSize": 200,
+    "class": "Barrel",
+    "yCoord": 400,
+    "type": 0,
+    "ySize": 200
+  },
+  "Block0": {
+    "id": 0,
+    "xVel": -33,
+    "xCoord": 600,
+    "xSize": 200,
+    "class": "Block",
+    "yCoord": 400,
+    "yVel": -30,
+    "type": 0,
+    "ySize": 200
+  },
+  "StoneSign4": {
+    "id": 4,
+    "text": "adsfasfa",
+    "xCoord": 400,
+    "xSize": 400,
+    "class": "StoneSign",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Sign5": {
+    "id": 5,
+    "text": "hej",
+    "xCoord": 1200,
+    "xSize": 200,
+    "class": "Sign",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Snake2": {
+    "id": 2,
+    "xVel": -71,
+    "xCoord": 1000,
+    "xSize": 150,
+    "class": "Snake",
+    "yCoord": 500,
+    "yVel": -32,
+    "type": 0,
+    "ySize": 50
+  },
+  "Box6": {
+    "id": 6,
+    "xCoord": 0,
+    "xSize": 200,
+    "class": "Box",
+    "yCoord": 0,
+    "type": 0,
+    "ySize": 200
+  },
+  "courseProperties": {
+    "maxSpeedLevel": 5,
+    "name": "test3",
+    "minSpeedLevel": 0,
+    "courseSize": 2200,
+    "randomAmount": 4,
+    "difficultyLevel": 0
+  },
+  "Snake1": {
+    "id": 1,
+    "xCoord": 400,
+    "xSize": 150,
+    "class": "Snake",
+    "yCoord": 1150,
+    "type": 0,
+    "ySize": 50
+  }
+}}
