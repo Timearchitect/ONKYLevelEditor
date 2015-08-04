@@ -121,9 +121,14 @@ void addObstacle() {
 
   // int xRounded = int(((mouseX/scaleFactor-cameraCoord.x) -interval*0.25) / interval ) * interval;
   // int yRounded = int(((mouseY/scaleFactor-cameraCoord.y) -interval*0.25) / interval ) * interval;
-  int xRounded=interval * int((mouseX/scaleFactor-cameraCoord.x-interval*0.5) / interval + 0.5);
-  int yRounded=interval * int((mouseY/scaleFactor-cameraCoord.y-interval*0.5) / interval + 0.5);
-
+  // int xRounded=interval * int((mouseX/scaleFactor-cameraCoord.x-interval*0.5) / interval + 0.5);
+ // int yRounded=interval * int((mouseY/scaleFactor-cameraCoord.y-interval*0.5) / interval + 0.5);
+ // int xRounded=int(interval * int((mouseX/scaleFactor-cameraCoord.x-interval*0.5) / interval + 0.5)-interval*0.5);
+  //int yRounded=int(interval * int((mouseY/scaleFactor-cameraCoord.y-interval*0.5) / interval + 0.5)-interval*0.5);
+ //  int xRounded=interval * int((mouseX/scaleFactor-cameraCoord.x-interval*1) / interval + 0.5);
+  //int yRounded=interval * int((mouseY/scaleFactor-cameraCoord.y-interval*1) / interval + 0.5);
+   int xRounded=interval * int((mouseX/scaleFactor-cameraCoord.x-list.get(0).w*0.5) / interval + 0.5);
+  int yRounded=interval * int((mouseY/scaleFactor-cameraCoord.y-list.get(0).h*0.5) / interval + 0.5);
   list.get(0).x=xRounded;
   list.get(0).y=yRounded;
   if (obstacles.size()>0) {
@@ -192,11 +197,10 @@ void  direct() {
 
 
 void GridInline() {
-  int interval=50;
-  focus.x = round((focus.x -interval*0.25) / interval ) * interval;
-  focus.y = round((focus.y -interval*0.25) / interval ) * interval;
-  focus.w = round((focus.w -interval*0.25) / interval ) * interval;
-  focus.h = round((focus.h -interval*0.25) / interval ) * interval;
+  focus.x = round((focus.x) / focus.increment ) * focus.increment;
+  focus.y = round((focus.y) / focus.increment ) * focus.increment;
+  focus.w = round((focus.w) / focus.increment ) * focus.increment;
+  focus.h = round((focus.h) / focus.increment ) * focus.increment;
 } 
 void paste() {
   for (Obstacle o : clipBoard) {

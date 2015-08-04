@@ -1,0 +1,65 @@
+{"blocks": {
+  "Block3": {
+    "id": 3,
+    "xVel": -69,
+    "xCoord": 800,
+    "xSize": 200,
+    "class": "Block",
+    "yCoord": 0,
+    "yVel": 10,
+    "type": 0,
+    "ySize": 200
+  },
+  "Block4": {
+    "id": 4,
+    "xVel": -69,
+    "xCoord": 800,
+    "xSize": 200,
+    "class": "Block",
+    "yCoord": 200,
+    "yVel": -9,
+    "type": 0,
+    "ySize": 200
+  },
+  "Block1": {
+    "id": 1,
+    "xVel": -49,
+    "xCoord": 600,
+    "xSize": 200,
+    "class": "Block",
+    "yCoord": 200,
+    "yVel": -9,
+    "type": 0,
+    "ySize": 200
+  },
+  "Block2": {
+    "id": 2,
+    "xVel": -49,
+    "xCoord": 600,
+    "xSize": 200,
+    "class": "Block",
+    "yCoord": 0,
+    "yVel": 10,
+    "type": 0,
+    "ySize": 200
+  },
+  "Block0": {
+    "id": 0,
+    "xVel": -34,
+    "xCoord": 600,
+    "xSize": 200,
+    "class": "Block",
+    "yCoord": 400,
+    "yVel": 4,
+    "type": 0,
+    "ySize": 200
+  },
+  "courseProperties": {
+    "maxSpeedLevel": 5,
+    "name": "blocks",
+    "minSpeedLevel": 0,
+    "courseSize": 2200,
+    "randomAmount": 4,
+    "difficultyLevel": 0
+  }
+}}

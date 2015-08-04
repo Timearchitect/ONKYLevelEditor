@@ -229,11 +229,11 @@ void importJSON() {
   println( "randomAmount: "+ courseProperties.getInt("randomAmount")) ;
   println(course.size());
   println(course.keys());
-  String[] obstacle = splitTokens(course.keys().toString(), ",[] ");
-  println(obstacle);
+  String[] entity = splitTokens(course.keys().toString(), ",[] ");
+  println(entity);
   for (int i = 0; i < course.size (); i++) {
-    if (!obstacle[i].equals("courseProperties")) {
-      JSONObject element = course.getJSONObject(obstacle[i]);
+    if (!entity[i].equals("courseProperties")) {
+      JSONObject element = course.getJSONObject(entity[i]);
       println(element);
       Obstacle correspondingObstacle= getObstacleOnClassName(element.getString("class"));
       correspondingObstacle.type=element.getInt("type"); 
@@ -269,18 +269,18 @@ void exportJSON() {
   println(" Course: "+courseName);
 
   for (int i = 0; i < obstacles.size (); i++) {
-    JSONObject obstacle = new JSONObject();
-    obstacle.setString("class", obstacles.get(i).getClass().getSimpleName());
-    obstacle.setInt("id", i);
-    obstacle.setInt("type", int(obstacles.get(i).type));
-    obstacle.setInt("xCoord", int(obstacles.get(i).x));
-    obstacle.setInt("yCoord", int(obstacles.get(i).y));
-    obstacle.setInt("xSize", int(obstacles.get(i).w));
-    obstacle.setInt("ySize", int(obstacles.get(i).h));
-    if ( !obstacles.get(i).text.equals(""))obstacle.setString("text", obstacles.get(i).text); 
-    if ( obstacles.get(i).vx!=0)obstacle.setInt("xVel", int(obstacles.get(i).vx)); 
-    if ( obstacles.get(i).vy!=0)obstacle.setInt("yVel", int(obstacles.get(i).vy)); 
-    course.setJSONObject(obstacles.get(i).getClass().getSimpleName()+i, obstacle);
+    JSONObject entity = new JSONObject();
+    entity.setString("class", obstacles.get(i).getClass().getSimpleName());
+    entity.setInt("id", i);
+    entity.setInt("type", int(obstacles.get(i).type));
+    entity.setInt("xCoord", int(obstacles.get(i).x));
+    entity.setInt("yCoord", int(obstacles.get(i).y));
+    entity.setInt("xSize", int(obstacles.get(i).w));
+    entity.setInt("ySize", int(obstacles.get(i).h));
+    if ( !obstacles.get(i).text.equals(""))entity.setString("text", obstacles.get(i).text); 
+    if ( obstacles.get(i).vx!=0)entity.setInt("xVel", int(obstacles.get(i).vx)); 
+    if ( obstacles.get(i).vy!=0)entity.setInt("yVel", int(obstacles.get(i).vy)); 
+    course.setJSONObject(obstacles.get(i).getClass().getSimpleName()+i, entity);
     println(i+" "+ obstacles.get(i).getClass().getSimpleName()+ " obstacle is exported");
   }
 
