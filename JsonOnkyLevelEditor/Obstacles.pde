@@ -2,10 +2,10 @@ abstract class Obstacle implements Cloneable {
   float impactForce, x, y, vx, vy, w=200, h=200;
   PVector coord, vel, accel, size;
   color obstacleColor;
-  int increment=100,hitBrightness, defaultHealth=1, health=defaultHealth, type, maxType;
+  int increment=100, hitBrightness, defaultHealth=1, health=defaultHealth, type, maxType;
   String[] tooltip;
   String text="";
-  boolean marked, randomized, stretchable, unBreakable, regenerating, underlay, highLight;
+  boolean dead, marked, randomized, directed, stretchable, unBreakable, regenerating, underlay, highLight;
   PImage image;
   Obstacle() {
     health=defaultHealth;
@@ -24,13 +24,19 @@ abstract class Obstacle implements Cloneable {
     // noStroke();
     //  fill(obstacleColor);
     // rect(x, y, w, h);
-    if (highLight)highLight();
+   // if (highLight)highLight();
+   // if (directed)direction();
   }
   void highLight() {
     stroke(255);
     strokeWeight(10);
     noFill();
     rect(x, y, w, h);
+  }
+  void direction() {
+    stroke(255, 0, 0);
+    strokeWeight(3);
+    line(x+w*0.5, y+h*0.5, x+w*0.5+vx/directionScale, y+h*0.5+vy/directionScale);
   }
   void changeType(int _amount) {
     type+=_amount;
@@ -255,8 +261,8 @@ class Glass extends Obstacle {
     tooltip=new String[maxType+1];
     tooltip[0]=" breakable dodad.";
     stretchable=true;
-increment= 50;  
-}
+    increment= 50;
+  }
   Glass(int _x, int _y, int _w, int _h) {
     super(_x, _y);
     w=_w;
@@ -276,7 +282,7 @@ increment= 50;
 }
 class Block extends Obstacle {
   int invis;
-  float ay=2;
+  //float ay=2;
   boolean scale;
   Block() {
     super();
@@ -287,6 +293,7 @@ class Block extends Obstacle {
     defaultHealth=20;
     tooltip=new String[maxType+1];
     tooltip[0]=" unbreakable enemy.";
+    directed=true;
   }
   Block(int _x, int _y) {
     super(_x, _y);
@@ -439,6 +446,7 @@ class Snake extends Obstacle {
     tooltip=new String[maxType+1];
     tooltip[0]="inflict poison powerdown effect.";
     increment=50;
+    directed=true;
   }
   PImage cutSprite (int index) {
     final int interval= 82, imageWidth=82, imageheight=35;
@@ -464,6 +472,7 @@ class Barrel extends Obstacle {
     vx=-2;
     tooltip=new String[maxType+1];
     tooltip[0]="moving/rolling breakable obstacle.";
+    directed=true;
   }
   /* Barrel(int _x, int _y) {
    super(_x, _y+67);
@@ -476,7 +485,7 @@ class Barrel extends Obstacle {
    }*/
   void display() {
     super.display();
-    angle--;
+    angle+=vx*0.1;
     pushMatrix();
     translate(x+w*0.5, y+h*0.5);
     rotate(radians(angle));

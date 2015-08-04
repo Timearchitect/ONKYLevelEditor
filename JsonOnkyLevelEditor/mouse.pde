@@ -20,12 +20,13 @@ void mousePressed() {
         paste();
         pasteing=false;
       } else {
-        if (focus==null) {
+        if (focus==null) { // regular add
           record(); //record undostate
           addObstacle();
-        } else {
+        } else { // select 
           searchFocusableObstacle();
           select(focus);
+          if (focus.directed)directing=true; // directing velocity
           if (mouseEvent.getClickCount()==2) {  // double-click edit attributes
             println("double-click");
             record(); //record undostate
@@ -57,11 +58,12 @@ void mousePressed() {
 void mouseDragged() {
   searchFocusableObstacle();
   if (mouseButton==LEFT) {
-    if (focus==null) {
-      addObstacle();
+    if ( focus==null) {
+      if (!directing) addObstacle();
     } else {
       stretch();
     }
+    direct();
     searchFocusableObstacle();
   }
   if (mouseButton==RIGHT) {
@@ -86,7 +88,10 @@ void mouseReleased() {
     if (focus!=null) {          
       record(); //record undostate
       GridInline();
+      // removeSameOverlapTiles();
     }
+    directing=false;
+    streching=false;
   }
 }
 void mouseWheel(MouseEvent event) {
@@ -111,17 +116,26 @@ void searchFocusableObstacle() {
 void addObstacle() {
   saveChanged=false;
   // int interval=int(list.get(0).h*0.5);
+  boolean add=true;
   int interval=int(list.get(0).increment);
-  int xRounded = int(((mouseX/scaleFactor-cameraCoord.x) -interval*0.25) / interval ) * interval;
-  int yRounded = int(((mouseY/scaleFactor-cameraCoord.y) -interval*0.25) / interval ) * interval;
-  //obstacles.add(new Box(int(mouseX/scaleFactor-cameraCoord.x),int(mouseY/scaleFactor-cameraCoord.y)));
-  //  if (selected!=null) {
+
+  // int xRounded = int(((mouseX/scaleFactor-cameraCoord.x) -interval*0.25) / interval ) * interval;
+  // int yRounded = int(((mouseY/scaleFactor-cameraCoord.y) -interval*0.25) / interval ) * interval;
+  int xRounded=interval * int((mouseX/scaleFactor-cameraCoord.x-interval*0.5) / interval + 0.5);
+  int yRounded=interval * int((mouseY/scaleFactor-cameraCoord.y-interval*0.5) / interval + 0.5);
+
   list.get(0).x=xRounded;
   list.get(0).y=yRounded;
-
-  obstacles.add(list.get(0).clone());
-  //  }
-  //obstacles.add(new Box(xRounded, yRounded));
+  if (obstacles.size()>0) {
+    println( "list: "+list.get(0).x +" : "+list.get(0).y );
+    for (int i = 0; i<obstacles.size (); i++) {
+      println( "obstacle: "+obstacles.get(i).x +" : "+obstacles.get(i).y );
+      if (obstacles.get(i).x == list.get(0).x && obstacles.get(i).y == list.get(0).y  ) {
+        add=false;
+      }
+    }
+  } 
+  if (add)obstacles.add(list.get(0).clone());
   println("added");
 }
 void removeObstacle() {
@@ -157,6 +171,26 @@ void stretch() {
     }
   }
 }
+void  direct() {
+  if (focus!=null && focus.directed) {
+    println("direct");
+    int sx=int(int(mouseX/scaleFactor-cameraCoord.x)-focus.x-focus.w*0.5);
+    int sy=int(int(mouseY/scaleFactor-cameraCoord.y)-focus.y-focus.h*0.5);
+    focus.vx=sx*directionScale;
+    focus.vy=sy*directionScale;
+  }
+  for (Obstacle s : selected) {
+    if (s.directed) {
+      println("direct");
+      int scalex=int(int(mouseX/scaleFactor-cameraCoord.x)-s.x-s.w*0.5);
+      int scaley=int(int(mouseY/scaleFactor-cameraCoord.y)-s.y-s.h*0.5);
+      s.vx=scalex*directionScale;
+      s.vy=scaley*directionScale;
+    }
+  }
+}
+
+
 void GridInline() {
   int interval=50;
   focus.x = round((focus.x -interval*0.25) / interval ) * interval;
@@ -181,3 +215,24 @@ void paste() {
   }
 }
 
+/*void removeSameOverlapTiles() {
+ println("!!!!!!!!!");
+ if (obstacles.size()>0) {
+ for (int i = obstacles.size ()-1; i>=0; i--) {
+ for (int j = obstacles.size ()-1; j>=0; j--) {
+ println(list.get(0).getClass());
+ if (obstacles.get(i)!=obstacles.get(j)&& list.get(0).getClass().isInstance(obstacles.get(i))) {
+ if (obstacles.get(i).x+obstacles.get(i).w >= obstacles.get(j).x && obstacles.get(j).x+obstacles.get(j).w > obstacles.get(i).x) {
+ //obstacles.remove(i);
+ obstacles.get(i).dead=true;
+ println("stacked/ overlaped removed");
+ }
+ }
+ }
+ }
+ for (int i = obstacles.size ()-1; i>=0; i--) {
+ if (obstacles.get(i).dead)obstacles.remove(i);
+ }
+ }
+ }
+ */

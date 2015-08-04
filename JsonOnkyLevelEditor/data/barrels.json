@@ -1,0 +1,32 @@
+{"barrels": {
+  "Barrel1": {
+    "id": 1,
+    "xVel": -81,
+    "xCoord": 900,
+    "xSize": 200,
+    "class": "Barrel",
+    "yCoord": 400,
+    "yVel": 28,
+    "type": 0,
+    "ySize": 200
+  },
+  "Barrel0": {
+    "id": 0,
+    "xVel": -41,
+    "xCoord": 500,
+    "xSize": 200,
+    "class": "Barrel",
+    "yCoord": 200,
+    "yVel": 48,
+    "type": 0,
+    "ySize": 200
+  },
+  "courseProperties": {
+    "maxSpeedLevel": 5,
+    "name": "barrels",
+    "minSpeedLevel": 0,
+    "courseSize": 2200,
+    "randomAmount": 4,
+    "difficultyLevel": 0
+  }
+}}

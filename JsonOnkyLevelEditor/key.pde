@@ -72,7 +72,6 @@ void keyPressed() {
       } else { 
         println("Cancelled.");
       }
-
       break;
     case 'a':
       rotateListElement(list.size()-1);

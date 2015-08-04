@@ -17,13 +17,13 @@ ArrayList<Obstacle> selected= new ArrayList<Obstacle>();
 ArrayList<Obstacle> clipBoard= new ArrayList<Obstacle>();
 PVector clipBoardCoord= new PVector();
 int listOrder;
-boolean first=true, hide, pasteing;
+boolean first=true, hide, pasteing, directing, streching;
 
 Obstacle focus=null;
 PImage  randomIcon, poisonIcon, slashIcon, laserIcon, superIcon, tokenIcon, lifeIcon, slowIcon, magnetIcon;
 PImage Tire, Vines, rockSign, rock, lumber, glass, Bush, Box, brokenBox, mysteryBox, Leaf, rockDebris, Block, BlockSad, ironBox, ironBox2, ironBox3;
 PImage  sign, Grass, waterSpriteSheet, Snake, Barrel;
-float scaleFactor=0.5;
+float scaleFactor=0.5, directionScale=0.1;
 PVector cameraCoord= new PVector(0, 0);
 //PVector pCameraCoord= new PVector(0, 0);
 PVector defaultCourseSize= new PVector(2200, 1000);
@@ -79,9 +79,14 @@ void draw() {
   translate(cameraCoord.x, cameraCoord.y);
   displayCourseSize();
   if (transparent)tint(255, 150);
-  for (Obstacle o : obstacles)  o.display();
+  for (Obstacle o : obstacles) {
+    o.display();
+    o.direction();
+  }
+
   if (transparent)noTint();
   for (Obstacle o : selected)  o.highLight();
+
   /*  if (pasteing) {
    tint(255,100);
    for (Obstacle o : clipBoard)o.display();
@@ -104,7 +109,8 @@ void draw() {
     textAlign(LEFT);
     text(" Coord: "+ int(focus.x)+" , " +int(focus.y), 50, 80+focus.h*0.5);
     text(" Size: "+ int(focus.w)+" , " +int(focus.h), 50, 100+focus.h*0.5);
-    text(" Tooltip: "+ focus.tooltip[focus.type], 50, 120+focus.h*0.5);
+    text(" velocity: "+ int(focus.vx)+" , " +int(focus.vy), 50, 120+focus.h*0.5);
+    text(" Tooltip: "+ focus.tooltip[focus.type], 50, 140+focus.h*0.5);
     text(" Class: "+ focus.getClass().getSimpleName(), 50, 40);
   } else if (selected.size()==0) {
     rect(50, 50, 100, 100);
@@ -231,11 +237,14 @@ void importJSON() {
       println(element);
       Obstacle correspondingObstacle= getObstacleOnClassName(element.getString("class"));
       correspondingObstacle.type=element.getInt("type"); 
-      correspondingObstacle.text=element.getString("text"); 
       correspondingObstacle.x=element.getInt("xCoord");
       correspondingObstacle.y=element.getInt("yCoord");
       correspondingObstacle.w=element.getInt("xSize");
       correspondingObstacle.h=element.getInt("ySize");
+      try {correspondingObstacle.text=element.getString("text");} catch (Exception e) { }
+      try {correspondingObstacle.vx=element.getInt("xVel");} catch (Exception e) { }
+      try {correspondingObstacle.vy=element.getInt("yVel");} catch (Exception e) { }
+
       obstacles.add(correspondingObstacle);
     }
   }
@@ -263,12 +272,14 @@ void exportJSON() {
     JSONObject obstacle = new JSONObject();
     obstacle.setString("class", obstacles.get(i).getClass().getSimpleName());
     obstacle.setInt("id", i);
-    obstacle.setString("text", obstacles.get(i).text); 
     obstacle.setInt("type", int(obstacles.get(i).type));
     obstacle.setInt("xCoord", int(obstacles.get(i).x));
     obstacle.setInt("yCoord", int(obstacles.get(i).y));
     obstacle.setInt("xSize", int(obstacles.get(i).w));
     obstacle.setInt("ySize", int(obstacles.get(i).h));
+    if ( !obstacles.get(i).text.equals(""))obstacle.setString("text", obstacles.get(i).text); 
+    if ( obstacles.get(i).vx!=0)obstacle.setInt("xVel", int(obstacles.get(i).vx)); 
+    if ( obstacles.get(i).vy!=0)obstacle.setInt("yVel", int(obstacles.get(i).vy)); 
     course.setJSONObject(obstacles.get(i).getClass().getSimpleName()+i, obstacle);
     println(i+" "+ obstacles.get(i).getClass().getSimpleName()+ " obstacle is exported");
   }

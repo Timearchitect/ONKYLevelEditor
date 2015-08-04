@@ -33,7 +33,7 @@ class TokenPowerup extends Obstacle {
     h=100;
     tooltip=new String[maxType+1];
     tooltip[0]=" valueble token used as ingame currency.";
-      increment=50;
+    increment=50;
   }
   void display() {
     super.display();
@@ -42,7 +42,7 @@ class TokenPowerup extends Obstacle {
      fill(obstacleColor);
      ellipse(x+offsetX, y+offsetY, w+40, h+40);
      }*/
-    image(image, x, y, 75, 75);
+    image(image, x+12, y+12, 75, 75);
   }
 }
 
@@ -56,7 +56,7 @@ class InvisPowerup extends Obstacle {
     h=100;
     tooltip=new String[maxType+1];
     tooltip[0]=" grants player invinciblity.";
-      increment=50;
+   increment=50;
   }
   void display() {
     super.display();
@@ -184,6 +184,7 @@ class MagnetPowerup extends Obstacle {
     h=100;
     tooltip=new String[maxType+1];
     tooltip[0]=" grants player token attraction.";
+    increment=50;
   }
   void display() {
     super.display();

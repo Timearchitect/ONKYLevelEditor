@@ -1,0 +1,460 @@
+{"test2": {
+  "LifePowerup17": {
+    "id": 17,
+    "text": "",
+    "xCoord": 700,
+    "xSize": 100,
+    "class": "LifePowerup",
+    "yCoord": 300,
+    "type": 0,
+    "ySize": 100
+  },
+  "LifePowerup16": {
+    "id": 16,
+    "text": "",
+    "xCoord": 700,
+    "xSize": 100,
+    "class": "LifePowerup",
+    "yCoord": 200,
+    "type": 0,
+    "ySize": 100
+  },
+  "Tire29": {
+    "id": 29,
+    "text": "",
+    "xCoord": 200,
+    "xSize": 200,
+    "class": "Tire",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Grass20": {
+    "id": 20,
+    "text": "",
+    "xCoord": 1000,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 400,
+    "type": 0,
+    "ySize": 200
+  },
+  "PoisonPowerdown13": {
+    "id": 13,
+    "text": "",
+    "xCoord": 1650,
+    "xSize": 100,
+    "class": "PoisonPowerdown",
+    "yCoord": 250,
+    "type": 0,
+    "ySize": 100
+  },
+  "Grass23": {
+    "id": 23,
+    "text": "",
+    "xCoord": 1000,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "LifePowerup9": {
+    "id": 9,
+    "text": "",
+    "xCoord": 600,
+    "xSize": 100,
+    "class": "LifePowerup",
+    "yCoord": 200,
+    "type": 0,
+    "ySize": 100
+  },
+  "LifePowerup8": {
+    "id": 8,
+    "text": "",
+    "xCoord": 600,
+    "xSize": 100,
+    "class": "LifePowerup",
+    "yCoord": 300,
+    "type": 0,
+    "ySize": 100
+  },
+  "Glass21": {
+    "id": 21,
+    "text": "hello world",
+    "xCoord": 600,
+    "xSize": 200,
+    "class": "Glass",
+    "yCoord": 650,
+    "type": 0,
+    "ySize": 50
+  },
+  "MagnetPowerup44": {
+    "id": 44,
+    "text": "",
+    "xCoord": 1450,
+    "xSize": 100,
+    "class": "MagnetPowerup",
+    "yCoord": 250,
+    "type": 0,
+    "ySize": 100
+  },
+  "Water32": {
+    "id": 32,
+    "text": "",
+    "xCoord": 1800,
+    "xSize": 200,
+    "class": "Water",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "InvisPowerup5": {
+    "id": 5,
+    "text": "",
+    "xCoord": 1250,
+    "xSize": 100,
+    "class": "InvisPowerup",
+    "yCoord": 250,
+    "type": 0,
+    "ySize": 100
+  },
+  "Water30": {
+    "id": 30,
+    "text": "",
+    "xCoord": 1800,
+    "xSize": 200,
+    "class": "Water",
+    "yCoord": 600,
+    "type": 0,
+    "ySize": 200
+  },
+  "Snake27": {
+    "id": 27,
+    "text": "",
+    "xCoord": 1450,
+    "xSize": 164,
+    "class": "Snake",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 70
+  },
+  "Snake26": {
+    "id": 26,
+    "text": "",
+    "xCoord": 1450,
+    "xSize": 164,
+    "class": "Snake",
+    "yCoord": 950,
+    "type": 0,
+    "ySize": 70
+  },
+  "LaserPowerup40": {
+    "id": 40,
+    "text": "",
+    "xCoord": 850,
+    "xSize": 100,
+    "class": "LaserPowerup",
+    "yCoord": 250,
+    "type": 0,
+    "ySize": 100
+  },
+  "Bush10": {
+    "id": 10,
+    "text": "",
+    "xCoord": 700,
+    "xSize": 100,
+    "class": "Bush",
+    "yCoord": 900,
+    "type": 0,
+    "ySize": 100
+  },
+  "Box22": {
+    "id": 22,
+    "text": "",
+    "xCoord": 0,
+    "xSize": 200,
+    "class": "Box",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Bush14": {
+    "id": 14,
+    "text": "",
+    "xCoord": 800,
+    "xSize": 100,
+    "class": "Bush",
+    "yCoord": 900,
+    "type": 0,
+    "ySize": 100
+  },
+  "Bush39": {
+    "id": 39,
+    "text": "",
+    "xCoord": 900,
+    "xSize": 100,
+    "class": "Bush",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 100
+  },
+  "Bush38": {
+    "id": 38,
+    "text": "",
+    "xCoord": 900,
+    "xSize": 100,
+    "class": "Bush",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 100
+  },
+  "TeleportPowerup36": {
+    "id": 36,
+    "text": "",
+    "xCoord": 1050,
+    "xSize": 100,
+    "class": "TeleportPowerup",
+    "yCoord": 250,
+    "type": 0,
+    "ySize": 100
+  },
+  "Bush12": {
+    "id": 12,
+    "text": "",
+    "xCoord": 700,
+    "xSize": 100,
+    "class": "Bush",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 100
+  },
+  "Water35": {
+    "id": 35,
+    "text": "",
+    "xCoord": 2000,
+    "xSize": 200,
+    "class": "Water",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Bush15": {
+    "id": 15,
+    "text": "",
+    "xCoord": 800,
+    "xSize": 100,
+    "class": "Bush",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 100
+  },
+  "Snake41": {
+    "id": 41,
+    "text": "",
+    "xCoord": 1300,
+    "xSize": 164,
+    "class": "Snake",
+    "yCoord": 900,
+    "type": 0,
+    "ySize": 70
+  },
+  "Grass19": {
+    "id": 19,
+    "text": "",
+    "xCoord": 1000,
+    "xSize": 200,
+    "class": "Grass",
+    "yCoord": 600,
+    "type": 0,
+    "ySize": 200
+  },
+  "TokenPowerup0": {
+    "id": 0,
+    "text": "",
+    "xCoord": 700,
+    "xSize": 100,
+    "class": "TokenPowerup",
+    "yCoord": 400,
+    "type": 0,
+    "ySize": 100
+  },
+  "TokenPowerup2": {
+    "id": 2,
+    "text": "",
+    "xCoord": 600,
+    "xSize": 100,
+    "class": "TokenPowerup",
+    "yCoord": 500,
+    "type": 0,
+    "ySize": 100
+  },
+  "RandomPowerup11": {
+    "id": 11,
+    "text": "",
+    "xCoord": 1850,
+    "xSize": 100,
+    "class": "RandomPowerup",
+    "yCoord": 250,
+    "type": 0,
+    "ySize": 100
+  },
+  "TokenPowerup1": {
+    "id": 1,
+    "text": "",
+    "xCoord": 600,
+    "xSize": 100,
+    "class": "TokenPowerup",
+    "yCoord": 400,
+    "type": 0,
+    "ySize": 100
+  },
+  "Sign34": {
+    "id": 34,
+    "text": "hello world",
+    "xCoord": 200,
+    "xSize": 200,
+    "class": "Sign",
+    "yCoord": 400,
+    "type": 0,
+    "ySize": 200
+  },
+  "Lumber33": {
+    "id": 33,
+    "text": "",
+    "xCoord": 1200,
+    "xSize": 50,
+    "class": "Lumber",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "TokenPowerup3": {
+    "id": 3,
+    "text": "",
+    "xCoord": 700,
+    "xSize": 100,
+    "class": "TokenPowerup",
+    "yCoord": 500,
+    "type": 0,
+    "ySize": 100
+  },
+  "courseProperties": {
+    "maxSpeedLevel": 5,
+    "name": "test2",
+    "minSpeedLevel": 0,
+    "courseSize": 2200,
+    "randomAmount": 4,
+    "difficultyLevel": 0
+  },
+  "Block18": {
+    "id": 18,
+    "text": "",
+    "xCoord": 800,
+    "xSize": 200,
+    "class": "Block",
+    "yCoord": 600,
+    "type": 0,
+    "ySize": 200
+  },
+  "Lumber31": {
+    "id": 31,
+    "text": "",
+    "xCoord": 1200,
+    "xSize": 200,
+    "class": "Lumber",
+    "yCoord": 650,
+    "type": 0,
+    "ySize": 50
+  },
+  "TokenPowerup7": {
+    "id": 7,
+    "text": "",
+    "xCoord": 650,
+    "xSize": 100,
+    "class": "TokenPowerup",
+    "yCoord": 450,
+    "type": 0,
+    "ySize": 100
+  },
+  "StoneSign6": {
+    "id": 6,
+    "text": "",
+    "xCoord": 200,
+    "xSize": 400,
+    "class": "StoneSign",
+    "yCoord": 600,
+    "type": 0,
+    "ySize": 200
+  },
+  "Water42": {
+    "id": 42,
+    "text": "",
+    "xCoord": 1600,
+    "xSize": 200,
+    "class": "Water",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "IronBox37": {
+    "id": 37,
+    "text": "",
+    "xCoord": 400,
+    "xSize": 200,
+    "class": "IronBox",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Barrel43": {
+    "id": 43,
+    "text": "",
+    "xCoord": 400,
+    "xSize": 200,
+    "class": "Barrel",
+    "yCoord": 200,
+    "type": 0,
+    "ySize": 200
+  },
+  "Glass28": {
+    "id": 28,
+    "text": "",
+    "xCoord": 600,
+    "xSize": 50,
+    "class": "Glass",
+    "yCoord": 800,
+    "type": 0,
+    "ySize": 200
+  },
+  "Rock4": {
+    "id": 4,
+    "text": "",
+    "xCoord": 400,
+    "xSize": 200,
+    "class": "Rock",
+    "yCoord": 400,
+    "type": 0,
+    "ySize": 200
+  },
+  "Bush25": {
+    "id": 25,
+    "text": "",
+    "xCoord": 900,
+    "xSize": 100,
+    "class": "Bush",
+    "yCoord": 900,
+    "type": 0,
+    "ySize": 100
+  },
+  "Bush24": {
+    "id": 24,
+    "text": "",
+    "xCoord": 700,
+    "xSize": 100,
+    "class": "Bush",
+    "yCoord": 900,
+    "type": 0,
+    "ySize": 100
+  }
+}}
